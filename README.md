@@ -1,6 +1,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/rogerselwyn/python-homelink/badge)](https://www.codefactor.io/repository/github/rogerselwyn/python-homelink)
 
-[![maintained](https://img.shields.io/maintenance/yes/2023.svg)](#)
+![GitHub release](https://img.shields.io/github/v/release/RogerSelwyn/python-homelink) [![maintained](https://img.shields.io/maintenance/yes/2023.svg)](#)
 [![maintainer](https://img.shields.io/badge/maintainer-%20%40RogerSelwyn-blue.svg)](https://github.com/RogerSelwyn)
 
 # pyhomelink
