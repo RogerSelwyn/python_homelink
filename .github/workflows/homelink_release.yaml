@@ -1,0 +1,16 @@
+name: Sky Q Remote Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  releasenotes:
+    name: Prepare release notes
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v2"
+      - name: Release Notes
+        uses: "rogerselwyn/actions/release-notes@main"
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
