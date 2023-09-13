@@ -26,6 +26,8 @@ class Alert(ApiComponent):
         self.modeltype = alert.get("modelType", None)
         self.location = alert.get("location", None)
         self.locationnickname = alert.get("locationNickname", None)
+        self.createdat = alert.get("createdAt", None)
+        self.updatedat = alert.get("updatedAt", None)
         self.insightid = alert.get("insightId", None)
         self.severity = alert.get("severity", None)
         self.category = alert.get("category", None)

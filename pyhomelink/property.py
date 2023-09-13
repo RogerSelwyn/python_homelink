@@ -20,6 +20,8 @@ class Property(ApiComponent):
         )
 
         self.reference = hl_property.get("reference", None)
+        self.createdat = hl_property.get("createdAt", None)
+        self.updatedat = hl_property.get("updatedAt", None)
         self.postcode = hl_property.get("postcode", None)
         self.latitude = hl_property.get("latitude", None)
         self.longitude = hl_property.get("longitude", None)

@@ -27,6 +27,8 @@ class Device(ApiComponent):
         self.installationdate = device.get("installationDate", None)
         self.installedby = device.get("installedBy", None)
         self.replacedate = device.get("replaceDate", None)
+        self.createdat = device.get("createdAt", None)
+        self.updatedat = device.get("updatedAt", None)
         self.metadata = self.Metadata(device["metadata"])
         self.status = self.Status(device["status"])
         self._rel = self.Rel(device["_rel"])
