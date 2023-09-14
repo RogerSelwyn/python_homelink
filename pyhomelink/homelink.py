@@ -19,7 +19,7 @@ from .utils import ApiComponent
 _LOGGER = logging.getLogger(__name__)
 
 
-class Landlord(ApiComponent):
+class HomeLINK(ApiComponent):
     """Landlord is the instantiation of the HomeLINK Landlord."""
 
     _endpoints = {

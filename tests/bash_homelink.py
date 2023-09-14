@@ -1,17 +1,14 @@
 """HomeLINK test script."""
 import asyncio
-import sys
 
 import aiohttp
 import requests
 
-sys.path.append("/HADev/Hassio/dev-config")
-import const
+import bash_const
+from pyhomelink.homelink import HomeLINK
 
-from pyhomelink.landlord import Landlord
-
-CLIENTID = const.HL_CLIENTID
-CLIENTSECRET = const.HL_CLIENTSECRET
+CLIENTID = bash_const.HL_CLIENTID
+CLIENTSECRET = bash_const.HL_CLIENTSECRET
 
 
 HTTP_TIMEOUT = 6
@@ -25,7 +22,7 @@ AUTHURL = (
 async def main(access_token):
     """Run the main test process."""
     async with aiohttp.ClientSession() as session:
-        landlord = Landlord(
+        landlord = HomeLINK(
             websession=session,
             access_token=access_token,
             # clientid=CLIENTID,
