@@ -28,7 +28,6 @@ pip install pyhomelink
 
 ```
 from pyhomelink.homelink import HomeLINK
-
 homelink = HomeLINK()
 ```
 Optional parameters:
