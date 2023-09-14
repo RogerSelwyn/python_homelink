@@ -1,4 +1,4 @@
-name: Sky Q Remote Release
+name: python-homelink Release
 
 on:
   release:
