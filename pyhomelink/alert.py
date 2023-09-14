@@ -41,5 +41,5 @@ class Alert(ApiComponent):
         def __init__(self, _rel):
             """Initialise _Rel."""
             self.property = _rel.get("property", None)
-            self._self = _rel.get("_self", None)
+            self.self = _rel.get("_self", None)
             self.device = _rel.get("device", None)

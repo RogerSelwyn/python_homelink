@@ -57,12 +57,12 @@ class Device(ApiComponent):
 
         def __init__(self, _rel):
             """Initialise _Rel."""
-            self._self = _rel.get("_self", None)
+            self.self = _rel.get("_self", None)
             self.property = _rel.get("property", None)
             self.alerts = _rel.get("alerts", None)
 
     async def get_alerts(self):
         """Get alerts for the Device."""
-        response = await self.api.async_get_data(self._rel.alerts)
+        response = await self.api.async_request("GET", self._rel.alerts)
 
         return [Alert(result, parent=self) for result in response.get("results", [])]

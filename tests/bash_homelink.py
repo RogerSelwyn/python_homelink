@@ -1,7 +1,7 @@
 """HomeLINK test script."""
 import asyncio
 
-import aiohttp
+# import aiohttp
 import requests
 
 import bash_const
@@ -21,46 +21,58 @@ AUTHURL = (
 
 async def main(access_token):
     """Run the main test process."""
-    async with aiohttp.ClientSession() as session:
-        homelink = HomeLINK(
-            websession=session,
-            access_token=access_token,
-            # clientid=CLIENTID,
-            # clientsecret=CLIENTSECRET,
-        )
 
-        properties = await homelink.get_properties()
+    homelink = HomeLINK(
+        # access_token=access_token,
+        clientid=CLIENTID,
+        clientsecret=CLIENTSECRET,
+    )
+    properties = await homelink.get_properties()
 
-        for hl_property in properties:
-            devices = await hl_property.get_devices()
-            for device in devices:
-                alerts = await device.get_alerts()
-                print(
-                    f"Device {device.serialnumber} - {device.location}. Alerts:- {alerts}"
-                )
-            alerts = await hl_property.get_alerts()
-            print(f"Property alerts:- {alerts}")
+    for hl_property in properties:
+        devices = await hl_property.get_devices()
+        for device in devices:
+            alerts = await device.get_alerts()
+            print(
+                f"Device {device.serialnumber} - {device.location}. Alerts:- {alerts}"
+            )
+        alerts = await hl_property.get_alerts()
+        print(f"Property alerts:- {alerts}")
 
-        hl_property = await homelink.get_property(properties[0].reference)
-        print(f"Property: {hl_property.address}")
-        devices = await homelink.get_property_devices(properties[0].reference)
-        print(f"Property Devices: {hl_property.address} - {devices}")
-        alerts = await homelink.get_property_alerts(properties[0].reference)
-        print(f"Property Alerts: {hl_property.address} - {alerts}")
+    hl_property = await homelink.get_property(properties[0].reference)
+    print(f"Property: {hl_property.address}")
+    devices = await homelink.get_property_devices(properties[0].reference)
+    print(f"Property Devices: {hl_property.address} - {devices}")
+    alerts = await homelink.get_property_alerts(properties[0].reference)
+    print(f"Property Alerts: {hl_property.address} - {alerts}")
+    tags = ["PROPERTY_JUNK"]
+    tagso = await homelink.add_property_tags(properties[0].reference, tags)
+    print(f"Property Add tags: {hl_property.address} - {tagso}")
+    tagso = await homelink.delete_property_tags(properties[0].reference, tags)
+    print(f"Property Delete tags: {hl_property.address} - {tagso}")
 
-        devices = await homelink.get_devices()
-        device = await homelink.get_device(devices[0].serialnumber)
-        print(f"Device: {device.location}")
-        alerts = await homelink.get_device_alerts(devices[0].serialnumber)
-        print(f"Device Alerts: {device.location} - {alerts}")
+    devices = await homelink.get_devices()
+    device = await homelink.get_device(devices[0].serialnumber)
+    print(f"Device: {device.location}")
+    alerts = await homelink.get_device_alerts(devices[0].serialnumber)
+    print(f"Device Alerts: {device.location} - {alerts}")
 
-        # alert = await landlord.get_alert("blah")
-        # print(f"Alert: {alert}")
+    # alert = await landlord.get_alert("blah")
+    # print(f"Alert: {alert}")
 
-        lookups = await homelink.get_lookups("model")
-        print(f"Lookups: 'model' - {lookups}")
-        lookup = await homelink.get_lookup("model", lookups[0].lookupid)
-        print(f"Lookup: 'model[0]' - {lookup.name}")
+    lookups = await homelink.get_lookups("model")
+    print(f"Lookups: 'model' - {lookups}")
+    lookup = await homelink.get_lookup("model", lookups[0].lookupid)
+    print(f"Lookup: 'model[0]' - {lookup.name}")
+
+    tags = ["JUNK"]
+    tagso = await hl_property.add_tags(tags)
+    print(f"Add Tags: {tagso}")
+    tags = ["JUNK"]
+    tagso = await hl_property.delete_tags(tags)
+    print(f"Add Tags: {tagso}")
+
+    await homelink.api.session.close()
 
 
 response = requests.get(

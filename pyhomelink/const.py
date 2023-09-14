@@ -10,5 +10,6 @@ ENDPOINT_GET_LOOKUP = "get_lookup"
 ENDPOINT_GET_LOOKUPS = "get_lookups"
 ENDPOINT_GET_PROPERTIES = "get_properties"
 ENDPOINT_GET_PROPERTY = "get_property"
+ENDPOINT_PROPERTY_TAGS = "property_tags"
 
 HTTP_OK = 200
