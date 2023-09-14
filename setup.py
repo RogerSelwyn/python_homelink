@@ -16,7 +16,7 @@ setup(
     description='Library for AICO HomeLINK',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/RogerSelwyn/python-homelink',
+    url='https://github.com/RogerSelwyn/python_homelink',
     license='MIT',
     packages=find_namespace_packages(exclude=['tests','manage']),
     install_requires=['aiohttp>=3.8.5'],

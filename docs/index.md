@@ -3,7 +3,7 @@ title: Home
 nav_order: 1
 ---
 
-# python-homelink
+# python_homelink
 Python module for accessing AICO HomeLINK services.
 
 ## Introduction
