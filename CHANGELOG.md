@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.3 (2023/09/14)
+### 🔨 Maintenance
+- [Bump to 0.0.3](https://github.com/RogerSelwyn/python_homelink/commit/97ec72c1ed7a878875a46bf4b71879f0e10fbdd0) - @RogerSelwyn
+- [Rename to python_homelink](https://github.com/RogerSelwyn/python_homelink/commit/fe601360df5d105025f339b1f5a10c8602c4060e) - @RogerSelwyn
+
 ## 0.0.2 (2023/09/14)
 ### ✨ Enhancements
 - [Added Lookup methods](https://github.com/RogerSelwyn/python_homelink/commit/a3b846f6b18627da24678ef6c2c0e8af859f2765) - @RogerSelwyn
