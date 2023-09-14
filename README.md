@@ -3,20 +3,20 @@
 ![GitHub release](https://img.shields.io/github/v/release/RogerSelwyn/python-homelink) [![maintained](https://img.shields.io/maintenance/yes/2023.svg)](#)
 [![maintainer](https://img.shields.io/badge/maintainer-%20%40RogerSelwyn-blue.svg)](https://github.com/RogerSelwyn)
 
-# pyhomelink
+# python-homelink
 Python module for accessing AICO HomeLINK services.
 
 ## Introduction
 
-This library enables access to the AICO HomeLINK api for retrieving the following items:
+This library enables access to the AICO HomeLINK API for retrieving the following items:
 * Property
 * Devices
 * Alerts
+* Lookups
 
-## Installing
+### [Buy Me A ~~Coffee~~ Beer 🍻](https://buymeacoffee.com/rogtp)
+I work on this integration because I like things to work well for myself and others, and for it to deliver as much as is achievable with the API. Please don't feel you are obligated to donate, but of course it is appreciated.
 
-To install:
+# Documentation
 
-```
-pip install pyhomelink
-```
+The full documentation is available here - [python-homelink Documentation](https://rogerselwyn.github.io/python-homelink/)
