@@ -1,4 +1,4 @@
-"""Python module for accessing Landlord."""
+"""Python module for accessing HomeLINK."""
 
 import logging
 
@@ -9,10 +9,13 @@ from .const import (
     ENDPOINT_GET_ALERT,
     ENDPOINT_GET_DEVICE,
     ENDPOINT_GET_DEVICES,
+    ENDPOINT_GET_LOOKUP,
+    ENDPOINT_GET_LOOKUPS,
     ENDPOINT_GET_PROPERTIES,
     ENDPOINT_GET_PROPERTY,
 )
 from .device import Device
+from .lookup import Lookup
 from .property import Property
 from .utils import ApiComponent
 
@@ -26,11 +29,10 @@ class HomeLINK(ApiComponent):
         ENDPOINT_GET_ALERT: "alert/{alertid}",
         ENDPOINT_GET_DEVICE: "device/{serialnumber}",
         ENDPOINT_GET_DEVICES: "device",
-        # ENDPOINT_GET_DEVICE_ALERTS: "device/{serialnumber}/alerts",
+        ENDPOINT_GET_LOOKUP: "lookup/{lookuptype}/{id}",
+        ENDPOINT_GET_LOOKUPS: "lookup/{lookuptype}",
         ENDPOINT_GET_PROPERTIES: "property",
         ENDPOINT_GET_PROPERTY: "property/{propertyreference}",
-        # ENDPOINT_GET_PROPERTY_ALERTS: "property/{propertyreference}/alerts",
-        # ENDPOINT_GET_PROPERTY_DEVICES: "property/{propertyreference}/devices",
     }
 
     def __init__(self, **kwargs):
@@ -45,7 +47,6 @@ class HomeLINK(ApiComponent):
         response = await self.api.async_get_data(
             self._endpoints.get(ENDPOINT_GET_PROPERTIES)
         )
-
         return [Property(result, parent=self) for result in response.get("results", [])]
 
     async def get_property(self, propertyreference):
@@ -72,7 +73,6 @@ class HomeLINK(ApiComponent):
         response = await self.api.async_get_data(
             self._endpoints.get(ENDPOINT_GET_DEVICES)
         )
-
         return [Device(result, parent=self) for result in response.get("results", [])]
 
     async def get_device(self, serialnumber):
@@ -93,3 +93,19 @@ class HomeLINK(ApiComponent):
             self._endpoints.get(ENDPOINT_GET_ALERT).format(alertid=alertid)
         )
         return Alert(response, parent=self)
+
+    async def get_lookups(self, lookuptype):
+        """Get a lookup by lookuptype."""
+        response = await self.api.async_get_data(
+            self._endpoints.get(ENDPOINT_GET_LOOKUPS).format(lookuptype=lookuptype)
+        )
+        return [Lookup(result, parent=self) for result in response]
+
+    async def get_lookup(self, lookuptype, lookupid):
+        """Get a lookup by lookuptype and id."""
+        response = await self.api.async_get_data(
+            self._endpoints.get(ENDPOINT_GET_LOOKUP).format(
+                lookuptype=lookuptype, id=lookupid
+            )
+        )
+        return Lookup(response, parent=self)

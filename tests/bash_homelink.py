@@ -22,14 +22,14 @@ AUTHURL = (
 async def main(access_token):
     """Run the main test process."""
     async with aiohttp.ClientSession() as session:
-        landlord = HomeLINK(
+        homelink = HomeLINK(
             websession=session,
             access_token=access_token,
             # clientid=CLIENTID,
             # clientsecret=CLIENTSECRET,
         )
 
-        properties = await landlord.get_properties()
+        properties = await homelink.get_properties()
 
         for hl_property in properties:
             devices = await hl_property.get_devices()
@@ -41,21 +41,26 @@ async def main(access_token):
             alerts = await hl_property.get_alerts()
             print(f"Property alerts:- {alerts}")
 
-        hl_property = await landlord.get_property(properties[0].reference)
+        hl_property = await homelink.get_property(properties[0].reference)
         print(f"Property: {hl_property.address}")
-        devices = await landlord.get_property_devices(properties[0].reference)
+        devices = await homelink.get_property_devices(properties[0].reference)
         print(f"Property Devices: {hl_property.address} - {devices}")
-        alerts = await landlord.get_property_alerts(properties[0].reference)
+        alerts = await homelink.get_property_alerts(properties[0].reference)
         print(f"Property Alerts: {hl_property.address} - {alerts}")
 
-        devices = await landlord.get_devices()
-        device = await landlord.get_device(devices[0].serialnumber)
+        devices = await homelink.get_devices()
+        device = await homelink.get_device(devices[0].serialnumber)
         print(f"Device: {device.location}")
-        alerts = await landlord.get_device_alerts(devices[0].serialnumber)
+        alerts = await homelink.get_device_alerts(devices[0].serialnumber)
         print(f"Device Alerts: {device.location} - {alerts}")
 
         # alert = await landlord.get_alert("blah")
         # print(f"Alert: {alert}")
+
+        lookups = await homelink.get_lookups("model")
+        print(f"Lookups: 'model' - {lookups}")
+        lookup = await homelink.get_lookup("model", lookups[0].lookupid)
+        print(f"Lookup: 'model[0]' - {lookup.name}")
 
 
 response = requests.get(

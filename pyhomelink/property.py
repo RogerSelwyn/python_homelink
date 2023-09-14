@@ -1,4 +1,4 @@
-"""Python module for accessing Landlord."""
+"""Python module for accessing HomeLINK Property."""
 
 import logging
 

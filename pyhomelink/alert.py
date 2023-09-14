@@ -1,4 +1,4 @@
-"""Python module for accessing Landlord."""
+"""Python module for accessing HomeLINK Alert."""
 
 import logging
 
@@ -21,7 +21,7 @@ class Alert(ApiComponent):
         self.serialnumber = alert.get("serialNumber", None)
         self.description = alert.get("description", None)
         self.eventtype = alert.get("eventType", None)
-        self.propertyreferenc = alert.get("propertyReferencn", None)
+        self.propertyreference = alert.get("propertyReference", None)
         self.model = alert.get("model", None)
         self.modeltype = alert.get("modelType", None)
         self.location = alert.get("location", None)
