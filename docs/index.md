@@ -33,8 +33,9 @@ homelink = HomeLINK()
 Optional parameters:
 * session - An async session (for instance the Home Assistant websession)
 * access_token - a JWT access token previously obtained
-* clientid - client id obtained from HomeLINK dashboard
-* clientsecret - client secret obtained from HomeLINK dashboard
 
-Either an access_token must be passed, or a client id/secret pair
+## Access token retrieval
 
+```
+access_token = homelink.auth(clientid, clientsecret)
+```

@@ -14,15 +14,8 @@ class API:
     def __init__(self, **kwargs):
         """Initialize the api."""
 
-        if (
-            not kwargs.get("access_token", None)
-            and not kwargs.get("clientid", None)
-            and not kwargs.get("clientsecret", None)
-        ):
-            _LOGGER.error(
-                "Either access key, or client_id and client_secret must be supplied"
-            )
-            return
+        self._clientid = None
+        self._clientsecret = None
 
         self.session = kwargs.get("session") or aiohttp.ClientSession()
 
@@ -30,16 +23,21 @@ class API:
             self._headers = self._build_headers(access_token)
         else:
             self._headers = None
-            self._clientid = kwargs.get("clientid")
-            self._clientsecret = kwargs.get("clientsecret")
 
     async def async_request(self, method, endpoint, data=None):
         """Get data from HomeLINK service."""
+        if not self._headers:
+            _LOGGER.error("Authentication required")
+            return
+
         url = self._build_url(endpoint)
         return await self._async_request(method, url, data)
 
-    async def async_do_auth(self):
+    async def async_do_auth(self, clientid, clientsecret):
         """Do authentication."""
+        self._clientid = clientid
+        self._clientsecret = clientsecret
+
         url = AUTHURL.format(self._clientid, self._clientsecret)
         try:
             response = await self._async_request("GET", url, None)

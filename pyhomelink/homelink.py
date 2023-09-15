@@ -48,12 +48,12 @@ class HomeLINK(ApiComponent):
         """Return the access token."""
         return self._access_token
 
-    async def auth(self):
+    async def auth(self, clientid, clientsecret):
         """Authorise to the api."""
-        auth = await self.api.async_do_auth()
+
+        auth = await self.api.async_do_auth(clientid, clientsecret)
         if auth:
             self._access_token = auth
-            return True
         return auth
 
     async def get_properties(self):

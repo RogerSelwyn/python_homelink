@@ -1,9 +1,6 @@
 """HomeLINK test script."""
 import asyncio
 
-# import aiohttp
-import requests
-
 import bash_const
 from pyhomelink.homelink import HomeLINK
 
@@ -24,10 +21,11 @@ async def main(access_token):
 
     homelink = HomeLINK(
         access_token=access_token,
+    )
+    auth = await homelink.auth(
         clientid=CLIENTID,
         clientsecret=CLIENTSECRET,
     )
-    auth = await homelink.auth()
     print(f"Auth: {auth}")
     properties = await homelink.get_properties()
 
