@@ -1,5 +1,14 @@
 # Changelog
 
+
+## 0.0.4 (2023/09/15)
+### ✨ Enhancements
+- [Add auth method](https://github.com/RogerSelwyn/python_homelink/commit/b39db3439689d30f0d59b95ee2a9380fd29c61c5) - @RogerSelwyn
+
+### 🔨 Maintenance
+- [Bump to 0.0.4](https://github.com/RogerSelwyn/python_homelink/commit/315d5975b2761e652a69da4632f67ff6c91df54b) - @RogerSelwyn
+- [Tweak auth](https://github.com/RogerSelwyn/python_homelink/commit/930f0e8494f7823a2052b7bc1f7bd60797b40808) - @RogerSelwyn
+
 ## 0.0.3 (2023/09/14)
 ### 🔨 Maintenance
 - [Bump to 0.0.3](https://github.com/RogerSelwyn/python_homelink/commit/97ec72c1ed7a878875a46bf4b71879f0e10fbdd0) - @RogerSelwyn
