@@ -41,6 +41,20 @@ class HomeLINK(ApiComponent):
             None,
             **kwargs,
         )
+        self._access_token = None
+
+    @property
+    def access_token(self):
+        """Return the access token."""
+        return self._access_token
+
+    async def auth(self):
+        """Authorise to the api."""
+        auth = await self.api.async_do_auth()
+        if auth:
+            self._access_token = auth
+            return True
+        return auth
 
     async def get_properties(self):
         """Get properties for the Landlord."""

@@ -35,18 +35,22 @@ class API:
 
     async def async_request(self, method, endpoint, data=None):
         """Get data from HomeLINK service."""
-        if not self._headers:
-            await self._async_do_auth()
-
         url = self._build_url(endpoint)
         return await self._async_request(method, url, data)
 
-    async def _async_do_auth(self):
+    async def async_do_auth(self):
         """Do authentication."""
         url = AUTHURL.format(self._clientid, self._clientsecret)
-        response = await self._async_request("GET", url, None)
+        try:
+            response = await self._async_request("GET", url, None)
+        except aiohttp.client_exceptions.ClientResponseError as err:
+            if err.status == 401:
+                return False
+            raise
+
         access_token = response.get("accessToken")
         self._headers = self._build_headers(access_token)
+        return access_token
 
     async def _async_request(self, method, url, data):
         http_method = {

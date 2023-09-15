@@ -9,7 +9,7 @@ from pyhomelink.homelink import HomeLINK
 
 CLIENTID = bash_const.HL_CLIENTID
 CLIENTSECRET = bash_const.HL_CLIENTSECRET
-
+# CLIENTSECRET = "blah"
 
 HTTP_TIMEOUT = 6
 RESPONSE_OK = 200
@@ -23,10 +23,12 @@ async def main(access_token):
     """Run the main test process."""
 
     homelink = HomeLINK(
-        # access_token=access_token,
+        access_token=access_token,
         clientid=CLIENTID,
         clientsecret=CLIENTSECRET,
     )
+    auth = await homelink.auth()
+    print(f"Auth: {auth}")
     properties = await homelink.get_properties()
 
     for hl_property in properties:
@@ -75,12 +77,13 @@ async def main(access_token):
     await homelink.api.session.close()
 
 
-response = requests.get(
-    AUTHURL,
-    timeout=HTTP_TIMEOUT,
-    headers=HEADERS,
-)
-if response.status_code == RESPONSE_OK:
-    asyncio.run(main(response.json()["accessToken"]))
-else:
-    print("error")
+# response = requests.get(
+#     AUTHURL,
+#     timeout=HTTP_TIMEOUT,
+#     headers=HEADERS,
+# )
+# if response.status_code == RESPONSE_OK:
+# asyncio.run(main(response.json()["accessToken"]))
+asyncio.run(main(None))
+# else:
+#     print("error")
