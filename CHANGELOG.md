@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.5 (2023/09/16)
+### 🔨 Maintenance
+- [Rename _rel to rel to avoid python warnings](https://github.com/RogerSelwyn/python_homelink/commit/c131bb74ef3747a7d5105c62de6da31aa0b823b3) - @RogerSelwyn
+- [Remove access_token as property](https://github.com/RogerSelwyn/python_homelink/commit/94b8ec2c0b87145442a1f3c52144c8f3a2460a98) - @RogerSelwyn
+- [Bump to 0.0.5](https://github.com/RogerSelwyn/python_homelink/commit/c2a52561eee9ffb22f313167999deb994f11e55a) - @RogerSelwyn
 
 ## 0.0.4 (2023/09/15)
 ### ✨ Enhancements
