@@ -32,28 +32,28 @@ class Property(ApiComponent):
         self.longitude = hl_property.get("longitude", None)
         self.address = hl_property.get("address", None)
         self.tags = hl_property.get("tags", None)
-        self._rel = self.Rel(hl_property["_rel"])
+        self.rel = self.Rel(hl_property["_rel"])
 
     class Rel:
         """Relative URLs for property."""
 
-        def __init__(self, _rel):
+        def __init__(self, rel):
             """Initialise _Rel."""
-            self.self = _rel.get("_self", None)
-            self.devices = _rel.get("devices", None)
-            self.alerts = _rel.get("alerts", None)
-            self.readings = _rel.get("readings", None)
-            self.insights = _rel.get("insights", None)
+            self.self = rel.get("_self", None)
+            self.devices = rel.get("devices", None)
+            self.alerts = rel.get("alerts", None)
+            self.readings = rel.get("readings", None)
+            self.insights = rel.get("insights", None)
 
     async def get_devices(self):
         """Get devices for the Property."""
-        response = await self.api.async_request("GET", self._rel.devices)
+        response = await self.api.async_request("GET", self.rel.devices)
 
         return [Device(result, parent=self) for result in response.get("results", [])]
 
     async def get_alerts(self):
         """Get alerts for the Property."""
-        response = await self.api.async_request("GET", self._rel.alerts)
+        response = await self.api.async_request("GET", self.rel.alerts)
 
         return [Alert(result, parent=self) for result in response.get("results", [])]
 
@@ -63,7 +63,7 @@ class Property(ApiComponent):
         response = await self.api.async_request(
             "PUT",
             self._endpoints.get(ENDPOINT_PROPERTY_TAGS).format(
-                propertyurl=self._rel.self
+                propertyurl=self.rel.self
             ),
             body,
         )
@@ -76,7 +76,7 @@ class Property(ApiComponent):
         response = await self.api.async_request(
             "DELETE",
             self._endpoints.get(ENDPOINT_PROPERTY_TAGS).format(
-                propertyurl=self._rel.self
+                propertyurl=self.rel.self
             ),
             body,
         )

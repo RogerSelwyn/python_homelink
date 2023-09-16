@@ -33,13 +33,13 @@ class Alert(ApiComponent):
         self.category = alert.get("category", None)
         self.type = alert.get("type", None)
         self.status = alert.get("status", None)
-        self._rel = self.Rel(alert["_rel"])
+        self.rel = self.Rel(alert["_rel"])
 
     class Rel:
         """Relative URLs for Alert."""
 
-        def __init__(self, _rel):
+        def __init__(self, rel):
             """Initialise _Rel."""
-            self.property = _rel.get("property", None)
-            self.self = _rel.get("_self", None)
-            self.device = _rel.get("device", None)
+            self.property = rel.get("property", None)
+            self.self = rel.get("_self", None)
+            self.device = rel.get("device", None)

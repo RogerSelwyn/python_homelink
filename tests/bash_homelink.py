@@ -1,6 +1,8 @@
 """HomeLINK test script."""
 import asyncio
 
+import requests
+
 import bash_const
 from pyhomelink.homelink import HomeLINK
 
@@ -22,11 +24,11 @@ async def main(access_token):
     homelink = HomeLINK(
         access_token=access_token,
     )
-    auth = await homelink.auth(
-        clientid=CLIENTID,
-        clientsecret=CLIENTSECRET,
-    )
-    print(f"Auth: {auth}")
+    # auth = await homelink.auth(
+    #     clientid=CLIENTID,
+    #     clientsecret=CLIENTSECRET,
+    # # )
+    # print(f"Auth: {auth}")
     properties = await homelink.get_properties()
 
     for hl_property in properties:
@@ -75,13 +77,13 @@ async def main(access_token):
     await homelink.api.session.close()
 
 
-# response = requests.get(
-#     AUTHURL,
-#     timeout=HTTP_TIMEOUT,
-#     headers=HEADERS,
-# )
-# if response.status_code == RESPONSE_OK:
-# asyncio.run(main(response.json()["accessToken"]))
-asyncio.run(main(None))
+response = requests.get(
+    AUTHURL,
+    timeout=HTTP_TIMEOUT,
+    headers=HEADERS,
+)
+if response.status_code == RESPONSE_OK:
+    asyncio.run(main(response.json()["accessToken"]))
+# asyncio.run(main(None))
 # else:
 #     print("error")

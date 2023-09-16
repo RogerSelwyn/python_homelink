@@ -31,7 +31,7 @@ class Device(ApiComponent):
         self.updatedat = device.get("updatedAt", None)
         self.metadata = self.Metadata(device["metadata"])
         self.status = self.Status(device["status"])
-        self._rel = self.Rel(device["_rel"])
+        self.rel = self.Rel(device["_rel"])
         # _convert_dict_to_class(self, device)
 
     class Metadata:
@@ -55,14 +55,14 @@ class Device(ApiComponent):
     class Rel:
         """Relative URLs for device."""
 
-        def __init__(self, _rel):
+        def __init__(self, rel):
             """Initialise _Rel."""
-            self.self = _rel.get("_self", None)
-            self.property = _rel.get("property", None)
-            self.alerts = _rel.get("alerts", None)
+            self.self = rel.get("_self", None)
+            self.property = rel.get("property", None)
+            self.alerts = rel.get("alerts", None)
 
     async def get_alerts(self):
         """Get alerts for the Device."""
-        response = await self.api.async_request("GET", self._rel.alerts)
+        response = await self.api.async_request("GET", self.rel.alerts)
 
         return [Alert(result, parent=self) for result in response.get("results", [])]
