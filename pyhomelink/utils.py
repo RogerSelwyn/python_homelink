@@ -1,10 +1,11 @@
-"""Core utilities for HomeLINK service."""
+"""HomeLINK utilities."""
 
-from .api import API
+from .exceptions import ApiException, AuthException
 
 
-class ApiComponent:
-    """Base of all components."""
-
-    def __init__(self, parent, **kwargs):
-        self.api = parent.api if parent else API(**kwargs)
+def check_status(status):
+    """Check status of the call."""
+    if status == 401:
+        raise AuthException(f"Authorization failed: {status}")
+    if status != 200:
+        raise ApiException(f"Error request failed: {status}")

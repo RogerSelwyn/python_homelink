@@ -8,12 +8,12 @@ nav_order: 5
 ## Get Lookups
 
 ```
-lookups = await homelink.get_lookups(lookuptype)
+lookups = await homelink_api.async_get_lookups(lookuptype)
 ```
 
 ## Get Lookup
 
 ```
-lookup = await homelink.get_lookups(lookuptype, lookupid)
+lookup = await homelink_api.async_get_lookups(lookuptype, lookupid)
 ```
 

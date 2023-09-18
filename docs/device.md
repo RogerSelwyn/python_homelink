@@ -8,23 +8,23 @@ nav_order: 3
 ## Get Devices
 
 ```
-devices = await homelink.get_devices()
+devices = await homelink_api.async_get_devices()
 ```
 
 ## Get Device
 
 ```
-device = await homelink.get_devices(serialnumber)
+device = await homelink_api.async_get_devices(serialnumber)
 ```
 
 ## Get Device Alerts
 
 ```
-alerts = await homelink.get_device_alerts(serialnumber)
+alerts = await homelink_api.async_get_device_alerts(serialnumber)
 ```
 
 or if device has already been retrieved
 
 ``` 
-alerts = await device.get_alerts()
+alerts = await device.async_get_alerts()
 ```

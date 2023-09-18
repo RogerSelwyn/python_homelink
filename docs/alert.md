@@ -8,5 +8,5 @@ nav_order: 4
 ## Get Alert
 
 ```
-alert = await homelink.get_alert(alertid)
+alert = await homelink_api.async_get_alert(alertid)
 ```

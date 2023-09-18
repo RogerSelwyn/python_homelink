@@ -162,3 +162,4 @@ cython_debug/
 # Added
 .vscode
 docs/.DS_Store
+pyhomelink/.DS_Store

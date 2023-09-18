@@ -1,68 +1,166 @@
 """Python module for accessing HomeLINK Device."""
-
-import logging
+# import logging
+from typing import List
 
 from .alert import Alert
-from .utils import ApiComponent
+from .auth import AbstractAuth
+from .utils import check_status
 
-_LOGGER = logging.getLogger(__name__)
+# from .utils import ApiComponent
 
 
-class Device(ApiComponent):
+class Device:
     """Device is the instantiation of a HomeLINK Device"""
 
-    def __init__(self, device, parent=None, **kwargs):
+    def __init__(self, raw_data: dict, auth: AbstractAuth):
         """Initialize the property."""
-        super().__init__(
-            parent,
-            **kwargs,
-        )
+        # super().__init__(
+        #     parent
+        # )
+        self._raw_data = raw_data
+        self._auth = auth
 
-        self.serialnumber = device.get("serialNumber", None)
-        self.model = device.get("model", None)
-        self.modeltype = device.get("modelType", None)
-        self.location = device.get("location", None)
-        self.locationnickname = device.get("locationNickname", None)
-        self.manufacturer = device.get("manufacturer", None)
-        self.installationdate = device.get("installationDate", None)
-        self.installedby = device.get("installedBy", None)
-        self.replacedate = device.get("replaceDate", None)
-        self.createdat = device.get("createdAt", None)
-        self.updatedat = device.get("updatedAt", None)
-        self.metadata = self.Metadata(device["metadata"])
-        self.status = self.Status(device["status"])
-        self.rel = self.Rel(device["_rel"])
-        # _convert_dict_to_class(self, device)
+    @property
+    def serialnumber(self) -> str:
+        """Return the serialnumber of the Device"""
+        return self._raw_data["serialNumber"]
+
+    @property
+    def createdat(self) -> str:
+        """Return the createdat of the Device"""
+        return self._raw_data["createdAt"]
+
+    @property
+    def updatedat(self) -> str:
+        """Return the updatedat of the Device"""
+        return self._raw_data["updatedAt"]
+
+    @property
+    def model(self) -> str:
+        """Return the model of the Device"""
+        return self._raw_data["model"]
+
+    @property
+    def modeltype(self) -> str:
+        """Return the modeltype of the Device"""
+        return self._raw_data["modelType"]
+
+    @property
+    def location(self) -> str:
+        """Return the location of the Device"""
+        return self._raw_data["location"]
+
+    @property
+    def locationnickname(self) -> str:
+        """Return the locationnickname of the Device"""
+        return self._raw_data["locationNickname"]
+
+    @property
+    def manufacturer(self) -> str:
+        """Return the manufacturer of the Device"""
+        return self._raw_data["manufacturer"]
+
+    @property
+    def installationdate(self) -> str:
+        """Return the installationdate of the Device"""
+        return self._raw_data["installationDate"]
+
+    @property
+    def installedby(self) -> str:
+        """Return the installedby of the Device"""
+        return self._raw_data["installedBy"]
+
+    @property
+    def replacedate(self) -> str:
+        """Return the replacedate of the Device"""
+        return self._raw_data["replaceDate"]
+
+    @property
+    def metadata(self) -> any:
+        """Return the metadata of the Device"""
+        return self.Metadata(self._raw_data["metadata"])
+
+    @property
+    def status(self) -> any:
+        """Return the tags of the Device"""
+        return self.Status(self._raw_data["status"])
+
+    @property
+    def rel(self) -> any:
+        """Return the tags of the Device"""
+        return self.Rel(self._raw_data["_rel"])
 
     class Metadata:
-        """Metadata class for device."""
+        """Metadata for property."""
 
-        def __init__(self, metadata):
-            """Initialise _Rel."""
-            self.signalstrength = metadata.get("signalStrength", None)
-            self.lastseendate = metadata.get("lastSeenDate", None)
-            self.connectivitytype = metadata.get("connectivityType", None)
+        def __init__(self, raw_data):
+            """Initialise Metadata"""
+            self._raw_data = raw_data
+
+        @property
+        def signalstrength(self) -> str:
+            """Return the signalstrength of the Device"""
+            return self._raw_data["signalStrength"]
+
+        @property
+        def lastseendate(self) -> str:
+            """Return the lastseendate of the Device"""
+            return self._raw_data["lastSeenDate"]
+
+        @property
+        def connectivitytype(self) -> str:
+            """Return the connectivitytype of the Device"""
+            return self._raw_data["connectivityType"]
 
     class Status:
-        """Status class for device."""
+        """Status for property."""
 
-        def __init__(self, status):
-            """Initialise _Rel."""
-            self.operationalstatus = status.get("operationalStatus", None)
-            self.lasttesteddate = status.get("lastTestedDate", None)
-            self.datacollectionstatus = status.get("dataCollectionStatus", None)
+        def __init__(self, raw_data):
+            """Initialise Status"""
+            self._raw_data = raw_data
+
+        @property
+        def operationalstatus(self) -> str:
+            """Return the operationalstatus of the Device"""
+            return self._raw_data["operationalStatus"]
+
+        @property
+        def lasttesteddate(self) -> str:
+            """Return the lasttesteddate of the Device"""
+            return self._raw_data["lastTestedDate"]
+
+        @property
+        def datacollectionstatus(self) -> str:
+            """Return the datacollectionstatus of the Device"""
+            return self._raw_data["dataCollectionStatus"]
 
     class Rel:
-        """Relative URLs for device."""
+        """Relative URLs for property."""
 
-        def __init__(self, rel):
+        def __init__(self, raw_data):
             """Initialise _Rel."""
-            self.self = rel.get("_self", None)
-            self.property = rel.get("property", None)
-            self.alerts = rel.get("alerts", None)
+            self._raw_data = raw_data
 
-    async def get_alerts(self):
-        """Get alerts for the Device."""
-        response = await self.api.async_request("GET", self.rel.alerts)
+        @property
+        def self(self) -> str:
+            """Return the self url of the Device"""
+            return self._raw_data["_self"]
 
-        return [Alert(result, parent=self) for result in response.get("results", [])]
+        @property
+        def hl_property(self) -> str:
+            """Return the property url of the Device"""
+            return self._raw_data["property"]
+
+        @property
+        def alerts(self) -> str:
+            """Return the alerts url of the Device"""
+            return self._raw_data["alerts"]
+
+    async def async_get_alerts(self) -> List[Alert]:
+        """Return the Alerts."""
+        resp = await self._auth.request("get", f"{self.rel.alerts}")
+        check_status(resp.status)
+        return [
+            Alert(alert_data, self._auth)
+            for alert_data in (await resp.json())["results"]
+        ]

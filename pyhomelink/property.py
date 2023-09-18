@@ -1,84 +1,142 @@
 """Python module for accessing HomeLINK Property."""
-
-import logging
+# import logging
+from typing import List
 
 from .alert import Alert
-from .const import ENDPOINT_PROPERTY_TAGS
+from .auth import AbstractAuth
+from .const import HomeLINKEndpoint
 from .device import Device
-from .utils import ApiComponent
+from .utils import check_status
 
-_LOGGER = logging.getLogger(__name__)
+# from .utils import ApiComponent
 
 
-class Property(ApiComponent):
+class Property:
     """Property is the instantiation of a HomeLINK Property"""
 
-    _endpoints = {
-        ENDPOINT_PROPERTY_TAGS: "{propertyurl}/tags",
-    }
-
-    def __init__(self, hl_property, parent=None, **kwargs):
+    def __init__(self, raw_data: dict, auth: AbstractAuth):
         """Initialize the property."""
-        super().__init__(
-            parent,
-            **kwargs,
-        )
+        # super().__init__(
+        #     parent
+        # )
+        self._raw_data = raw_data
+        self._auth = auth
 
-        self.reference = hl_property.get("reference", None)
-        self.createdat = hl_property.get("createdAt", None)
-        self.updatedat = hl_property.get("updatedAt", None)
-        self.postcode = hl_property.get("postcode", None)
-        self.latitude = hl_property.get("latitude", None)
-        self.longitude = hl_property.get("longitude", None)
-        self.address = hl_property.get("address", None)
-        self.tags = hl_property.get("tags", None)
-        self.rel = self.Rel(hl_property["_rel"])
+    @property
+    def reference(self) -> str:
+        """Return the reference of the Property"""
+        return self._raw_data["reference"]
+
+    @property
+    def createdat(self) -> str:
+        """Return the createdat of the Property"""
+        return self._raw_data["createdAt"]
+
+    @property
+    def updatedat(self) -> str:
+        """Return the updatedat of the Propery"""
+        return self._raw_data["updatedAt"]
+
+    @property
+    def postcode(self) -> str:
+        """Return the postcode of the Property"""
+        return self._raw_data["postcode"]
+
+    @property
+    def latitude(self) -> str:
+        """Return the latitude of the Property"""
+        return self._raw_data["latitude"]
+
+    @property
+    def longitude(self) -> str:
+        """Return the longitude of the Property"""
+        return self._raw_data["longitude"]
+
+    @property
+    def address(self) -> str:
+        """Return the address of the Property"""
+        return self._raw_data["address"]
+
+    @property
+    def tags(self) -> list:
+        """Return the tags of the Property"""
+        return self._raw_data["tags"]
+
+    @property
+    def rel(self) -> any:
+        """Return the tags of the Property"""
+        return self.Rel(self._raw_data["_rel"])
 
     class Rel:
         """Relative URLs for property."""
 
-        def __init__(self, rel):
+        def __init__(self, raw_data):
             """Initialise _Rel."""
-            self.self = rel.get("_self", None)
-            self.devices = rel.get("devices", None)
-            self.alerts = rel.get("alerts", None)
-            self.readings = rel.get("readings", None)
-            self.insights = rel.get("insights", None)
+            self._raw_data = raw_data
 
-    async def get_devices(self):
-        """Get devices for the Property."""
-        response = await self.api.async_request("GET", self.rel.devices)
+        @property
+        def self(self) -> str:
+            """Return the self url of the Property"""
+            return self._raw_data["_self"]
 
-        return [Device(result, parent=self) for result in response.get("results", [])]
+        @property
+        def devices(self) -> str:
+            """Return the devices url of the Property"""
+            return self._raw_data["devices"]
 
-    async def get_alerts(self):
-        """Get alerts for the Property."""
-        response = await self.api.async_request("GET", self.rel.alerts)
+        @property
+        def alerts(self) -> str:
+            """Return the alerts url of the Property"""
+            return self._raw_data["alerts"]
 
-        return [Alert(result, parent=self) for result in response.get("results", [])]
+        @property
+        def readings(self) -> str:
+            """Return the readings url of the Property"""
+            return self._raw_data["readings"]
 
-    async def add_tags(self, tags):
-        """Add tag to the Property."""
-        body = {"tagIds": tags}
-        response = await self.api.async_request(
-            "PUT",
-            self._endpoints.get(ENDPOINT_PROPERTY_TAGS).format(
-                propertyurl=self.rel.self
+        @property
+        def insights(self) -> str:
+            """Return the insights url of the Property"""
+            return self._raw_data["insights"]
+
+    async def async_get_devices(self) -> List[Device]:
+        """Return the Devices."""
+        resp = await self._auth.request("get", f"{self.rel.devices}")
+        check_status(resp.status)
+        return [
+            Device(device_data, self._auth)
+            for device_data in (await resp.json())["results"]
+        ]
+
+    async def async_get_alerts(self) -> List[Alert]:
+        """Return the Alerts."""
+        resp = await self._auth.request("get", f"{self.rel.alerts}")
+        check_status(resp.status)
+        return [
+            Alert(alert_data, self._auth)
+            for alert_data in (await resp.json())["results"]
+        ]
+
+    async def async_add_tags(self, tags) -> List[str]:
+        """Add tags to a property."""
+        resp = await self._auth.request(
+            "put",
+            HomeLINKEndpoint.PROPERTY_TAGS.value.format(
+                propertyreference=self.reference
             ),
-            body,
+            json={"tagIds": tags},
         )
-        self.tags = response.get("tags", None)
-        return self.tags
+        check_status(resp.status)
+        return await resp.json()
 
-    async def delete_tags(self, tags):
-        """Delete tag from the Property."""
-        body = {"tagIds": tags}
-        response = await self.api.async_request(
-            "DELETE",
-            self._endpoints.get(ENDPOINT_PROPERTY_TAGS).format(
-                propertyurl=self.rel.self
+    async def async_delete_tags(self, tags) -> List[str]:
+        """Delete tags from a property."""
+        resp = await self._auth.request(
+            "delete",
+            HomeLINKEndpoint.PROPERTY_TAGS.value.format(
+                propertyreference=self.reference
             ),
-            body,
+            json={"tagIds": tags},
         )
-        self.tags = response.get("tags", None)
-        return self.tags
+        check_status(resp.status)
+        return await resp.json()

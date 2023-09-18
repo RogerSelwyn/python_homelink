@@ -1,91 +1,136 @@
-"""Various utilities in support of HomeLINK."""
-import logging
+"""API in support of HomeLINK."""
+from typing import List
 
-import aiohttp
+from .alert import Alert
+from .auth import AbstractAuth
+from .const import HomeLINKEndpoint
+from .device import Device
+from .lookup import Lookup
+from .property import Property
+from .utils import check_status
 
-from .const import AUTHURL, BASE_URL, HTTP_OK
 
-_LOGGER = logging.getLogger(__name__)
+class HomeLINKApi:
+    """HomeLINK API"""
 
+    def __init__(self, auth: AbstractAuth) -> None:
+        """Initialise the api."""
+        self.auth = auth
 
-class API:
-    """API access to the HomeLINK service."""
+    async def async_get_properties(self) -> List[Property]:
+        """Return the Properties."""
+        resp = await self.auth.request("get", HomeLINKEndpoint.PROPERTIES.value)
+        check_status(resp.status)
+        return [
+            Property(property_data, self.auth)
+            for property_data in (await resp.json())["results"]
+        ]
 
-    def __init__(self, **kwargs):
-        """Initialize the api."""
+    async def async_get_property(self, propertyreference) -> Property:
+        """Return the Properties."""
+        resp = await self.auth.request(
+            "get",
+            HomeLINKEndpoint.PROPERTY.value.format(propertyreference=propertyreference),
+        )
+        check_status(resp.status)
+        return Property(await resp.json(), self.auth)
 
-        self._clientid = None
-        self._clientsecret = None
+    async def async_get_property_devices(self, propertyreference) -> List[Device]:
+        """Return the Property Devices."""
+        resp = await self.auth.request(
+            "get",
+            HomeLINKEndpoint.PROPERTY_DEVICES.value.format(
+                propertyreference=propertyreference
+            ),
+        )
+        check_status(resp.status)
+        return [
+            Device(device_data, self.auth)
+            for device_data in (await resp.json())["results"]
+        ]
 
-        self.session = kwargs.get("session") or aiohttp.ClientSession()
+    async def async_get_property_alerts(self, propertyreference) -> List[Alert]:
+        """Return the Property Alerts."""
+        resp = await self.auth.request(
+            "get",
+            HomeLINKEndpoint.PROPERTY_ALERTS.value.format(
+                propertyreference=propertyreference
+            ),
+        )
+        check_status(resp.status)
+        return [
+            Alert(alert_data, self.auth)
+            for alert_data in (await resp.json())["results"]
+        ]
 
-        if access_token := kwargs.get("access_token", None):
-            self._headers = self._build_headers(access_token)
-        else:
-            self._headers = None
+    async def async_add_property_tags(self, propertyreference, tags) -> List[str]:
+        """Add tags to a property."""
+        resp = await self.auth.request(
+            "put",
+            HomeLINKEndpoint.PROPERTY_TAGS.value.format(
+                propertyreference=propertyreference
+            ),
+            json={"tagIds": tags},
+        )
+        check_status(resp.status)
+        return await resp.json()
 
-    async def async_request(self, method, endpoint, data=None):
-        """Get data from HomeLINK service."""
-        if not self._headers:
-            _LOGGER.error("Authentication required")
-            return
+    async def async_delete_property_tags(self, propertyreference, tags) -> List[str]:
+        """Delete tags from a property."""
+        resp = await self.auth.request(
+            "delete",
+            HomeLINKEndpoint.PROPERTY_TAGS.value.format(
+                propertyreference=propertyreference
+            ),
+            json={"tagIds": tags},
+        )
+        check_status(resp.status)
+        return await resp.json()
 
-        url = self._build_url(endpoint)
-        return await self._async_request(method, url, data)
+    async def async_get_devices(self) -> List[Device]:
+        """Return the Properties."""
+        resp = await self.auth.request("get", HomeLINKEndpoint.DEVICES.value)
+        check_status(resp.status)
+        return [
+            Device(device_data, self.auth)
+            for device_data in (await resp.json())["results"]
+        ]
 
-    async def async_do_auth(self, clientid, clientsecret):
-        """Do authentication."""
-        self._clientid = clientid
-        self._clientsecret = clientsecret
+    async def async_get_device(self, serialnumber) -> Device:
+        """Return the Properties."""
+        resp = await self.auth.request(
+            "get", HomeLINKEndpoint.DEVICE.value.format(serialnumber=serialnumber)
+        )
+        check_status(resp.status)
+        return Device(await resp.json(), self.auth)
 
-        url = AUTHURL.format(self._clientid, self._clientsecret)
-        try:
-            response = await self._async_request("GET", url, None)
-        except aiohttp.client_exceptions.ClientResponseError as err:
-            if err.status == 401:
-                return False
-            raise
+    async def async_get_device_alerts(self, serialnumber) -> List[Alert]:
+        """Return the Device Alerts."""
+        resp = await self.auth.request(
+            "get",
+            HomeLINKEndpoint.DEVICES_ALERTS.value.format(serialnumber=serialnumber),
+        )
+        check_status(resp.status)
+        return [
+            Alert(alert_data, self.auth)
+            for alert_data in (await resp.json())["results"]
+        ]
 
-        access_token = response.get("accessToken")
-        self._headers = self._build_headers(access_token)
-        return access_token
+    async def async_get_lookups(self, lookuptype) -> List[Lookup]:
+        """Return the Lookups for lookuptype"""
+        resp = await self.auth.request(
+            "get", HomeLINKEndpoint.LOOKUPS.value.format(lookuptype=lookuptype)
+        )
+        check_status(resp.status)
+        return [Lookup(lookup_data, self.auth) for lookup_data in await resp.json()]
 
-    async def _async_request(self, method, url, data):
-        http_method = {
-            "DELETE": self.session.delete,
-            "GET": self.session.get,
-            "PATCH": self.session.patch,
-            "POST": self.session.post,
-            "PUT": self.session.put,
-        }.get(method)
-        try:
-            async with http_method(
-                url,
-                headers=self._headers,
-                json=data,
-                raise_for_status=True,
-                timeout=10,
-            ) as response:
-                if response.status != HTTP_OK:
-                    _LOGGER.warning(
-                        "Retrieval error, status %s, for url %s", response.status, url
-                    )
-                    raise RuntimeError(
-                        f"Retrieval error, status {response.status}, for url {url}"
-                    )
-
-                return await response.json(content_type=None)
-        except aiohttp.client_exceptions.ClientConnectorError as err:
-            raise RuntimeError(
-                "Connection to HomeLINK service failed with Connection Error"
-            ) from err
-
-    def _build_url(self, endpoint):
-        """Returns a url for a given endpoint ."""
-        return f"{BASE_URL}{endpoint}"
-
-    def _build_headers(self, access_token):
-        return {
-            "accept": "application/json",
-            "Authorization": f"Bearer {access_token}",
-        }
+    async def async_get_lookup(self, lookuptype, lookupid) -> Lookup:
+        """Return the Lookups for lookuptype"""
+        resp = await self.auth.request(
+            "get",
+            HomeLINKEndpoint.LOOKUP.value.format(
+                lookuptype=lookuptype, lookupid=lookupid
+            ),
+        )
+        check_status(resp.status)
+        return Lookup(await resp.json(), self.auth)
