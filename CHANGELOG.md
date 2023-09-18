@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.6 (2023/09/18)
+### ✨ Enhancements
+- [Re-write to include abstract auth and models](https://github.com/RogerSelwyn/python_homelink/commit/8e51485c44909c63dd9fb1a7ede66ad583cfec99) - @RogerSelwyn
+
+### 🔨 Maintenance
+- [Bump to 0.0.6](https://github.com/RogerSelwyn/python_homelink/commit/cffbf10d14490a2f614b12a87f3e629d1db3a2d2) - @RogerSelwyn
+
 ## 0.0.5 (2023/09/16)
 ### 🔨 Maintenance
 - [Rename _rel to rel to avoid python warnings](https://github.com/RogerSelwyn/python_homelink/commit/c131bb74ef3747a7d5105c62de6da31aa0b823b3) - @RogerSelwyn
