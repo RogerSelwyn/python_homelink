@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0 (2023/09/19)
+### 🔨 Maintenance
+- [Add AUTHURL to init](https://github.com/RogerSelwyn/python_homelink/commit/ff0fb12cac2ef3e15f23df64d600bafce098e13d) - @RogerSelwyn
+- [Code tidy up for release](https://github.com/RogerSelwyn/python_homelink/commit/b66e1de6c7c66b7dc754639fcbfddd4f4fcc3d84) - @RogerSelwyn
+- [Bump to 0.1.0](https://github.com/RogerSelwyn/python_homelink/commit/2c72f89c272bfa6b6853249425f955bc4319354e) - @RogerSelwyn
+
 ## 0.0.6 (2023/09/18)
 ### ✨ Enhancements
 - [Re-write to include abstract auth and models](https://github.com/RogerSelwyn/python_homelink/commit/8e51485c44909c63dd9fb1a7ede66ad583cfec99) - @RogerSelwyn
