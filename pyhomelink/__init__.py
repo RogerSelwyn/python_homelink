@@ -1,5 +1,4 @@
 """Initialise."""
-
-from .api import HomeLINKApi  # ElectricKiwiEndpoint,
+from .api import HomeLINKApi
 from .auth import AbstractAuth
-from .const import AUTHURL
+from .const import AUTH_URL

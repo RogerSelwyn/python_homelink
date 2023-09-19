@@ -1,12 +1,10 @@
 """Python module for accessing HomeLINK Device."""
-# import logging
 from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
+from .const import ATTR_RESULTS
 from .utils import check_status
-
-# from .utils import ApiComponent
 
 
 class Device:
@@ -14,9 +12,6 @@ class Device:
 
     def __init__(self, raw_data: dict, auth: AbstractAuth):
         """Initialize the property."""
-        # super().__init__(
-        #     parent
-        # )
         self._raw_data = raw_data
         self._auth = auth
 
@@ -162,5 +157,5 @@ class Device:
         check_status(resp.status)
         return [
             Alert(alert_data, self._auth)
-            for alert_data in (await resp.json())["results"]
+            for alert_data in (await resp.json())[ATTR_RESULTS]
         ]

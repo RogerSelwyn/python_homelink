@@ -1,13 +1,15 @@
 """Constants."""
-from enum import Enum
+from enum import StrEnum
 
-AUTHURL = "https://auth.live.homelync.io/oauth2?client={0}&secret={1}"
+ATTR_RESULTS = "results"
+
+AUTH_URL = "https://auth.live.homelync.io/oauth2?client={0}&secret={1}"
 BASE_URL = "https://frontier.live.homelync.io/v1/"
 
 HTTP_OK = 200
 
 
-class HomeLINKEndpoint(Enum):
+class HomeLINKEndpoint(StrEnum):
     """HomeLINK Endpoints."""
 
     PROPERTIES = "property"

@@ -1,9 +1,5 @@
 """Python module for accessing HomeLINK Alert."""
-# import logging
-
 from .auth import AbstractAuth
-
-# from .utils import ApiComponent
 
 
 class Alert:
@@ -11,9 +7,6 @@ class Alert:
 
     def __init__(self, raw_data: dict, auth: AbstractAuth):
         """Initialize the property."""
-        # super().__init__(
-        #     parent
-        # )
         self._raw_data = raw_data
         self._auth = auth
 

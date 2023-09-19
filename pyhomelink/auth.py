@@ -8,9 +8,7 @@ from aiohttp import ClientError, ClientResponse, ClientSession
 from .const import BASE_URL
 
 AUTHURL = "https://auth.live.homelync.io/oauth2"
-
 AUTHORIZATION_HEADER = "Authorization"
-
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -24,7 +22,6 @@ class AbstractAuth(ABC):
     ):
         """Initialize the auth."""
         self._websession = websession
-        # self._url = AUTHURL
 
     @abstractmethod
     async def async_get_access_token(self) -> str:

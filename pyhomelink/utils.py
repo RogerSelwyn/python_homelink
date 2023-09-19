@@ -1,5 +1,4 @@
 """HomeLINK utilities."""
-
 from .exceptions import ApiException, AuthException
 
 

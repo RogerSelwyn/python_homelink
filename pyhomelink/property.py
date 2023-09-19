@@ -1,14 +1,11 @@
 """Python module for accessing HomeLINK Property."""
-# import logging
 from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
-from .const import HomeLINKEndpoint
+from .const import ATTR_RESULTS, HomeLINKEndpoint
 from .device import Device
 from .utils import check_status
-
-# from .utils import ApiComponent
 
 
 class Property:
@@ -16,9 +13,6 @@ class Property:
 
     def __init__(self, raw_data: dict, auth: AbstractAuth):
         """Initialize the property."""
-        # super().__init__(
-        #     parent
-        # )
         self._raw_data = raw_data
         self._auth = auth
 
@@ -105,7 +99,7 @@ class Property:
         check_status(resp.status)
         return [
             Device(device_data, self._auth)
-            for device_data in (await resp.json())["results"]
+            for device_data in (await resp.json())[ATTR_RESULTS]
         ]
 
     async def async_get_alerts(self) -> List[Alert]:
@@ -114,16 +108,14 @@ class Property:
         check_status(resp.status)
         return [
             Alert(alert_data, self._auth)
-            for alert_data in (await resp.json())["results"]
+            for alert_data in (await resp.json())[ATTR_RESULTS]
         ]
 
     async def async_add_tags(self, tags) -> List[str]:
         """Add tags to a property."""
         resp = await self._auth.request(
             "put",
-            HomeLINKEndpoint.PROPERTY_TAGS.value.format(
-                propertyreference=self.reference
-            ),
+            HomeLINKEndpoint.PROPERTY_TAGS.format(propertyreference=self.reference),
             json={"tagIds": tags},
         )
         check_status(resp.status)
@@ -133,9 +125,7 @@ class Property:
         """Delete tags from a property."""
         resp = await self._auth.request(
             "delete",
-            HomeLINKEndpoint.PROPERTY_TAGS.value.format(
-                propertyreference=self.reference
-            ),
+            HomeLINKEndpoint.PROPERTY_TAGS.format(propertyreference=self.reference),
             json={"tagIds": tags},
         )
         check_status(resp.status)
