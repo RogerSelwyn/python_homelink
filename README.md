@@ -4,7 +4,9 @@
 [![maintainer](https://img.shields.io/badge/maintainer-%20%40RogerSelwyn-blue.svg)](https://github.com/RogerSelwyn)
 
 # python_homelink
-Python module for accessing AICO HomeLINK services.
+Python library for accessing AICO HomeLINK services.
+
+**Note:-** This library requires Python 3.11.
 
 ## Introduction
 
