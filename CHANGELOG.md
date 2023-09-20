@@ -1,10 +1,19 @@
 # Changelog
 
-## 0.1.0 (2023/09/19)
+## 0.1.1 (2023/09/20)
+### 🐛 Fixes
+- [Remove logging of token auth url](https://github.com/RogerSelwyn/python_homelink/commit/01b52d7ce9cdde92797761e2f138fe169c673993) - @RogerSelwyn
+- [Bump python to 3.11](https://github.com/RogerSelwyn/python_homelink/commit/9c97065143a91ef7d745a6858f6caef970138a05) - @RogerSelwyn
+ 
 ### 🔨 Maintenance
 - [Add AUTHURL to init](https://github.com/RogerSelwyn/python_homelink/commit/ff0fb12cac2ef3e15f23df64d600bafce098e13d) - @RogerSelwyn
+- [Bump to 0.0.7](https://github.com/RogerSelwyn/python_homelink/commit/0cd46326070801e4f11852486b3e2e85a49cc2a6) - @RogerSelwyn
 - [Code tidy up for release](https://github.com/RogerSelwyn/python_homelink/commit/b66e1de6c7c66b7dc754639fcbfddd4f4fcc3d84) - @RogerSelwyn
 - [Bump to 0.1.0](https://github.com/RogerSelwyn/python_homelink/commit/2c72f89c272bfa6b6853249425f955bc4319354e) - @RogerSelwyn
+- [Bump to 0.1.1](https://github.com/RogerSelwyn/python_homelink/commit/bea8031174af78df8b4a455c03cfd19267bdc141) - @RogerSelwyn
+
+### 📚 Documentation
+- [Update to show python requirement](https://github.com/RogerSelwyn/python_homelink/commit/d45e0d9094538a353929a17e3153ff27fbf71f75) - @RogerSelwyn
 
 ## 0.0.6 (2023/09/18)
 ### ✨ Enhancements
