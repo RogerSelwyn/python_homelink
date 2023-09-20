@@ -50,5 +50,7 @@ class AbstractAuth(ABC):
     ) -> ClientResponse:
         """Make a request."""
         url = f"{AUTHURL}{url}"
-        _LOGGER.debug("request[%s]=%s %s", "get", url, kwargs.get("params"))
+        _LOGGER.debug(
+            "request[%s]=%s %s", "get", "Auth get token", kwargs.get("params")
+        )
         return await self._websession.request("get", url, **kwargs)
