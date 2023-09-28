@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 (2023/09/28)
+### ✨ Enhancements
+- [Return properly typed dates](https://github.com/RogerSelwyn/python_homelink/commit/7139871604be7396c0ba4ce7b7a697d5609d1053) - @RogerSelwyn
+
+### 🔨 Maintenance
+- [Bump to 0.1.2](https://github.com/RogerSelwyn/python_homelink/commit/fefb80b1743bd0c43ac6ff00d7ca7cbef9625502) - @RogerSelwyn
+
 ## 0.1.1 (2023/09/20)
 ### 🐛 Fixes
 - [Remove logging of token auth url](https://github.com/RogerSelwyn/python_homelink/commit/01b52d7ce9cdde92797761e2f138fe169c673993) - @RogerSelwyn
