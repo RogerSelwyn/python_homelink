@@ -1,11 +1,12 @@
 """Python module for accessing HomeLINK Property."""
+from datetime import datetime
 from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
 from .const import ATTR_RESULTS, HomeLINKEndpoint
 from .device import Device
-from .utils import check_status
+from .utils import check_status, parse_date
 
 
 class Property:
@@ -22,14 +23,14 @@ class Property:
         return self._raw_data["reference"]
 
     @property
-    def createdat(self) -> str:
+    def createdate(self) -> datetime:
         """Return the createdat of the Property"""
-        return self._raw_data["createdAt"]
+        return parse_date(self._raw_data["createdAt"])
 
     @property
-    def updatedat(self) -> str:
+    def updatedat(self) -> datetime:
         """Return the updatedat of the Propery"""
-        return self._raw_data["updatedAt"]
+        return parse_date(self._raw_data["updatedAt"])
 
     @property
     def postcode(self) -> str:

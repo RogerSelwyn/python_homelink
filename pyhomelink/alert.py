@@ -1,5 +1,8 @@
 """Python module for accessing HomeLINK Alert."""
+from datetime import datetime
+
 from .auth import AbstractAuth
+from .utils import parse_date
 
 
 class Alert:
@@ -14,16 +17,6 @@ class Alert:
     def alertid(self) -> str:
         """Return the alertid of the Alert"""
         return self._raw_data["id"]
-
-    @property
-    def createdat(self) -> str:
-        """Return the createdat of the Property"""
-        return self._raw_data["createdAt"]
-
-    @property
-    def updatedat(self) -> str:
-        """Return the updatedat of the Propery"""
-        return self._raw_data["updatedAt"]
 
     @property
     def serialnumber(self) -> str:
@@ -66,6 +59,16 @@ class Alert:
         return self._raw_data["locationNickname"]
 
     @property
+    def insightid(self) -> str:
+        """Return the insightId of the Alert"""
+        return self._raw_data["insightId"]
+
+    @property
+    def raiseddate(self) -> datetime:
+        """Return the raisedDate of the Property"""
+        return parse_date(self._raw_data["raisedDate"])
+
+    @property
     def severity(self) -> str:
         """Return the severity of the Alert"""
         return self._raw_data["severity"]
@@ -96,6 +99,11 @@ class Alert:
         def __init__(self, raw_data):
             """Initialise _Rel."""
             self._raw_data = raw_data
+            if "device" in self._raw_data:
+                self.device = self._raw_data["device"]
+
+            if "insight" in self._raw_data:
+                self.insight = self._raw_data["insight"]
 
         @property
         def self(self) -> str:
@@ -106,8 +114,3 @@ class Alert:
         def hl_property(self) -> str:
             """Return the property url of the Alert"""
             return self._raw_data["property"]
-
-        @property
-        def device(self) -> str:
-            """Return the device url of the Alert"""
-            return self._raw_data["device"]

@@ -1,10 +1,11 @@
 """Python module for accessing HomeLINK Device."""
+from datetime import datetime
 from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
 from .const import ATTR_RESULTS
-from .utils import check_status
+from .utils import check_status, parse_date
 
 
 class Device:
@@ -21,14 +22,14 @@ class Device:
         return self._raw_data["serialNumber"]
 
     @property
-    def createdat(self) -> str:
+    def createdate(self) -> datetime:
         """Return the createdat of the Device"""
-        return self._raw_data["createdAt"]
+        return parse_date(self._raw_data["createdAt"])
 
     @property
-    def updatedat(self) -> str:
+    def updatedat(self) -> datetime:
         """Return the updatedat of the Device"""
-        return self._raw_data["updatedAt"]
+        return parse_date(self._raw_data["updatedAt"])
 
     @property
     def model(self) -> str:
@@ -56,9 +57,9 @@ class Device:
         return self._raw_data["manufacturer"]
 
     @property
-    def installationdate(self) -> str:
+    def installationdate(self) -> datetime:
         """Return the installationdate of the Device"""
-        return self._raw_data["installationDate"]
+        return parse_date(self._raw_data["installationDate"])
 
     @property
     def installedby(self) -> str:
@@ -66,9 +67,9 @@ class Device:
         return self._raw_data["installedBy"]
 
     @property
-    def replacedate(self) -> str:
+    def replacedate(self) -> datetime:
         """Return the replacedate of the Device"""
-        return self._raw_data["replaceDate"]
+        return parse_date(self._raw_data["replaceDate"])
 
     @property
     def metadata(self) -> any:
@@ -98,9 +99,9 @@ class Device:
             return self._raw_data["signalStrength"]
 
         @property
-        def lastseendate(self) -> str:
+        def lastseendate(self) -> datetime:
             """Return the lastseendate of the Device"""
-            return self._raw_data["lastSeenDate"]
+            return parse_date(self._raw_data["lastSeenDate"])
 
         @property
         def connectivitytype(self) -> str:
@@ -120,9 +121,9 @@ class Device:
             return self._raw_data["operationalStatus"]
 
         @property
-        def lasttesteddate(self) -> str:
+        def lasttesteddate(self) -> datetime:
             """Return the lasttesteddate of the Device"""
-            return self._raw_data["lastTestedDate"]
+            return parse_date(self._raw_data["lastTestedDate"])
 
         @property
         def datacollectionstatus(self) -> str:
