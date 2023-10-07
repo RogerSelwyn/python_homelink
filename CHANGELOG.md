@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.3 (2023/10/07)
+### ✨ Enhancements
+- [Add classifiers](https://github.com/RogerSelwyn/python_homelink/commit/e9bb351f88f140c4bf80fe56c27b2329ac7cf1b5) - @RogerSelwyn
+
+### 🔨 Maintenance
+- [Bump to 0.1.3](https://github.com/RogerSelwyn/python_homelink/commit/4283b7821923c06b4582302fbde92396301c7acc) - @RogerSelwyn
+
+### 📚 Documentation
+- [Update README.md](https://github.com/RogerSelwyn/python_homelink/commit/a9c0850548fcb8947dd3680ee654c661336f2d1b) - @RogerSelwyn
+
 ## 0.1.2 (2023/09/28)
 ### ✨ Enhancements
 - [Return properly typed dates](https://github.com/RogerSelwyn/python_homelink/commit/7139871604be7396c0ba4ce7b7a697d5609d1053) - @RogerSelwyn
