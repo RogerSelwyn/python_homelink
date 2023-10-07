@@ -1,7 +1,13 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/rogerselwyn/python_homelink/badge)](https://www.codefactor.io/repository/github/rogerselwyn/python_homelink)
+[![CodeQL](https://github.com/RogerSelwyn/python_homelink/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/RogerSelwyn/python_homelink/actions/workflows/github-code-scanning/codeql)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/pyhomelink)](https://libraries.io/pypi/pyhomelink)
 
 ![GitHub release](https://img.shields.io/github/v/release/RogerSelwyn/python_homelink) [![maintained](https://img.shields.io/maintenance/yes/2023.svg)](#)
 [![maintainer](https://img.shields.io/badge/maintainer-%20%40RogerSelwyn-blue.svg)](https://github.com/RogerSelwyn)
+![PyPI - Status](https://img.shields.io/pypi/status/pyhomelink)
+[![PyPI](https://img.shields.io/pypi/v/pyhomelink)](https://pypi.org/project/pyhomelink/)
+[![GitHub](https://img.shields.io/github/license/rogerselwyn/python_homelink)](https://github.com/RogerSewlwyn/python_homelink/blob/main/LICENSE)
+
 
 # python_homelink
 Python library for accessing AICO HomeLINK services.
