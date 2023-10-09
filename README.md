@@ -23,7 +23,7 @@ This library enables access to the AICO HomeLINK API for retrieving the followin
 * Lookups
 
 ### [Buy Me A ~~Coffee~~ Beer 🍻](https://buymeacoffee.com/rogtp)
-I work on this integration because I like things to work well for myself and others, and for it to deliver as much as is achievable with the API. Please don't feel you are obligated to donate, but of course it is appreciated.
+I work on this library because I like things to work well for myself and others, and for it to deliver as much as is achievable with the API. Please don't feel you are obligated to donate, but of course it is appreciated.
 
 # Documentation
 
