@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.4 (2023/10/23)
+### ✨ Enhancements
+- [Add support for retrieving Insights](https://github.com/RogerSelwyn/python_homelink/commit/93a815598d88e4ff2ccead77201acd9f1d12d952) - @RogerSelwyn
+
+### 🐛 Fixes
+- [Fix handling of insight location](https://github.com/RogerSelwyn/python_homelink/commit/4820d8173abc1a65ea93582bc10c3609ddf2d65b) - @RogerSelwyn
+
+### 📚 Documentation
+- [Update README.md](https://github.com/RogerSelwyn/python_homelink/commit/fc44abcac179ad7eb5ff938b9a5861b713cc6cde) - @RogerSelwyn
+
+### 🔖 Release
+- [Bump to 0.1.4](https://github.com/RogerSelwyn/python_homelink/commit/7dbcd5bbe720493b26ee8918210e98bb95c14a31) - @RogerSelwyn
+
 ## 0.1.3 (2023/10/07)
 ### ✨ Enhancements
 - [Add classifiers](https://github.com/RogerSelwyn/python_homelink/commit/e9bb351f88f140c4bf80fe56c27b2329ac7cf1b5) - @RogerSelwyn
