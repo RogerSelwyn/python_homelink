@@ -5,6 +5,7 @@ from .alert import Alert
 from .auth import AbstractAuth
 from .const import ATTR_RESULTS, HomeLINKEndpoint
 from .device import Device
+from .insight import Insight
 from .lookup import Lookup
 from .property import Property
 from .utils import check_status
@@ -111,6 +112,23 @@ class HomeLINKApi:
             Alert(alert_data, self.auth)
             for alert_data in (await resp.json())[ATTR_RESULTS]
         ]
+
+    async def async_get_insights(self) -> List[Insight]:
+        """Return the Properties."""
+        resp = await self.auth.request("get", HomeLINKEndpoint.INSIGHTS)
+        check_status(resp.status)
+        return [
+            Insight(insight_data, self.auth)
+            for insight_data in (await resp.json())[ATTR_RESULTS]
+        ]
+
+    async def async_get_insight(self, insightid) -> Insight:
+        """Return the Properties."""
+        resp = await self.auth.request(
+            "get", HomeLINKEndpoint.INSIGHT.format(insightid=insightid)
+        )
+        check_status(resp.status)
+        return Insight(await resp.json(), self.auth)
 
     async def async_get_lookups(self, lookuptype) -> List[Lookup]:
         """Return the Lookups for lookuptype"""

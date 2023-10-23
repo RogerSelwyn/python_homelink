@@ -42,6 +42,8 @@ async def _test():
         print(f"Properties: {properties[0].reference}")
 
         for hl_property in properties:
+            insights = await hl_property.async_get_insights()
+            print(f"Insights: {insights[0].insightid}")
             devices = await hl_property.async_get_devices()
             for device in devices:
                 alerts = await device.async_get_alerts()
@@ -79,10 +81,17 @@ async def _test():
         alerts = await homelink_api.async_get_device_alerts(device.serialnumber)
         print(f"Device Alerts: {device.location} - {alerts}")
 
-        lookups = await homelink_api.async_get_lookups("model")
-        print(f"Lookups: 'model' - {lookups[0].code}")
-        lookup = await homelink_api.async_get_lookup("model", lookups[0].lookupid)
-        print(f"Lookup: 'model[0]' - {lookup.name}")
+        insights = await homelink_api.async_get_insights()
+        print(f"Insights: {insights[0].insightid}")
+        insight = await homelink_api.async_get_insight(insights[0].insightid)
+        print(f"Insight: {insight.insightid}")
+        # alerts = await homelink_api.async_get_device_alerts(device.serialnumber)
+        # print(f"Device Alerts: {device.location} - {alerts}")
+
+        # lookups = await homelink_api.async_get_lookups("model")
+        # print(f"Lookups: 'model' - {lookups[0].code}")
+        # lookup = await homelink_api.async_get_lookup("model", lookups[0].lookupid)
+        # print(f"Lookup: 'model[0]' - {lookup.name}")
 
         print("Success", file=sys.stdout)
 

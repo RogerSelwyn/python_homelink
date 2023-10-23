@@ -6,6 +6,7 @@ from .alert import Alert
 from .auth import AbstractAuth
 from .const import ATTR_RESULTS, HomeLINKEndpoint
 from .device import Device
+from .insight import Insight
 from .utils import check_status, parse_date
 
 
@@ -101,6 +102,15 @@ class Property:
         return [
             Device(device_data, self._auth)
             for device_data in (await resp.json())[ATTR_RESULTS]
+        ]
+
+    async def async_get_insights(self) -> List[Insight]:
+        """Return the Insights."""
+        resp = await self._auth.request("get", f"{self.rel.insights}")
+        check_status(resp.status)
+        return [
+            Insight(insight_data, self._auth)
+            for insight_data in (await resp.json())[ATTR_RESULTS]
         ]
 
     async def async_get_alerts(self) -> List[Alert]:

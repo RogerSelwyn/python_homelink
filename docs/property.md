@@ -29,6 +29,18 @@ or if property has already been retrieved
 devices = await property.get_devices()
 ```
 
+## Get Property Insights
+
+```
+insights = await homelink_api.async_get_property_insights(propertyreference)
+```
+
+or if property has already been retrieved
+
+``` 
+insights = await property.get_insights()
+```
+
 ## Get Property Alerts
 
 ```

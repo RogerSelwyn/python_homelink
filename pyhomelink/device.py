@@ -23,12 +23,12 @@ class Device:
 
     @property
     def createdate(self) -> datetime:
-        """Return the createdat of the Device"""
+        """Return the createdate of the Device"""
         return parse_date(self._raw_data["createdAt"])
 
     @property
     def updatedat(self) -> datetime:
-        """Return the updatedat of the Device"""
+        """Return the updatedate of the Device"""
         return parse_date(self._raw_data["updatedAt"])
 
     @property
