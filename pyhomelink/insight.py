@@ -44,7 +44,7 @@ class Insight:
     @property
     def location(self) -> str:
         """Return the location of the Insight"""
-        return self._raw_data["location"] or None
+        return self._raw_data.get("location", None)
 
     @property
     def rel(self) -> any:

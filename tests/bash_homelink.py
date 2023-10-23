@@ -82,16 +82,14 @@ async def _test():
         print(f"Device Alerts: {device.location} - {alerts}")
 
         insights = await homelink_api.async_get_insights()
-        print(f"Insights: {insights[0].insightid}")
+        print(f"Insights: {insights[0].location}")
         insight = await homelink_api.async_get_insight(insights[0].insightid)
         print(f"Insight: {insight.insightid}")
-        # alerts = await homelink_api.async_get_device_alerts(device.serialnumber)
-        # print(f"Device Alerts: {device.location} - {alerts}")
 
-        # lookups = await homelink_api.async_get_lookups("model")
-        # print(f"Lookups: 'model' - {lookups[0].code}")
-        # lookup = await homelink_api.async_get_lookup("model", lookups[0].lookupid)
-        # print(f"Lookup: 'model[0]' - {lookup.name}")
+        lookups = await homelink_api.async_get_lookups("model")
+        print(f"Lookups: 'model' - {lookups[0].code}")
+        lookup = await homelink_api.async_get_lookup("model", lookups[0].lookupid)
+        print(f"Lookup: 'model[0]' - {lookup.name}")
 
         print("Success", file=sys.stdout)
 
