@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.5 (2023/10/24)
+### 🐛 Fixes
+- [Add missing attributes to EventType Lookup](https://github.com/RogerSelwyn/python_homelink/commit/9ddfc1adf514101edc689a24050fa41325195bd7) - @RogerSelwyn
+
+### 🔖 Release
+- [Bump to 0.1.5](https://github.com/RogerSelwyn/python_homelink/commit/ba1ec17e5503efb478142ad59ef19e7914288d76) - @RogerSelwyn
+
 ## 0.1.4 (2023/10/23)
 ### ✨ Enhancements
 - [Add support for retrieving Insights](https://github.com/RogerSelwyn/python_homelink/commit/93a815598d88e4ff2ccead77201acd9f1d12d952) - @RogerSelwyn
