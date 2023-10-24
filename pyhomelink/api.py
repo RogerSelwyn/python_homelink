@@ -3,10 +3,10 @@ from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
-from .const import ATTR_RESULTS, HomeLINKEndpoint
+from .const import ATTR_RESULTS, LOOKUPEVENTTYPE, HomeLINKEndpoint
 from .device import Device
 from .insight import Insight
-from .lookup import Lookup
+from .lookup import Lookup, LookupEventType
 from .property import Property
 from .utils import check_status
 
@@ -59,10 +59,7 @@ class HomeLINKApi:
             ),
         )
         check_status(resp.status)
-        return [
-            Alert(alert_data, self.auth)
-            for alert_data in (await resp.json())[ATTR_RESULTS]
-        ]
+        return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
     async def async_add_property_tags(self, propertyreference, tags) -> List[str]:
         """Add tags to a property."""
@@ -108,18 +105,14 @@ class HomeLINKApi:
             HomeLINKEndpoint.DEVICES_ALERTS.format(serialnumber=serialnumber),
         )
         check_status(resp.status)
-        return [
-            Alert(alert_data, self.auth)
-            for alert_data in (await resp.json())[ATTR_RESULTS]
-        ]
+        return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
     async def async_get_insights(self) -> List[Insight]:
         """Return the Properties."""
         resp = await self.auth.request("get", HomeLINKEndpoint.INSIGHTS)
         check_status(resp.status)
         return [
-            Insight(insight_data, self.auth)
-            for insight_data in (await resp.json())[ATTR_RESULTS]
+            Insight(insight_data) for insight_data in (await resp.json())[ATTR_RESULTS]
         ]
 
     async def async_get_insight(self, insightid) -> Insight:
@@ -128,21 +121,27 @@ class HomeLINKApi:
             "get", HomeLINKEndpoint.INSIGHT.format(insightid=insightid)
         )
         check_status(resp.status)
-        return Insight(await resp.json(), self.auth)
+        return Insight(await resp.json())
 
-    async def async_get_lookups(self, lookuptype) -> List[Lookup]:
+    async def async_get_lookups(self, lookuptype) -> List:
         """Return the Lookups for lookuptype"""
         resp = await self.auth.request(
             "get", HomeLINKEndpoint.LOOKUPS.format(lookuptype=lookuptype)
         )
         check_status(resp.status)
-        return [Lookup(lookup_data, self.auth) for lookup_data in await resp.json()]
+        return [
+            self._process_lookup(lookuptype, lookup_data)
+            for lookup_data in await resp.json()
+        ]
 
-    async def async_get_lookup(self, lookuptype, lookupid) -> Lookup:
+    async def async_get_lookup(self, lookuptype, lookupid):
         """Return the Lookups for lookuptype"""
         resp = await self.auth.request(
             "get",
             HomeLINKEndpoint.LOOKUP.format(lookuptype=lookuptype, lookupid=lookupid),
         )
         check_status(resp.status)
-        return Lookup(await resp.json(), self.auth)
+        return self._process_lookup(lookuptype, await resp.json())
+
+    def _process_lookup(self, lookuptype, data):
+        return LookupEventType(data) if lookuptype == LOOKUPEVENTTYPE else Lookup(data)

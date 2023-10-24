@@ -1,15 +1,12 @@
 """Python module for accessing HomeLINK Insight."""
 
-from .auth import AbstractAuth
-
 
 class Insight:
     """Insight is the instantiation of a HomeLINK Insight"""
 
-    def __init__(self, raw_data: dict, auth: AbstractAuth):
+    def __init__(self, raw_data: dict):
         """Initialize the property."""
         self._raw_data = raw_data
-        self._auth = auth
 
     @property
     def insightid(self) -> str:

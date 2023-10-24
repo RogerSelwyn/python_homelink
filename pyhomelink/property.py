@@ -109,18 +109,14 @@ class Property:
         resp = await self._auth.request("get", f"{self.rel.insights}")
         check_status(resp.status)
         return [
-            Insight(insight_data, self._auth)
-            for insight_data in (await resp.json())[ATTR_RESULTS]
+            Insight(insight_data) for insight_data in (await resp.json())[ATTR_RESULTS]
         ]
 
     async def async_get_alerts(self) -> List[Alert]:
         """Return the Alerts."""
         resp = await self._auth.request("get", f"{self.rel.alerts}")
         check_status(resp.status)
-        return [
-            Alert(alert_data, self._auth)
-            for alert_data in (await resp.json())[ATTR_RESULTS]
-        ]
+        return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
     async def async_add_tags(self, tags) -> List[str]:
         """Add tags to a property."""

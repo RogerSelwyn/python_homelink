@@ -1,17 +1,15 @@
 """Python module for accessing HomeLINK Alert."""
 from datetime import datetime
 
-from .auth import AbstractAuth
 from .utils import parse_date
 
 
 class Alert:
     """Alert is the instantiation of a HomeLINK Alert"""
 
-    def __init__(self, raw_data: dict, auth: AbstractAuth):
+    def __init__(self, raw_data: dict):
         """Initialize the property."""
         self._raw_data = raw_data
-        self._auth = auth
 
     @property
     def alertid(self) -> str:

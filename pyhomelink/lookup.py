@@ -1,14 +1,12 @@
 """Python module for accessing HomeLINK Lookup."""
-from .auth import AbstractAuth
 
 
 class Lookup:
     """Lookup is the instantiation of a HomeLINK Lookup"""
 
-    def __init__(self, raw_data: dict, auth: AbstractAuth):
+    def __init__(self, raw_data: dict):
         """Initialize the property."""
         self._raw_data = raw_data
-        self._auth = auth
 
     @property
     def lookupid(self) -> str:
@@ -27,10 +25,24 @@ class Lookup:
 
     @property
     def description(self) -> str:
-        """Return the descriptionof the Lookup"""
+        """Return the description of the Lookup"""
         return self._raw_data["description"]
 
     @property
     def active(self) -> bool:
         """Return the active of the Lookup"""
         return self._raw_data["active"]
+
+
+class LookupEventType(Lookup):
+    """LookupEventType is the instantiation of a HomeLINK EventType Lookup"""
+
+    @property
+    def eventcategoryid(self) -> str:
+        """Return the category of the Lookup"""
+        return self._raw_data["eventCategoryId"]
+
+    @property
+    def severityid(self) -> str:
+        """Return the severity of the Lookup"""
+        return self._raw_data["severityId"]

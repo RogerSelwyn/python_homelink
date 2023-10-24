@@ -86,6 +86,8 @@ async def _test():
         insight = await homelink_api.async_get_insight(insights[0].insightid)
         print(f"Insight: {insight.insightid}")
 
+        lookups = await homelink_api.async_get_lookups("eventType")
+        print(f"Lookups: 'eventType' - {lookups[0].eventcategoryid}")
         lookups = await homelink_api.async_get_lookups("model")
         print(f"Lookups: 'model' - {lookups[0].code}")
         lookup = await homelink_api.async_get_lookup("model", lookups[0].lookupid)

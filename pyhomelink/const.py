@@ -8,6 +8,8 @@ BASE_URL = "https://frontier.live.homelync.io/v1/"
 
 HTTP_OK = 200
 
+LOOKUPEVENTTYPE = "eventType"
+
 
 class HomeLINKEndpoint(StrEnum):
     """HomeLINK Endpoints."""

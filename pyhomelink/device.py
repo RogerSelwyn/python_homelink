@@ -156,7 +156,4 @@ class Device:
         """Return the Alerts."""
         resp = await self._auth.request("get", f"{self.rel.alerts}")
         check_status(resp.status)
-        return [
-            Alert(alert_data, self._auth)
-            for alert_data in (await resp.json())[ATTR_RESULTS]
-        ]
+        return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
