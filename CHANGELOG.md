@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.6 (2023/11/07)
+### 🔨 Maintenance
+- [Add url to api error](https://github.com/RogerSelwyn/python_homelink/commit/11f57293bcb9bc1f38aa0fe5e24885610d6c867e) - @RogerSelwyn
+
+### 🔖 Release
+- [Bump to 0.1.6](https://github.com/RogerSelwyn/python_homelink/commit/a27e56e2abc42562be45f381c855f02ba7e24bba) - @RogerSelwyn
+
 ## 0.1.5 (2023/10/24)
 ### 🐛 Fixes
 - [Add missing attributes to EventType Lookup](https://github.com/RogerSelwyn/python_homelink/commit/9ddfc1adf514101edc689a24050fa41325195bd7) - @RogerSelwyn
