@@ -21,7 +21,7 @@ class HomeLINKApi:
     async def async_get_properties(self) -> List[Property]:
         """Return the Properties."""
         resp = await self.auth.request("get", HomeLINKEndpoint.PROPERTIES)
-        check_status(resp.status)
+        check_status(resp)
         return [
             Property(property_data, self.auth)
             for property_data in (await resp.json())[ATTR_RESULTS]
@@ -33,7 +33,7 @@ class HomeLINKApi:
             "get",
             HomeLINKEndpoint.PROPERTY.format(propertyreference=propertyreference),
         )
-        check_status(resp.status)
+        check_status(resp)
         return Property(await resp.json(), self.auth)
 
     async def async_get_property_devices(self, propertyreference) -> List[Device]:
@@ -44,7 +44,7 @@ class HomeLINKApi:
                 propertyreference=propertyreference
             ),
         )
-        check_status(resp.status)
+        check_status(resp)
         return [
             Device(device_data, self.auth)
             for device_data in (await resp.json())[ATTR_RESULTS]
@@ -58,7 +58,7 @@ class HomeLINKApi:
                 propertyreference=propertyreference
             ),
         )
-        check_status(resp.status)
+        check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
     async def async_add_property_tags(self, propertyreference, tags) -> List[str]:
@@ -68,7 +68,7 @@ class HomeLINKApi:
             HomeLINKEndpoint.PROPERTY_TAGS.format(propertyreference=propertyreference),
             json={"tagIds": tags},
         )
-        check_status(resp.status)
+        check_status(resp)
         return await resp.json()
 
     async def async_delete_property_tags(self, propertyreference, tags) -> List[str]:
@@ -78,13 +78,13 @@ class HomeLINKApi:
             HomeLINKEndpoint.PROPERTY_TAGS.format(propertyreference=propertyreference),
             json={"tagIds": tags},
         )
-        check_status(resp.status)
+        check_status(resp)
         return await resp.json()
 
     async def async_get_devices(self) -> List[Device]:
         """Return the Properties."""
         resp = await self.auth.request("get", HomeLINKEndpoint.DEVICES)
-        check_status(resp.status)
+        check_status(resp)
         return [
             Device(device_data, self.auth)
             for device_data in (await resp.json())[ATTR_RESULTS]
@@ -95,7 +95,7 @@ class HomeLINKApi:
         resp = await self.auth.request(
             "get", HomeLINKEndpoint.DEVICE.format(serialnumber=serialnumber)
         )
-        check_status(resp.status)
+        check_status(resp)
         return Device(await resp.json(), self.auth)
 
     async def async_get_device_alerts(self, serialnumber) -> List[Alert]:
@@ -104,13 +104,13 @@ class HomeLINKApi:
             "get",
             HomeLINKEndpoint.DEVICES_ALERTS.format(serialnumber=serialnumber),
         )
-        check_status(resp.status)
+        check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
     async def async_get_insights(self) -> List[Insight]:
         """Return the Properties."""
         resp = await self.auth.request("get", HomeLINKEndpoint.INSIGHTS)
-        check_status(resp.status)
+        check_status(resp)
         return [
             Insight(insight_data) for insight_data in (await resp.json())[ATTR_RESULTS]
         ]
@@ -120,7 +120,7 @@ class HomeLINKApi:
         resp = await self.auth.request(
             "get", HomeLINKEndpoint.INSIGHT.format(insightid=insightid)
         )
-        check_status(resp.status)
+        check_status(resp)
         return Insight(await resp.json())
 
     async def async_get_lookups(self, lookuptype) -> List:
@@ -128,7 +128,7 @@ class HomeLINKApi:
         resp = await self.auth.request(
             "get", HomeLINKEndpoint.LOOKUPS.format(lookuptype=lookuptype)
         )
-        check_status(resp.status)
+        check_status(resp)
         return [
             self._process_lookup(lookuptype, lookup_data)
             for lookup_data in await resp.json()
@@ -140,7 +140,7 @@ class HomeLINKApi:
             "get",
             HomeLINKEndpoint.LOOKUP.format(lookuptype=lookuptype, lookupid=lookupid),
         )
-        check_status(resp.status)
+        check_status(resp)
         return self._process_lookup(lookuptype, await resp.json())
 
     def _process_lookup(self, lookuptype, data):

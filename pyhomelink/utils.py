@@ -4,12 +4,12 @@ from dateutil import parser
 from .exceptions import ApiException, AuthException
 
 
-def check_status(status):
+def check_status(resp):
     """Check status of the call."""
-    if status == 401:
-        raise AuthException(f"Authorization failed: {status}")
-    if status != 200:
-        raise ApiException(f"Error request failed: {status}")
+    if resp.status == 401:
+        raise AuthException(f"Authorization failed: {resp.status}")
+    if resp.status != 200:
+        raise ApiException(f"Error request failed: {resp.status}, url: {resp.url}")
 
 
 def parse_date(in_date):

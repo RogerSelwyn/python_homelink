@@ -98,7 +98,7 @@ class Property:
     async def async_get_devices(self) -> List[Device]:
         """Return the Devices."""
         resp = await self._auth.request("get", f"{self.rel.devices}")
-        check_status(resp.status)
+        check_status(resp)
         return [
             Device(device_data, self._auth)
             for device_data in (await resp.json())[ATTR_RESULTS]
@@ -107,7 +107,7 @@ class Property:
     async def async_get_insights(self) -> List[Insight]:
         """Return the Insights."""
         resp = await self._auth.request("get", f"{self.rel.insights}")
-        check_status(resp.status)
+        check_status(resp)
         return [
             Insight(insight_data) for insight_data in (await resp.json())[ATTR_RESULTS]
         ]
@@ -115,7 +115,7 @@ class Property:
     async def async_get_alerts(self) -> List[Alert]:
         """Return the Alerts."""
         resp = await self._auth.request("get", f"{self.rel.alerts}")
-        check_status(resp.status)
+        check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
     async def async_add_tags(self, tags) -> List[str]:
@@ -125,7 +125,7 @@ class Property:
             HomeLINKEndpoint.PROPERTY_TAGS.format(propertyreference=self.reference),
             json={"tagIds": tags},
         )
-        check_status(resp.status)
+        check_status(resp)
         return await resp.json()
 
     async def async_delete_tags(self, tags) -> List[str]:
@@ -135,5 +135,5 @@ class Property:
             HomeLINKEndpoint.PROPERTY_TAGS.format(propertyreference=self.reference),
             json={"tagIds": tags},
         )
-        check_status(resp.status)
+        check_status(resp)
         return await resp.json()

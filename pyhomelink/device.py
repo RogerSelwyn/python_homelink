@@ -155,5 +155,5 @@ class Device:
     async def async_get_alerts(self) -> List[Alert]:
         """Return the Alerts."""
         resp = await self._auth.request("get", f"{self.rel.alerts}")
-        check_status(resp.status)
+        check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
