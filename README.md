@@ -20,6 +20,7 @@ This library enables access to the AICO HomeLINK API for retrieving the followin
 * Property
 * Devices
 * Alerts
+* Insights
 * Lookups
 
 ### [Buy Me A ~~Coffee~~ Beer 🍻](https://buymeacoffee.com/rogtp)
