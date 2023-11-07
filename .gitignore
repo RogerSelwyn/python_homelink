@@ -163,3 +163,4 @@ cython_debug/
 .vscode
 docs/.DS_Store
 pyhomelink/.DS_Store
+.DS_Store
