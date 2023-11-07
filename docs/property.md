@@ -14,7 +14,7 @@ properties = await homelink_api.async_get_properties()
 ## Get Property
 
 ```
-devices = await homelink_api.async_get_property(propertyreference)
+property = await homelink_api.async_get_property(propertyreference)
 ```
 
 ## Get Property Devices
