@@ -9,6 +9,8 @@ BASE_URL = "https://frontier.live.homelync.io/v1/"
 HTTP_OK = 200
 
 LOOKUPEVENTTYPE = "eventType"
+MODELTYPE_ENVIRONMENT = "ENV"
+MODELTYPE_CO2 = "CO2"
 
 
 class HomeLINKEndpoint(StrEnum):
