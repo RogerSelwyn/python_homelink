@@ -7,6 +7,7 @@ from .auth import AbstractAuth
 from .const import ATTR_RESULTS, HomeLINKEndpoint
 from .device import Device
 from .insight import Insight
+from .reading import DeviceReading, PropertyReading
 from .utils import check_status, parse_date
 
 
@@ -30,7 +31,7 @@ class Property:
 
     @property
     def updatedat(self) -> datetime:
-        """Return the updatedat of the Propery"""
+        """Return the updatedat of the Property"""
         return parse_date(self._raw_data["updatedAt"])
 
     @property
@@ -117,6 +118,14 @@ class Property:
         resp = await self._auth.request("get", f"{self.rel.alerts}")
         check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
+
+    async def async_get_readings(self, readingdate) -> List[DeviceReading]:
+        """Return the Readings."""
+        resp = await self._auth.request(
+            "get", f"{self.rel.readings}?date={readingdate}"
+        )
+        check_status(resp)
+        return [PropertyReading(reading_data) for reading_data in await resp.json()]
 
     async def async_add_tags(self, tags) -> List[str]:
         """Add tags to a property."""

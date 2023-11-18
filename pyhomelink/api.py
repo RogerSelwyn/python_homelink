@@ -3,11 +3,12 @@ from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
-from .const import ATTR_RESULTS, LOOKUPEVENTTYPE, HomeLINKEndpoint
+from .const import ATTR_RESULTS, LOOKUPEVENTTYPE, HomeLINKEndpoint, HomeLINKReadingType
 from .device import Device
 from .insight import Insight
 from .lookup import Lookup, LookupEventType
 from .property import Property
+from .reading import DeviceReading, PropertyReading
 from .utils import check_status
 
 
@@ -61,6 +62,19 @@ class HomeLINKApi:
         check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
+    async def async_get_property_readings(
+        self, propertyreference, readingdate
+    ) -> List[DeviceReading]:
+        """Return the Property Readings."""
+        resp = await self.auth.request(
+            "get",
+            HomeLINKEndpoint.PROPERTY_READINGS.format(
+                propertyreference=propertyreference, date=readingdate
+            ),
+        )
+        check_status(resp)
+        return [PropertyReading(reading_data) for reading_data in await resp.json()]
+
     async def async_add_property_tags(self, propertyreference, tags) -> List[str]:
         """Add tags to a property."""
         resp = await self.auth.request(
@@ -102,10 +116,33 @@ class HomeLINKApi:
         """Return the Device Alerts."""
         resp = await self.auth.request(
             "get",
-            HomeLINKEndpoint.DEVICES_ALERTS.format(serialnumber=serialnumber),
+            HomeLINKEndpoint.DEVICE_ALERTS.format(serialnumber=serialnumber),
         )
         check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
+
+    async def async_get_device_readings(
+        self, serialnumber, readingtype: HomeLINKReadingType, start=None, end=None
+    ) -> DeviceReading:
+        """Return the Device Alerts."""
+        url = HomeLINKEndpoint.DEVICE_READINGS.format(
+            serialnumber=serialnumber,
+            readingtype=readingtype,
+        )
+        if start or end:
+            url = url + "?"
+        if start:
+            url = url + f"start={start}"
+        if start and end:
+            url = url + "&"
+        if end:
+            url = url + f"end={end}"
+        resp = await self.auth.request(
+            "get",
+            url,
+        )
+        check_status(resp)
+        return DeviceReading(await resp.json())
 
     async def async_get_insights(self) -> List[Insight]:
         """Return the Properties."""

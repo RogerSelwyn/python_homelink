@@ -53,6 +53,20 @@ or if property has already been retrieved
 alerts = await property.async_get_alerts()
 ```
 
+## Get Property Readings
+
+```
+readings = await homelink_api.async_get_property_readings(propertyreference, readingdate)
+```
+
+or if property has already been retrieved
+
+``` 
+readings = await property.async_get_readings(readingdate)
+```
+
+Date is in the format `YYYY-MM-DD` e.g. 2023-11-18
+
 ## Add Property Tags
 
 ```

@@ -7,6 +7,7 @@ import aiohttp
 from aiohttp import ClientSession
 
 import bash_const
+from pyhomelink import HomeLINKReadingType
 from pyhomelink.api import HomeLINKApi
 from pyhomelink.auth import AbstractAuth
 
@@ -93,6 +94,26 @@ async def _test():
         lookup = await homelink_api.async_get_lookup("model", lookups[0].lookupid)
         print(f"Lookup: 'model[0]' - {lookup.name}")
 
+        readings = await homelink_api.async_get_property_readings(
+            properties[0].reference, "2023-11-17"
+        )
+        print(readings[0].type)
+        readings = await properties[0].async_get_readings("2023-11-17")
+        print(readings[2].devices[0].values[0].value)
+        readings = await homelink_api.async_get_device_readings(
+            devices[5].serialnumber,
+            HomeLINKReadingType.CO2,
+            "2023-11-16",
+            "2023-11-17",
+        )
+        print(readings.type)
+
+        readings = await devices[5].async_get_device_readings(
+            HomeLINKReadingType.HUMIDITY,
+            "2023-11-16",
+            "2023-11-17",
+        )
+        print(readings.values[0].value)
         print("Success", file=sys.stdout)
 
 

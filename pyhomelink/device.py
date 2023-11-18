@@ -4,7 +4,13 @@ from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
-from .const import ATTR_RESULTS, MODELTYPE_CO2, MODELTYPE_ENVIRONMENT
+from .const import (
+    ATTR_RESULTS,
+    MODELTYPE_CO2,
+    MODELTYPE_ENVIRONMENT,
+    HomeLINKReadingType,
+)
+from .reading import DeviceReading
 from .utils import check_status, parse_date
 
 
@@ -195,3 +201,27 @@ class Device:
         resp = await self._auth.request("get", f"{self.rel.alerts}")
         check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
+
+    async def async_get_device_readings(
+        self, readingtype: HomeLINKReadingType, start=None, end=None
+    ) -> DeviceReading:
+        """Return the Device Readings."""
+        if readingtype == HomeLINKReadingType.CO2:
+            url = self.rel.readings.co2readings
+        elif readingtype == HomeLINKReadingType.HUMIDITY:
+            url = self.rel.readings.humidityreadings
+        elif readingtype == HomeLINKReadingType.TEMPERATURE:
+            url = self.rel.readings.temperaturereadings
+
+        if start or end:
+            url = url + "?"
+        if start:
+            url = url + f"start={start}"
+        if start and end:
+            url = url + "&"
+        if end:
+            url = url + f"end={end}"
+        resp = await self._auth.request("get", url)
+
+        check_status(resp)
+        return DeviceReading(await resp.json())
