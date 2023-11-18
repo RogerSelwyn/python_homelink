@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.1.7 (2023/11/18)
+### ✨ Enhancements
+- [Add Reading urls to device when needed](https://github.com/RogerSelwyn/python_homelink/commit/b235b88444249beceecd9df8be5ceb8fa73e106b) - @RogerSelwyn
+- [Add support for Readings](https://github.com/RogerSelwyn/python_homelink/commit/818af767602eb3650127a74edad3face0944a430) - @RogerSelwyn
+
+### 🔨 Maintenance
+- [Delete .github/stale.yaml](https://github.com/RogerSelwyn/python_homelink/commit/5a21ad4c19fb40f7887daabbcb4552b0c58e4da6) - @RogerSelwyn
+- [Create stale.yaml](https://github.com/RogerSelwyn/python_homelink/commit/6e5e2ccce4de56f4c1bad2fafa44fb53c11391c8) - @RogerSelwyn
+
+### 📚 Documentation
+- [Update property.md](https://github.com/RogerSelwyn/python_homelink/commit/ea7d53c08727c2970fe9fe9a6fa32c4e4b406112) - @RogerSelwyn
+- [Update README.md](https://github.com/RogerSelwyn/python_homelink/commit/78e9b20bee3d1f314410b8f6ac1ee34389d915c1) - @RogerSelwyn
+- [Update index.md](https://github.com/RogerSelwyn/python_homelink/commit/c81093959fd060f58c8ddb5b553292054755808b) - @RogerSelwyn
+
+### 🔖 Release
+- [Bump to 0.1.7](https://github.com/RogerSelwyn/python_homelink/commit/f49f141902578844d398b4cf4c7556b44846147d) - @RogerSelwyn
+
 ## 0.1.6 (2023/11/07)
 ### 🔨 Maintenance
 - [Add url to api error](https://github.com/RogerSelwyn/python_homelink/commit/11f57293bcb9bc1f38aa0fe5e24885610d6c867e) - @RogerSelwyn
