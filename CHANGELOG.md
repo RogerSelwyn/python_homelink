@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.8 (2023/12/11)
+### 🐛 Fixes
+- [Add in missing get_property_insights](https://github.com/RogerSelwyn/python_homelink/commit/7231a1dddfcc422e4ff6cfd40f99580e5cda64f7) - @RogerSelwyn
+
+### 🔖 Release
+- [Bump to 0.1.8](https://github.com/RogerSelwyn/python_homelink/commit/fa5334d4ab0f8ef7abf0cac26fa4fae53bb0abb0) - @RogerSelwyn
+
 ## 0.1.7 (2023/11/18)
 ### ✨ Enhancements
 - [Add Reading urls to device when needed](https://github.com/RogerSelwyn/python_homelink/commit/b235b88444249beceecd9df8be5ceb8fa73e106b) - @RogerSelwyn
