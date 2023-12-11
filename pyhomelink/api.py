@@ -62,6 +62,19 @@ class HomeLINKApi:
         check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
+    async def async_get_property_insights(self, propertyreference) -> List[Insight]:
+        """Return the Property Insightss."""
+        resp = await self.auth.request(
+            "get",
+            HomeLINKEndpoint.PROPERTY_INSIGHTS.format(
+                propertyreference=propertyreference
+            ),
+        )
+        check_status(resp)
+        return [
+            Insight(insight_data) for insight_data in (await resp.json())[ATTR_RESULTS]
+        ]
+
     async def async_get_property_readings(
         self, propertyreference, readingdate
     ) -> List[DeviceReading]:

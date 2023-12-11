@@ -60,6 +60,10 @@ async def _test():
         print(f"Property Devices: {hl_property.address} - {devices[0].serialnumber}")
         alerts = await homelink_api.async_get_property_alerts(properties[0].reference)
         print(f"Property Alerts: {hl_property.address} - {alerts}")
+        insights = await homelink_api.async_get_property_insights(
+            properties[0].reference
+        )
+        print(f"Property Insights: {hl_property.address} - {insights}")
 
         tags = ["PROPERTY_JUNK"]
         tagso = await homelink_api.async_add_property_tags(hl_property.reference, tags)
