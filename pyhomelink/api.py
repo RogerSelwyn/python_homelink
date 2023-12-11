@@ -143,13 +143,13 @@ class HomeLINKApi:
             readingtype=readingtype,
         )
         if start or end:
-            url = url + "?"
+            url = f"{url}?"
         if start:
-            url = url + f"start={start}"
+            url = f"{url}start={start}"
         if start and end:
-            url = url + "&"
+            url = f"{url}&"
         if end:
-            url = url + f"end={end}"
+            url = f"{url}end={end}"
         resp = await self.auth.request(
             "get",
             url,
