@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.9 (2024/01/24)
+### ✨ Enhancements
+- [Add 'calculated at' for Insight](https://github.com/RogerSelwyn/python_homelink/commit/80b3d9a388cb87b0ae12a45728c7196b7e5c9fbe) - @RogerSelwyn
+
+### 🔨 Maintenance
+- [Sourcery recommendations](https://github.com/RogerSelwyn/python_homelink/commit/971cd55c77e3f75cffb6cbd10ee4d82c50e414f0) - @RogerSelwyn
+- [Sourcery recommendations](https://github.com/RogerSelwyn/python_homelink/commit/807e41b203d5a7ff15df938aa8f658553fdee2c3) - @RogerSelwyn
+
+### 📚 Documentation
+- [Update README.md](https://github.com/RogerSelwyn/python_homelink/commit/2641974f83a444227c18a5ca96bdda0afade6270) - @RogerSelwyn
+
+### 🔖 Release
+- [Release v0.1.9](https://github.com/RogerSelwyn/python_homelink/commit/5a66bac612805a473e881c6063ffc1598a6a07ea) - @RogerSelwyn
+
 ## 0.1.8 (2023/12/11)
 ### 🐛 Fixes
 - [Add in missing get_property_insights](https://github.com/RogerSelwyn/python_homelink/commit/7231a1dddfcc422e4ff6cfd40f99580e5cda64f7) - @RogerSelwyn
