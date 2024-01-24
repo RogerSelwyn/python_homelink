@@ -44,6 +44,11 @@ class Insight:
         return self._raw_data.get("location", None)
 
     @property
+    def calculatedat(self) -> str:
+        """Return the datetime of the Insight calculation"""
+        return self._raw_data.get("calculatedAt", None)
+
+    @property
     def rel(self) -> any:
         """Return the tags of the Insight"""
         return self.Rel(self._raw_data["_rel"])
