@@ -1,4 +1,5 @@
 """Python module for accessing HomeLINK Property."""
+
 from datetime import datetime
 from typing import List
 
@@ -125,7 +126,11 @@ class Property:
             "get", f"{self.rel.readings}?date={readingdate}"
         )
         check_status(resp)
-        return [PropertyReading(reading_data) for reading_data in await resp.json()]
+        return [
+            PropertyReading(reading_data)
+            for reading_data in await resp.json()
+            if "type" in reading_data
+        ]
 
     async def async_add_tags(self, tags) -> List[str]:
         """Add tags to a property."""
