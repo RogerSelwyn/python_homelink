@@ -1,5 +1,13 @@
 # Changelog
 
+
+## 0.1.10 (2024/04/17)
+### 🐛 Fixes
+- [Deal with invalid readings from the api](https://github.com/RogerSelwyn/python_homelink/commit/919ff54ed0d4e17f5cc07ec4ea8d391b99480e8c) - @RogerSelwyn
+
+### 🔖 Release
+- [Release v0.1.10](https://github.com/RogerSelwyn/python_homelink/commit/6aff8a59aba749fb3b68bd2b0662c82c960b9a26) - @RogerSelwyn
+  
 ## 0.1.9 (2024/01/24)
 ### ✨ Enhancements
 - [Add 'calculated at' for Insight](https://github.com/RogerSelwyn/python_homelink/commit/80b3d9a388cb87b0ae12a45728c7196b7e5c9fbe) - @RogerSelwyn
