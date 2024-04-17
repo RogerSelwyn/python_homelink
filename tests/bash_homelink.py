@@ -1,4 +1,5 @@
 """HomeLINK test script."""
+
 import asyncio
 import sys
 from typing import cast
@@ -99,10 +100,10 @@ async def _test():
         print(f"Lookup: 'model[0]' - {lookup.name}")
 
         readings = await homelink_api.async_get_property_readings(
-            properties[0].reference, "2023-11-17"
+            properties[0].reference, "2024-04-17"
         )
-        print(readings[0].type)
-        readings = await properties[0].async_get_readings("2023-11-17")
+        print(readings[2].type)
+        readings = await properties[0].async_get_readings("2024-04-17")
         print(readings[2].devices[0].values[0].value)
         readings = await homelink_api.async_get_device_readings(
             devices[5].serialnumber,

@@ -1,4 +1,5 @@
 """API in support of HomeLINK."""
+
 from typing import List
 
 from .alert import Alert
@@ -86,7 +87,11 @@ class HomeLINKApi:
             ),
         )
         check_status(resp)
-        return [PropertyReading(reading_data) for reading_data in await resp.json()]
+        return [
+            PropertyReading(reading_data)
+            for reading_data in await resp.json()
+            if "type" in reading_data
+        ]
 
     async def async_add_property_tags(self, propertyreference, tags) -> List[str]:
         """Add tags to a property."""
