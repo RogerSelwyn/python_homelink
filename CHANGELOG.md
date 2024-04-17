@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.11 (2024/04/17)
+### 🐛 Fixes
+- [Further fix for invalid readings from api](https://github.com/RogerSelwyn/python_homelink/commit/3df90dbbec777939b433fea6a8e89c6ed64d7970) - @RogerSelwyn
+
+### 🔖 Release
+- [Release 0.1.11](https://github.com/RogerSelwyn/python_homelink/commit/fb5a55e6f335b06dcfdc91c16466be26e75aa6a5) - @RogerSelwyn
 
 ## 0.1.10 (2024/04/17)
 ### 🐛 Fixes
