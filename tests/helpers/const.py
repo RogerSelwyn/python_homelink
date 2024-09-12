@@ -1,0 +1,4 @@
+"""Constants."""
+
+CLIENTID = 1234
+CLIENTSECRET = 5678
