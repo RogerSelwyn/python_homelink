@@ -1,0 +1,14 @@
+{
+    "id": "2fba2afd-95e9-4c93-b10b-93e74f41a67a",
+    "type": "MOULD",
+    "riskLevel": "HIGH",
+    "location": "HALLWAY1",
+    "calculatedAt": "2024-09-15T23:00:00.000Z",
+    "value": 92.7248,
+    "appliesTo": "ROOM",
+    "propertyReference": "DUMMY_USER_My_House",
+    "_rel": {
+        "_self": "insight/2fba2afd-95e9-4c93-b10b-93e74f41a67a",
+        "property": "property/DUMMY_USER_My_House"
+    }
+}
