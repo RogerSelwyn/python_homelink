@@ -49,7 +49,21 @@ def mock_aio():
 
 
 @pytest.fixture
-async def homelink_api(aiohttp_client_session: ClientSession) -> HomeLINKApi:
-    """Homelink_api."""
+async def homelink_api_unauth(aiohttp_client_session: ClientSession) -> HomeLINKApi:
+    """Homelinkapi."""
 
     return HomeLINKApi(ApiAuthImpl(aiohttp_client_session, ""))
+
+
+@pytest.fixture
+async def homelink_api(homelink_api_unauth, mock_aio) -> HomeLINKApi:
+    """Homelink authenticated api."""
+
+    new_token = "longtoken"
+    mock_aio.get(
+        "https://auth.live.homelync.io/oauth2?client=1234&secret=5678",
+        status=200,
+        body='{"accessToken": "%s"}' % (new_token),
+        repeat=True,
+    )
+    return homelink_api_unauth
