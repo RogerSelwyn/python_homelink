@@ -1,0 +1,9 @@
+{
+    "id": "ABANDONMENT_RISK_HIGH",
+    "code": "ABANDONMENT_RISK_HIGH",
+    "name": "Void Risk High",
+    "description": "This property is at high risk of being void",
+    "eventCategoryId": "INSIGHT",
+    "severityId": "HIGH",
+    "active": true
+}

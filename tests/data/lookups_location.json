@@ -1,0 +1,268 @@
+[
+    {
+        "id": "ATTIC",
+        "code": "ATTIC",
+        "name": "Attic",
+        "description": "Attic",
+        "active": true
+    },
+    {
+        "id": "BASEMENT",
+        "code": "BASEMENT",
+        "name": "Basement",
+        "description": "Basement or Cellar",
+        "active": true
+    },
+    {
+        "id": "BATHROOM",
+        "code": "BATHROOM",
+        "name": "Bathroom",
+        "description": "Bathroom",
+        "active": true
+    },
+    {
+        "id": "BEDROOM",
+        "code": "BEDROOM",
+        "name": "Bedroom",
+        "description": "Bedroom",
+        "active": true
+    },
+    {
+        "id": "BEDROOM1",
+        "code": "BEDROOM1",
+        "name": "Bedroom 1",
+        "description": "Bedroom 1",
+        "active": true
+    },
+    {
+        "id": "BEDROOM2",
+        "code": "BEDROOM2",
+        "name": "Bedroom 2",
+        "description": "Bedroom 2",
+        "active": true
+    },
+    {
+        "id": "BEDROOM3",
+        "code": "BEDROOM3",
+        "name": "Bedroom 3",
+        "description": "Bedroom 3",
+        "active": true
+    },
+    {
+        "id": "BEDROOM4",
+        "code": "BEDROOM4",
+        "name": "Bedroom 4",
+        "description": "Bedroom 4",
+        "active": true
+    },
+    {
+        "id": "BEDROOM5",
+        "code": "BEDROOM5",
+        "name": "Bedroom 5",
+        "description": "Bedroom 5",
+        "active": true
+    },
+    {
+        "id": "BEDROOM6",
+        "code": "BEDROOM6",
+        "name": "Bedroom 6",
+        "description": "Bedroom 6",
+        "active": true
+    },
+    {
+        "id": "CALIBRATION",
+        "code": "CALIBRATION",
+        "name": "Calibration",
+        "description": "Calibration",
+        "active": true
+    },
+    {
+        "id": "CLASSROOM",
+        "code": "CLASSROOM",
+        "name": "Class Room",
+        "description": "Class Room",
+        "active": true
+    },
+    {
+        "id": "COMMUNALAREA",
+        "code": "COMMUNALAREA",
+        "name": "Communal Area",
+        "description": "Communal Area",
+        "active": true
+    },
+    {
+        "id": "COMPUTERROOM",
+        "code": "COMPUTERROOM",
+        "name": "Computer Room",
+        "description": "Computer Room",
+        "active": true
+    },
+    {
+        "id": "CONSERVATORY",
+        "code": "CONSERVATORY",
+        "name": "Conservatory",
+        "description": "Conservatory",
+        "active": true
+    },
+    {
+        "id": "DININGROOM",
+        "code": "DININGROOM",
+        "name": "Dining Room",
+        "description": "Dining room",
+        "active": true
+    },
+    {
+        "id": "ELEC",
+        "code": "ELEC",
+        "name": "Electrical Cupboard",
+        "description": "Electrical Cupboard",
+        "active": true
+    },
+    {
+        "id": "ELECTRICALCUPBOARD",
+        "code": "ELECTRICALCUPBOARD",
+        "name": "Electrical Cupboard",
+        "description": "Electrical Cupboard",
+        "active": true
+    },
+    {
+        "id": "GARAGE",
+        "code": "GARAGE",
+        "name": "Garage",
+        "description": "Garage",
+        "active": true
+    },
+    {
+        "id": "HALLWAY",
+        "code": "HALLWAY",
+        "name": "Hallway",
+        "description": "Entrance hallway",
+        "active": true
+    },
+    {
+        "id": "HALLWAY1",
+        "code": "HALLWAY1",
+        "name": "Hallway 1",
+        "description": "Hallway 1",
+        "active": true
+    },
+    {
+        "id": "HALLWAY2",
+        "code": "HALLWAY2",
+        "name": "Hallway 2",
+        "description": "Hallway 2",
+        "active": true
+    },
+    {
+        "id": "HALLWAYFL1",
+        "code": "HALLWAYFL1",
+        "name": "Hallway Fl 1",
+        "description": "Hallway Floor 1",
+        "active": true
+    },
+    {
+        "id": "HALLWAYFL2",
+        "code": "HALLWAYFL2",
+        "name": "Hallway Fl 2",
+        "description": "Halway Floor 2",
+        "active": true
+    },
+    {
+        "id": "KITCHEN",
+        "code": "KITCHEN",
+        "name": "Kitchen",
+        "description": "Kitchen",
+        "active": true
+    },
+    {
+        "id": "LAB",
+        "code": "LAB",
+        "name": "Laboratory",
+        "description": "Laboratory",
+        "active": true
+    },
+    {
+        "id": "LANDING",
+        "code": "LANDING",
+        "name": "Landing",
+        "description": "Landing/Upstairs hallway",
+        "active": true
+    },
+    {
+        "id": "LIVINGROOM",
+        "code": "LIVINGROOM",
+        "name": "Living Room",
+        "description": "Living room",
+        "active": true
+    },
+    {
+        "id": "OTHER",
+        "code": "OTHER",
+        "name": "Other",
+        "description": "Room not listed, please use nickname",
+        "active": true
+    },
+    {
+        "id": "OUTSIDE",
+        "code": "OUTSIDE",
+        "name": "Outside",
+        "description": "Outside",
+        "active": true
+    },
+    {
+        "id": "SHED",
+        "code": "SHED",
+        "name": "Shed",
+        "description": "Shed",
+        "active": true
+    },
+    {
+        "id": "SITTINGROOM1",
+        "code": "SITTINGROOM1",
+        "name": "Sitting Room 1",
+        "description": "Sitting Room 1",
+        "active": true
+    },
+    {
+        "id": "SITTINGROOM2",
+        "code": "SITTINGROOM2",
+        "name": "Sitting Room 2",
+        "description": "Sitting Room 2",
+        "active": true
+    },
+    {
+        "id": "SPAREBED",
+        "code": "SPAREBED",
+        "name": "Spare Bedroom",
+        "description": "Bedroom that is not in full time occupation",
+        "active": true
+    },
+    {
+        "id": "SPORTS",
+        "code": "SPORTS",
+        "name": "Sports Room",
+        "description": "Sports room or hall",
+        "active": true
+    },
+    {
+        "id": "STOCK",
+        "code": "STOCK",
+        "name": "Stock",
+        "description": "Device is currently in stock",
+        "active": true
+    },
+    {
+        "id": "STUDY",
+        "code": "STUDY",
+        "name": "Study",
+        "description": "Study",
+        "active": true
+    },
+    {
+        "id": "UTILITY",
+        "code": "UTILITY",
+        "name": "Utility Room",
+        "description": "Utility room",
+        "active": true
+    }
+]
