@@ -85,7 +85,7 @@ class DeviceReading:
     @property
     def dataavailability(self) -> int:
         """Return the dataAvailability of the Reading"""
-        return self._raw_data["dataAvailability "]
+        return self._raw_data["dataAvailability"]
 
     @property
     def rel(self) -> any:
