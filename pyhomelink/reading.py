@@ -1,4 +1,5 @@
 """Python module for accessing HomeLINK Reading."""
+
 from datetime import datetime
 
 from .utils import parse_date
@@ -126,6 +127,21 @@ class Value:
     def value(self) -> str:
         """Return the value of the Reading"""
         return self._raw_data["value"]
+
+    @property
+    def serialnumber(self) -> str:
+        """Return the serialNumber of the Reading"""
+        return self._raw_data["serialNumber"]
+
+    @property
+    def readingtypeid(self) -> str:
+        """Return the readingTypeId of the Reading"""
+        return self._raw_data["readingTypeId"]
+
+    @property
+    def statusid(self) -> str:
+        """Return the statusId of the Reading"""
+        return self._raw_data["statusId"]
 
     @property
     def readingdate(self) -> datetime:
