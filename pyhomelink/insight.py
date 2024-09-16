@@ -1,5 +1,7 @@
 """Python module for accessing HomeLINK Insight."""
 
+from .utils import parse_date
+
 
 class Insight:
     """Insight is the instantiation of a HomeLINK Insight"""
@@ -46,7 +48,7 @@ class Insight:
     @property
     def calculatedat(self) -> str:
         """Return the datetime of the Insight calculation"""
-        return self._raw_data.get("calculatedAt", None)
+        return parse_date(self._raw_data.get("calculatedAt", None))
 
     @property
     def rel(self) -> any:
