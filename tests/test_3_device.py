@@ -4,7 +4,7 @@ from datetime import date, datetime, timedelta
 
 from pyhomelink.api import HomeLINKApi
 from pyhomelink.const import HomeLINKReadingType
-from pyhomelink.device import Device
+from pyhomelink.device import Device, DeviceReading
 
 from .helpers.const import DEVICE_SERIAL, DEVICE_SERIAL_CO2, PROPERTY_REF
 from .helpers.utils import create_mock
@@ -154,7 +154,20 @@ async def test_device_readings_start(homelink_api: HomeLINKApi, mock_aio) -> Non
     reading = await homelink_api.async_get_device_readings(
         DEVICE_SERIAL, HomeLINKReadingType.TEMPERATURE, start=today
     )
+    assert isinstance(reading, DeviceReading)
     assert reading.unit == "celsius"
+    assert reading.type == "environment-temperature-indoor"
+    assert isinstance(reading.dataavailability, str)
+    assert reading.rel.hl_property == f"property/{PROPERTY_REF}"
+    assert reading.rel.device == f"device/{DEVICE_SERIAL}"
+    assert len(reading.values) == reading.count
+
+    readingvalue = reading.values[0]
+    assert readingvalue.value == 20.31
+    assert readingvalue.serialnumber == "C3CEC7FB-001FD799"
+    assert readingvalue.readingtypeid == "environment.temperature.indoor"
+    assert readingvalue.statusid == "ACTIVE"
+    assert isinstance(readingvalue.readingdate, datetime)
 
 
 async def test_device_readings_start_end(homelink_api: HomeLINKApi, mock_aio) -> None:
