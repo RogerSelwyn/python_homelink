@@ -1,0 +1,27 @@
+{
+    "count": 0,
+    "results": [
+        {
+            "id": "d86fa724-a982-4980-88d9-9fa5e4c57d0d",
+            "serialNumber": "001FD75F",
+            "description": "001FD75F in location Hall: Head Removed",
+            "eventType": "HEAD_REMOVED",
+            "propertyReference": "DUMMY_USER_My_House",
+            "model": "Ei1025",
+            "modelType": "ENVCO2SENSOR",
+            "location": "HALLWAY1",
+            "locationNickname": null,
+            "insightId": null,
+            "raisedDate": "2023-10-13T17:08:52.000Z",
+            "severity": "MEDIUM",
+            "category": "PRIORITY_MAINTENANCE",
+            "type": "DEVICE",
+            "status": "ACTIVE",
+            "_rel": {
+                "property": "property/DUMMY_USER_My_House",
+                "_self": "alert/d86fa724-a982-4980-88d9-9fa5e4c57d0d",
+                "device": "device/001FD75F"
+            }
+        }
+    ]
+}

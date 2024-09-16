@@ -1,0 +1,4674 @@
+{
+    "unit": "ppm",
+    "count": 666,
+    "type": "environment-co2-indoor",
+    "dataAvailability": "Only the last 7days of readings are available via this api. See: https://homelinkhelp.zendesk.com/hc/en-us/articles/6906536639249-Data-Availability-and-Retention",
+    "_rel": {
+        "property": "property/DUMMY_USER_My_House",
+        "device": "device/001FD75F"
+    },
+    "values": [
+        {
+            "value": 1972,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T14:21:27.000Z"
+        },
+        {
+            "value": 1892,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T14:36:27.000Z"
+        },
+        {
+            "value": 1829,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T14:51:27.000Z"
+        },
+        {
+            "value": 1770,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T15:06:26.000Z"
+        },
+        {
+            "value": 1844,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T15:21:26.000Z"
+        },
+        {
+            "value": 974,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T15:36:26.000Z"
+        },
+        {
+            "value": 912,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T15:51:26.000Z"
+        },
+        {
+            "value": 1200,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T16:06:26.000Z"
+        },
+        {
+            "value": 1429,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T16:21:26.000Z"
+        },
+        {
+            "value": 1631,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T16:36:26.000Z"
+        },
+        {
+            "value": 1793,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T16:51:26.000Z"
+        },
+        {
+            "value": 2008,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T17:06:26.000Z"
+        },
+        {
+            "value": 2149,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T17:21:26.000Z"
+        },
+        {
+            "value": 2243,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T17:36:26.000Z"
+        },
+        {
+            "value": 2298,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T17:51:26.000Z"
+        },
+        {
+            "value": 2388,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T18:06:27.000Z"
+        },
+        {
+            "value": 2518,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T18:21:26.000Z"
+        },
+        {
+            "value": 1832,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T18:36:26.000Z"
+        },
+        {
+            "value": 2152,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T18:51:27.000Z"
+        },
+        {
+            "value": 2345,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T19:06:26.000Z"
+        },
+        {
+            "value": 2484,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T19:21:26.000Z"
+        },
+        {
+            "value": 2602,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T19:36:26.000Z"
+        },
+        {
+            "value": 2751,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T19:51:26.000Z"
+        },
+        {
+            "value": 2987,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T20:06:26.000Z"
+        },
+        {
+            "value": 2893,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T20:21:26.000Z"
+        },
+        {
+            "value": 2832,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T20:36:26.000Z"
+        },
+        {
+            "value": 2756,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T20:51:26.000Z"
+        },
+        {
+            "value": 2763,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T21:06:26.000Z"
+        },
+        {
+            "value": 2741,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T21:21:26.000Z"
+        },
+        {
+            "value": 2805,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T21:36:26.000Z"
+        },
+        {
+            "value": 2726,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T21:51:26.000Z"
+        },
+        {
+            "value": 2158,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T22:06:25.000Z"
+        },
+        {
+            "value": 2055,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T22:21:25.000Z"
+        },
+        {
+            "value": 2200,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T22:36:25.000Z"
+        },
+        {
+            "value": 2251,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T22:51:25.000Z"
+        },
+        {
+            "value": 2225,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T23:06:25.000Z"
+        },
+        {
+            "value": 2193,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T23:21:26.000Z"
+        },
+        {
+            "value": 2200,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T23:36:25.000Z"
+        },
+        {
+            "value": 2177,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T23:51:25.000Z"
+        },
+        {
+            "value": 2145,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T00:06:25.000Z"
+        },
+        {
+            "value": 2122,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T00:21:25.000Z"
+        },
+        {
+            "value": 2096,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T00:36:25.000Z"
+        },
+        {
+            "value": 2076,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T00:51:25.000Z"
+        },
+        {
+            "value": 2051,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T01:06:25.000Z"
+        },
+        {
+            "value": 2034,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T01:21:25.000Z"
+        },
+        {
+            "value": 2004,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T01:36:25.000Z"
+        },
+        {
+            "value": 1999,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T01:51:25.000Z"
+        },
+        {
+            "value": 1979,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T02:06:25.000Z"
+        },
+        {
+            "value": 1945,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T02:21:25.000Z"
+        },
+        {
+            "value": 1928,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T02:36:25.000Z"
+        },
+        {
+            "value": 1920,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T02:51:25.000Z"
+        },
+        {
+            "value": 1878,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T03:06:25.000Z"
+        },
+        {
+            "value": 1855,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T03:21:26.000Z"
+        },
+        {
+            "value": 1847,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T03:36:25.000Z"
+        },
+        {
+            "value": 1827,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T03:51:25.000Z"
+        },
+        {
+            "value": 1807,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T04:06:25.000Z"
+        },
+        {
+            "value": 1803,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T04:21:25.000Z"
+        },
+        {
+            "value": 1770,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T04:36:24.000Z"
+        },
+        {
+            "value": 1756,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T04:51:24.000Z"
+        },
+        {
+            "value": 1716,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T05:06:24.000Z"
+        },
+        {
+            "value": 1708,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T05:21:24.000Z"
+        },
+        {
+            "value": 1699,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T05:36:24.000Z"
+        },
+        {
+            "value": 1677,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T05:51:24.000Z"
+        },
+        {
+            "value": 1660,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T06:06:24.000Z"
+        },
+        {
+            "value": 1640,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T06:21:24.000Z"
+        },
+        {
+            "value": 1616,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T06:36:24.000Z"
+        },
+        {
+            "value": 1617,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T06:51:24.000Z"
+        },
+        {
+            "value": 2014,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T07:06:24.000Z"
+        },
+        {
+            "value": 1893,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T07:21:24.000Z"
+        },
+        {
+            "value": 1538,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T07:36:24.000Z"
+        },
+        {
+            "value": 862,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T07:51:24.000Z"
+        },
+        {
+            "value": 824,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T08:06:24.000Z"
+        },
+        {
+            "value": 1411,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T08:21:24.000Z"
+        },
+        {
+            "value": 2071,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T08:36:24.000Z"
+        },
+        {
+            "value": 2200,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T08:51:23.000Z"
+        },
+        {
+            "value": 2330,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T09:06:23.000Z"
+        },
+        {
+            "value": 2401,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T09:21:23.000Z"
+        },
+        {
+            "value": 2108,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T09:36:23.000Z"
+        },
+        {
+            "value": 1803,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T09:51:23.000Z"
+        },
+        {
+            "value": 2008,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:06:23.000Z"
+        },
+        {
+            "value": 2083,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:21:23.000Z"
+        },
+        {
+            "value": 2113,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:36:23.000Z"
+        },
+        {
+            "value": 2113,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:36:28.000Z"
+        },
+        {
+            "value": 2172,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:51:23.000Z"
+        },
+        {
+            "value": 2179,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T11:06:23.000Z"
+        },
+        {
+            "value": 2213,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T11:21:23.000Z"
+        },
+        {
+            "value": 2212,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T11:36:23.000Z"
+        },
+        {
+            "value": 2235,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T11:51:23.000Z"
+        },
+        {
+            "value": 2237,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T12:06:23.000Z"
+        },
+        {
+            "value": 2235,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T12:21:23.000Z"
+        },
+        {
+            "value": 2249,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T12:36:23.000Z"
+        },
+        {
+            "value": 2275,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T12:51:23.000Z"
+        },
+        {
+            "value": 2292,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T13:06:23.000Z"
+        },
+        {
+            "value": 2290,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T13:21:23.000Z"
+        },
+        {
+            "value": 2301,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T13:36:23.000Z"
+        },
+        {
+            "value": 2010,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T13:51:22.000Z"
+        },
+        {
+            "value": 2304,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T14:06:22.000Z"
+        },
+        {
+            "value": 2432,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T14:21:22.000Z"
+        },
+        {
+            "value": 2689,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T14:36:22.000Z"
+        },
+        {
+            "value": 2795,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T14:51:22.000Z"
+        },
+        {
+            "value": 2888,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T15:06:23.000Z"
+        },
+        {
+            "value": 3042,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T15:21:23.000Z"
+        },
+        {
+            "value": 3100,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T15:36:23.000Z"
+        },
+        {
+            "value": 3122,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T15:51:23.000Z"
+        },
+        {
+            "value": 2909,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T16:06:22.000Z"
+        },
+        {
+            "value": 2985,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T16:21:22.000Z"
+        },
+        {
+            "value": 3090,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T16:36:22.000Z"
+        },
+        {
+            "value": 2625,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T16:51:22.000Z"
+        },
+        {
+            "value": 2161,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T17:06:22.000Z"
+        },
+        {
+            "value": 2103,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T17:21:22.000Z"
+        },
+        {
+            "value": 2233,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T17:36:22.000Z"
+        },
+        {
+            "value": 2165,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T17:51:22.000Z"
+        },
+        {
+            "value": 1821,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T18:06:22.000Z"
+        },
+        {
+            "value": 1990,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T18:21:22.000Z"
+        },
+        {
+            "value": 1995,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T18:36:22.000Z"
+        },
+        {
+            "value": 2033,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T18:51:22.000Z"
+        },
+        {
+            "value": 1785,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T19:06:22.000Z"
+        },
+        {
+            "value": 2018,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T19:21:22.000Z"
+        },
+        {
+            "value": 2134,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T19:36:22.000Z"
+        },
+        {
+            "value": 2468,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T19:51:22.000Z"
+        },
+        {
+            "value": 2521,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T20:06:22.000Z"
+        },
+        {
+            "value": 2687,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T20:21:22.000Z"
+        },
+        {
+            "value": 2955,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T20:36:22.000Z"
+        },
+        {
+            "value": 3139,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T20:51:22.000Z"
+        },
+        {
+            "value": 3280,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T21:06:22.000Z"
+        },
+        {
+            "value": 3089,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T21:21:22.000Z"
+        },
+        {
+            "value": 2296,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T21:36:22.000Z"
+        },
+        {
+            "value": 2470,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T21:51:22.000Z"
+        },
+        {
+            "value": 2521,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T22:06:22.000Z"
+        },
+        {
+            "value": 2496,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T22:21:22.000Z"
+        },
+        {
+            "value": 2478,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T22:36:21.000Z"
+        },
+        {
+            "value": 2459,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T22:51:21.000Z"
+        },
+        {
+            "value": 2391,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T23:06:21.000Z"
+        },
+        {
+            "value": 2393,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T23:21:21.000Z"
+        },
+        {
+            "value": 2469,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T23:36:21.000Z"
+        },
+        {
+            "value": 2453,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T23:51:21.000Z"
+        },
+        {
+            "value": 1220,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T00:06:56.000Z"
+        },
+        {
+            "value": 1157,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T00:21:56.000Z"
+        },
+        {
+            "value": 1221,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T00:36:55.000Z"
+        },
+        {
+            "value": 1226,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T00:51:55.000Z"
+        },
+        {
+            "value": 1225,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T01:06:55.000Z"
+        },
+        {
+            "value": 1222,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T01:21:55.000Z"
+        },
+        {
+            "value": 1221,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T01:36:55.000Z"
+        },
+        {
+            "value": 1222,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T01:51:55.000Z"
+        },
+        {
+            "value": 1209,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T02:06:55.000Z"
+        },
+        {
+            "value": 1209,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T02:21:55.000Z"
+        },
+        {
+            "value": 1197,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T02:36:55.000Z"
+        },
+        {
+            "value": 1216,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T02:51:55.000Z"
+        },
+        {
+            "value": 1218,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T03:06:55.000Z"
+        },
+        {
+            "value": 1209,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T03:21:55.000Z"
+        },
+        {
+            "value": 1204,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T03:36:55.000Z"
+        },
+        {
+            "value": 1205,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T03:51:55.000Z"
+        },
+        {
+            "value": 1205,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T04:06:55.000Z"
+        },
+        {
+            "value": 1195,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T04:21:55.000Z"
+        },
+        {
+            "value": 1208,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T04:36:55.000Z"
+        },
+        {
+            "value": 1201,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T04:51:55.000Z"
+        },
+        {
+            "value": 1225,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T05:06:55.000Z"
+        },
+        {
+            "value": 1223,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T05:21:56.000Z"
+        },
+        {
+            "value": 1229,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T05:36:54.000Z"
+        },
+        {
+            "value": 1225,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T05:51:54.000Z"
+        },
+        {
+            "value": 1224,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T06:06:54.000Z"
+        },
+        {
+            "value": 1222,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T06:21:54.000Z"
+        },
+        {
+            "value": 1216,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T06:36:54.000Z"
+        },
+        {
+            "value": 1268,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T06:51:54.000Z"
+        },
+        {
+            "value": 1308,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T07:06:54.000Z"
+        },
+        {
+            "value": 1337,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T07:21:54.000Z"
+        },
+        {
+            "value": 1357,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T07:36:54.000Z"
+        },
+        {
+            "value": 1417,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T07:51:54.000Z"
+        },
+        {
+            "value": 1495,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T08:06:54.000Z"
+        },
+        {
+            "value": 1696,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T08:21:55.000Z"
+        },
+        {
+            "value": 1570,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T08:36:54.000Z"
+        },
+        {
+            "value": 1593,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T08:51:54.000Z"
+        },
+        {
+            "value": 1562,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T09:06:54.000Z"
+        },
+        {
+            "value": 1519,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T09:21:54.000Z"
+        },
+        {
+            "value": 1383,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T09:36:55.000Z"
+        },
+        {
+            "value": 1458,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T09:51:53.000Z"
+        },
+        {
+            "value": 1482,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T10:06:53.000Z"
+        },
+        {
+            "value": 1477,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T10:21:53.000Z"
+        },
+        {
+            "value": 1487,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T10:36:53.000Z"
+        },
+        {
+            "value": 1472,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T10:51:54.000Z"
+        },
+        {
+            "value": 1493,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T11:06:53.000Z"
+        },
+        {
+            "value": 1477,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T11:21:53.000Z"
+        },
+        {
+            "value": 1467,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T11:36:53.000Z"
+        },
+        {
+            "value": 1548,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T11:51:54.000Z"
+        },
+        {
+            "value": 1719,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T12:06:54.000Z"
+        },
+        {
+            "value": 1685,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T12:21:53.000Z"
+        },
+        {
+            "value": 1721,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T12:36:53.000Z"
+        },
+        {
+            "value": 1692,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T12:51:53.000Z"
+        },
+        {
+            "value": 1602,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T13:06:53.000Z"
+        },
+        {
+            "value": 1594,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T13:21:53.000Z"
+        },
+        {
+            "value": 1592,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T13:36:53.000Z"
+        },
+        {
+            "value": 1592,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T13:51:53.000Z"
+        },
+        {
+            "value": 1600,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T14:06:52.000Z"
+        },
+        {
+            "value": 1574,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T14:21:52.000Z"
+        },
+        {
+            "value": 1369,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T14:36:52.000Z"
+        },
+        {
+            "value": 1456,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T14:51:52.000Z"
+        },
+        {
+            "value": 1421,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T15:06:52.000Z"
+        },
+        {
+            "value": 1394,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T15:21:52.000Z"
+        },
+        {
+            "value": 1401,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T15:36:52.000Z"
+        },
+        {
+            "value": 1362,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T15:51:52.000Z"
+        },
+        {
+            "value": 1326,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T16:06:52.000Z"
+        },
+        {
+            "value": 1344,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T16:21:52.000Z"
+        },
+        {
+            "value": 1387,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T16:36:52.000Z"
+        },
+        {
+            "value": 842,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T16:51:52.000Z"
+        },
+        {
+            "value": 701,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T17:06:52.000Z"
+        },
+        {
+            "value": 897,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T17:21:52.000Z"
+        },
+        {
+            "value": 788,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T17:36:52.000Z"
+        },
+        {
+            "value": 808,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T17:51:52.000Z"
+        },
+        {
+            "value": 923,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T18:06:52.000Z"
+        },
+        {
+            "value": 945,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T18:21:51.000Z"
+        },
+        {
+            "value": 1027,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T18:36:51.000Z"
+        },
+        {
+            "value": 1024,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T18:51:51.000Z"
+        },
+        {
+            "value": 1042,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T19:06:51.000Z"
+        },
+        {
+            "value": 1044,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T19:21:51.000Z"
+        },
+        {
+            "value": 1040,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T19:36:51.000Z"
+        },
+        {
+            "value": 1051,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T19:51:51.000Z"
+        },
+        {
+            "value": 1079,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T20:06:51.000Z"
+        },
+        {
+            "value": 1163,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T20:21:51.000Z"
+        },
+        {
+            "value": 1156,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T20:36:51.000Z"
+        },
+        {
+            "value": 1156,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T20:36:56.000Z"
+        },
+        {
+            "value": 1175,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T20:51:51.000Z"
+        },
+        {
+            "value": 1174,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T21:06:51.000Z"
+        },
+        {
+            "value": 1165,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T21:21:51.000Z"
+        },
+        {
+            "value": 1152,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T21:36:51.000Z"
+        },
+        {
+            "value": 1145,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T21:51:51.000Z"
+        },
+        {
+            "value": 1143,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T22:06:51.000Z"
+        },
+        {
+            "value": 1139,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T22:21:50.000Z"
+        },
+        {
+            "value": 1149,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T22:36:50.000Z"
+        },
+        {
+            "value": 1134,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T22:51:50.000Z"
+        },
+        {
+            "value": 1123,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T23:06:50.000Z"
+        },
+        {
+            "value": 1115,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T23:21:50.000Z"
+        },
+        {
+            "value": 1114,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T23:36:50.000Z"
+        },
+        {
+            "value": 1111,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-09T23:51:51.000Z"
+        },
+        {
+            "value": 1117,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T00:06:50.000Z"
+        },
+        {
+            "value": 1105,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T00:21:50.000Z"
+        },
+        {
+            "value": 1089,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T00:36:50.000Z"
+        },
+        {
+            "value": 1079,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T00:51:50.000Z"
+        },
+        {
+            "value": 1082,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T01:06:50.000Z"
+        },
+        {
+            "value": 1084,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T01:21:50.000Z"
+        },
+        {
+            "value": 1067,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T01:36:50.000Z"
+        },
+        {
+            "value": 1061,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T01:51:50.000Z"
+        },
+        {
+            "value": 1054,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T02:06:50.000Z"
+        },
+        {
+            "value": 1046,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T02:21:50.000Z"
+        },
+        {
+            "value": 1033,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T02:36:50.000Z"
+        },
+        {
+            "value": 1022,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T02:51:50.000Z"
+        },
+        {
+            "value": 1018,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T03:06:50.000Z"
+        },
+        {
+            "value": 1009,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T03:21:49.000Z"
+        },
+        {
+            "value": 989,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T03:36:49.000Z"
+        },
+        {
+            "value": 983,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T03:51:49.000Z"
+        },
+        {
+            "value": 970,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T04:06:49.000Z"
+        },
+        {
+            "value": 991,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T04:21:49.000Z"
+        },
+        {
+            "value": 995,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T04:36:49.000Z"
+        },
+        {
+            "value": 993,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T04:51:48.000Z"
+        },
+        {
+            "value": 994,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T05:06:48.000Z"
+        },
+        {
+            "value": 994,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T05:21:48.000Z"
+        },
+        {
+            "value": 994,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T05:36:48.000Z"
+        },
+        {
+            "value": 998,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T05:51:48.000Z"
+        },
+        {
+            "value": 994,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T06:06:48.000Z"
+        },
+        {
+            "value": 991,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T06:21:48.000Z"
+        },
+        {
+            "value": 976,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T06:36:48.000Z"
+        },
+        {
+            "value": 970,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T06:51:48.000Z"
+        },
+        {
+            "value": 963,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T07:06:48.000Z"
+        },
+        {
+            "value": 996,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T07:21:48.000Z"
+        },
+        {
+            "value": 1032,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T07:36:48.000Z"
+        },
+        {
+            "value": 1022,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T07:51:48.000Z"
+        },
+        {
+            "value": 1039,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T08:06:48.000Z"
+        },
+        {
+            "value": 1050,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T08:21:48.000Z"
+        },
+        {
+            "value": 1069,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T08:36:47.000Z"
+        },
+        {
+            "value": 1062,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T08:51:47.000Z"
+        },
+        {
+            "value": 1061,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T09:06:47.000Z"
+        },
+        {
+            "value": 1063,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T09:21:47.000Z"
+        },
+        {
+            "value": 1068,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T09:36:47.000Z"
+        },
+        {
+            "value": 1103,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T09:51:47.000Z"
+        },
+        {
+            "value": 1123,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T10:06:47.000Z"
+        },
+        {
+            "value": 1140,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T10:21:47.000Z"
+        },
+        {
+            "value": 1159,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T10:36:47.000Z"
+        },
+        {
+            "value": 1165,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T10:51:47.000Z"
+        },
+        {
+            "value": 1167,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T11:06:47.000Z"
+        },
+        {
+            "value": 1170,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T11:21:47.000Z"
+        },
+        {
+            "value": 1176,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T11:36:47.000Z"
+        },
+        {
+            "value": 1173,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T11:51:47.000Z"
+        },
+        {
+            "value": 1167,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T12:06:47.000Z"
+        },
+        {
+            "value": 1166,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T12:21:47.000Z"
+        },
+        {
+            "value": 1163,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T12:36:47.000Z"
+        },
+        {
+            "value": 1159,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T12:51:47.000Z"
+        },
+        {
+            "value": 1303,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T13:06:47.000Z"
+        },
+        {
+            "value": 1243,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T13:21:47.000Z"
+        },
+        {
+            "value": 1238,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T13:36:47.000Z"
+        },
+        {
+            "value": 1229,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T13:51:47.000Z"
+        },
+        {
+            "value": 1261,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T14:06:46.000Z"
+        },
+        {
+            "value": 1251,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T14:21:46.000Z"
+        },
+        {
+            "value": 1245,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T14:36:46.000Z"
+        },
+        {
+            "value": 1255,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T14:51:46.000Z"
+        },
+        {
+            "value": 1420,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T15:06:46.000Z"
+        },
+        {
+            "value": 1289,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T15:21:46.000Z"
+        },
+        {
+            "value": 1283,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T15:36:46.000Z"
+        },
+        {
+            "value": 1268,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T15:51:46.000Z"
+        },
+        {
+            "value": 1296,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T16:06:46.000Z"
+        },
+        {
+            "value": 1467,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T16:21:46.000Z"
+        },
+        {
+            "value": 1536,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T16:36:46.000Z"
+        },
+        {
+            "value": 1738,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T16:51:47.000Z"
+        },
+        {
+            "value": 1513,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T17:06:47.000Z"
+        },
+        {
+            "value": 1606,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T17:21:47.000Z"
+        },
+        {
+            "value": 1517,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T17:36:47.000Z"
+        },
+        {
+            "value": 1425,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T17:51:47.000Z"
+        },
+        {
+            "value": 1410,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T18:06:47.000Z"
+        },
+        {
+            "value": 1409,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T18:21:47.000Z"
+        },
+        {
+            "value": 1399,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T18:36:47.000Z"
+        },
+        {
+            "value": 1391,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T18:51:47.000Z"
+        },
+        {
+            "value": 1382,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T19:06:46.000Z"
+        },
+        {
+            "value": 1449,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T19:21:46.000Z"
+        },
+        {
+            "value": 1406,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T19:36:46.000Z"
+        },
+        {
+            "value": 1402,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T19:51:46.000Z"
+        },
+        {
+            "value": 1448,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T20:06:46.000Z"
+        },
+        {
+            "value": 1437,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T20:21:46.000Z"
+        },
+        {
+            "value": 1431,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T20:36:46.000Z"
+        },
+        {
+            "value": 1381,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T20:51:46.000Z"
+        },
+        {
+            "value": 1401,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T21:06:46.000Z"
+        },
+        {
+            "value": 1407,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T21:21:46.000Z"
+        },
+        {
+            "value": 1409,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T21:36:46.000Z"
+        },
+        {
+            "value": 1410,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T21:51:46.000Z"
+        },
+        {
+            "value": 1372,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T22:06:46.000Z"
+        },
+        {
+            "value": 1382,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T22:21:46.000Z"
+        },
+        {
+            "value": 1417,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T22:36:46.000Z"
+        },
+        {
+            "value": 1443,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T22:51:46.000Z"
+        },
+        {
+            "value": 1442,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T23:06:46.000Z"
+        },
+        {
+            "value": 1449,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T23:21:46.000Z"
+        },
+        {
+            "value": 1436,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T23:36:46.000Z"
+        },
+        {
+            "value": 1441,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-10T23:51:45.000Z"
+        },
+        {
+            "value": 1439,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T00:06:45.000Z"
+        },
+        {
+            "value": 1436,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T00:21:46.000Z"
+        },
+        {
+            "value": 1425,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T00:36:45.000Z"
+        },
+        {
+            "value": 1429,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T00:51:45.000Z"
+        },
+        {
+            "value": 1407,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T01:06:45.000Z"
+        },
+        {
+            "value": 1402,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T01:21:45.000Z"
+        },
+        {
+            "value": 1389,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T01:36:45.000Z"
+        },
+        {
+            "value": 1389,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T01:51:45.000Z"
+        },
+        {
+            "value": 1400,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T02:06:45.000Z"
+        },
+        {
+            "value": 1381,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T02:21:45.000Z"
+        },
+        {
+            "value": 1382,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T02:36:45.000Z"
+        },
+        {
+            "value": 1370,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T02:51:45.000Z"
+        },
+        {
+            "value": 1367,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T03:06:45.000Z"
+        },
+        {
+            "value": 1365,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T03:21:45.000Z"
+        },
+        {
+            "value": 1375,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T03:36:45.000Z"
+        },
+        {
+            "value": 1372,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T03:51:46.000Z"
+        },
+        {
+            "value": 1384,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T04:06:44.000Z"
+        },
+        {
+            "value": 1377,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T04:21:44.000Z"
+        },
+        {
+            "value": 1385,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T04:36:43.000Z"
+        },
+        {
+            "value": 1192,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T04:51:43.000Z"
+        },
+        {
+            "value": 1242,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T05:06:43.000Z"
+        },
+        {
+            "value": 1274,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T05:21:43.000Z"
+        },
+        {
+            "value": 1328,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T05:36:43.000Z"
+        },
+        {
+            "value": 1352,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T05:51:43.000Z"
+        },
+        {
+            "value": 1388,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T06:06:43.000Z"
+        },
+        {
+            "value": 1427,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T06:21:43.000Z"
+        },
+        {
+            "value": 1452,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T06:36:43.000Z"
+        },
+        {
+            "value": 1475,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T06:51:43.000Z"
+        },
+        {
+            "value": 1475,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T07:06:43.000Z"
+        },
+        {
+            "value": 1701,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T07:21:43.000Z"
+        },
+        {
+            "value": 1842,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T07:36:43.000Z"
+        },
+        {
+            "value": 1834,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T07:51:43.000Z"
+        },
+        {
+            "value": 1817,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T08:06:43.000Z"
+        },
+        {
+            "value": 1762,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T08:21:42.000Z"
+        },
+        {
+            "value": 1755,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T08:36:42.000Z"
+        },
+        {
+            "value": 1819,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T08:51:42.000Z"
+        },
+        {
+            "value": 1787,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T09:06:42.000Z"
+        },
+        {
+            "value": 1755,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T09:21:42.000Z"
+        },
+        {
+            "value": 1726,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T09:36:42.000Z"
+        },
+        {
+            "value": 1695,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T09:51:42.000Z"
+        },
+        {
+            "value": 1662,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T10:06:42.000Z"
+        },
+        {
+            "value": 1639,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T10:21:43.000Z"
+        },
+        {
+            "value": 1593,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T10:36:42.000Z"
+        },
+        {
+            "value": 1576,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T10:51:42.000Z"
+        },
+        {
+            "value": 1549,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T11:06:42.000Z"
+        },
+        {
+            "value": 1513,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T11:21:42.000Z"
+        },
+        {
+            "value": 1471,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T11:36:43.000Z"
+        },
+        {
+            "value": 1449,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T11:51:42.000Z"
+        },
+        {
+            "value": 1423,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T12:06:42.000Z"
+        },
+        {
+            "value": 1400,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T12:21:42.000Z"
+        },
+        {
+            "value": 1379,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T12:36:42.000Z"
+        },
+        {
+            "value": 1089,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T12:51:42.000Z"
+        },
+        {
+            "value": 1296,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T13:06:42.000Z"
+        },
+        {
+            "value": 1294,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T13:21:42.000Z"
+        },
+        {
+            "value": 1391,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T13:36:42.000Z"
+        },
+        {
+            "value": 1369,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T13:51:42.000Z"
+        },
+        {
+            "value": 1479,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T14:06:42.000Z"
+        },
+        {
+            "value": 1412,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T14:21:42.000Z"
+        },
+        {
+            "value": 1401,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T14:36:42.000Z"
+        },
+        {
+            "value": 1375,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T14:51:42.000Z"
+        },
+        {
+            "value": 1391,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T15:06:41.000Z"
+        },
+        {
+            "value": 1391,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T15:06:46.000Z"
+        },
+        {
+            "value": 1455,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T15:21:41.000Z"
+        },
+        {
+            "value": 1475,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T15:36:41.000Z"
+        },
+        {
+            "value": 1467,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T15:51:41.000Z"
+        },
+        {
+            "value": 1473,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T16:06:41.000Z"
+        },
+        {
+            "value": 1461,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T16:21:41.000Z"
+        },
+        {
+            "value": 1461,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T16:36:41.000Z"
+        },
+        {
+            "value": 1476,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T16:51:41.000Z"
+        },
+        {
+            "value": 1356,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T17:06:41.000Z"
+        },
+        {
+            "value": 1396,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T17:21:41.000Z"
+        },
+        {
+            "value": 1579,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T17:36:41.000Z"
+        },
+        {
+            "value": 1687,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T17:51:41.000Z"
+        },
+        {
+            "value": 1726,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T18:06:41.000Z"
+        },
+        {
+            "value": 1466,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T18:21:41.000Z"
+        },
+        {
+            "value": 1463,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T18:36:42.000Z"
+        },
+        {
+            "value": 1546,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T18:51:41.000Z"
+        },
+        {
+            "value": 1510,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T19:06:41.000Z"
+        },
+        {
+            "value": 1505,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T19:21:41.000Z"
+        },
+        {
+            "value": 1510,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T19:36:41.000Z"
+        },
+        {
+            "value": 1508,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T19:51:41.000Z"
+        },
+        {
+            "value": 1498,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T20:06:41.000Z"
+        },
+        {
+            "value": 1555,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T20:21:41.000Z"
+        },
+        {
+            "value": 1510,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T20:36:41.000Z"
+        },
+        {
+            "value": 1519,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T20:51:41.000Z"
+        },
+        {
+            "value": 1507,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T21:06:41.000Z"
+        },
+        {
+            "value": 1491,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T21:21:41.000Z"
+        },
+        {
+            "value": 1471,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T21:36:41.000Z"
+        },
+        {
+            "value": 1519,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T21:51:41.000Z"
+        },
+        {
+            "value": 1519,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T22:06:41.000Z"
+        },
+        {
+            "value": 1541,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T22:21:41.000Z"
+        },
+        {
+            "value": 1523,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T22:36:42.000Z"
+        },
+        {
+            "value": 1515,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T22:51:41.000Z"
+        },
+        {
+            "value": 1523,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T23:06:41.000Z"
+        },
+        {
+            "value": 1511,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T23:21:40.000Z"
+        },
+        {
+            "value": 1511,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T23:36:40.000Z"
+        },
+        {
+            "value": 1506,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-11T23:51:40.000Z"
+        },
+        {
+            "value": 1493,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T00:06:40.000Z"
+        },
+        {
+            "value": 1482,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T00:21:40.000Z"
+        },
+        {
+            "value": 1467,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T00:36:40.000Z"
+        },
+        {
+            "value": 1441,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T00:51:40.000Z"
+        },
+        {
+            "value": 1436,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T01:06:40.000Z"
+        },
+        {
+            "value": 1416,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T01:21:40.000Z"
+        },
+        {
+            "value": 1407,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T01:36:40.000Z"
+        },
+        {
+            "value": 1382,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T01:51:40.000Z"
+        },
+        {
+            "value": 1372,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T02:06:40.000Z"
+        },
+        {
+            "value": 1361,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T02:21:40.000Z"
+        },
+        {
+            "value": 1346,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T02:36:40.000Z"
+        },
+        {
+            "value": 1328,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T02:51:40.000Z"
+        },
+        {
+            "value": 1309,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T03:06:40.000Z"
+        },
+        {
+            "value": 1298,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T03:21:40.000Z"
+        },
+        {
+            "value": 1287,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T03:36:40.000Z"
+        },
+        {
+            "value": 1273,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T03:51:40.000Z"
+        },
+        {
+            "value": 1255,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T04:06:41.000Z"
+        },
+        {
+            "value": 1237,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T04:21:40.000Z"
+        },
+        {
+            "value": 1225,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T04:36:40.000Z"
+        },
+        {
+            "value": 1614,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T08:52:50.000Z"
+        },
+        {
+            "value": 1703,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T08:52:52.000Z"
+        },
+        {
+            "value": 1701,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T08:53:01.000Z"
+        },
+        {
+            "value": 1671,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T08:53:06.000Z"
+        },
+        {
+            "value": 1672,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T08:53:06.000Z"
+        },
+        {
+            "value": 1697,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T09:06:37.000Z"
+        },
+        {
+            "value": 1759,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T09:21:37.000Z"
+        },
+        {
+            "value": 1726,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T09:36:36.000Z"
+        },
+        {
+            "value": 1732,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T09:51:36.000Z"
+        },
+        {
+            "value": 1781,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T10:06:36.000Z"
+        },
+        {
+            "value": 1778,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T10:21:36.000Z"
+        },
+        {
+            "value": 1754,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T10:36:36.000Z"
+        },
+        {
+            "value": 1753,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T10:51:36.000Z"
+        },
+        {
+            "value": 1731,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T11:06:36.000Z"
+        },
+        {
+            "value": 1704,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T11:21:36.000Z"
+        },
+        {
+            "value": 1679,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T11:36:35.000Z"
+        },
+        {
+            "value": 1666,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T11:51:35.000Z"
+        },
+        {
+            "value": 1634,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T12:06:35.000Z"
+        },
+        {
+            "value": 1629,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T12:21:35.000Z"
+        },
+        {
+            "value": 1623,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T12:36:35.000Z"
+        },
+        {
+            "value": 1592,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T12:51:35.000Z"
+        },
+        {
+            "value": 1577,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T13:06:35.000Z"
+        },
+        {
+            "value": 1560,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T13:21:35.000Z"
+        },
+        {
+            "value": 1539,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T13:36:35.000Z"
+        },
+        {
+            "value": 1515,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T13:51:35.000Z"
+        },
+        {
+            "value": 1515,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T13:51:40.000Z"
+        },
+        {
+            "value": 1516,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T14:06:35.000Z"
+        },
+        {
+            "value": 1489,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T14:21:35.000Z"
+        },
+        {
+            "value": 1467,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T14:36:35.000Z"
+        },
+        {
+            "value": 1443,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T14:51:35.000Z"
+        },
+        {
+            "value": 1329,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T15:06:35.000Z"
+        },
+        {
+            "value": 1400,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T15:21:35.000Z"
+        },
+        {
+            "value": 1443,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T15:36:35.000Z"
+        },
+        {
+            "value": 1451,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T15:51:35.000Z"
+        },
+        {
+            "value": 1506,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T16:06:35.000Z"
+        },
+        {
+            "value": 1509,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T16:21:36.000Z"
+        },
+        {
+            "value": 1697,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T16:36:35.000Z"
+        },
+        {
+            "value": 1777,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T16:51:36.000Z"
+        },
+        {
+            "value": 1568,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T17:06:34.000Z"
+        },
+        {
+            "value": 1493,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T17:21:34.000Z"
+        },
+        {
+            "value": 1489,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T17:36:34.000Z"
+        },
+        {
+            "value": 1467,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T17:51:34.000Z"
+        },
+        {
+            "value": 1519,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T18:06:35.000Z"
+        },
+        {
+            "value": 1513,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T18:21:34.000Z"
+        },
+        {
+            "value": 1490,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T18:36:34.000Z"
+        },
+        {
+            "value": 1476,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T18:51:34.000Z"
+        },
+        {
+            "value": 1456,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T19:06:36.000Z"
+        },
+        {
+            "value": 1454,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T19:21:36.000Z"
+        },
+        {
+            "value": 1438,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T19:36:36.000Z"
+        },
+        {
+            "value": 1427,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T19:51:36.000Z"
+        },
+        {
+            "value": 1409,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T20:06:36.000Z"
+        },
+        {
+            "value": 1395,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T20:21:36.000Z"
+        },
+        {
+            "value": 1406,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T20:36:36.000Z"
+        },
+        {
+            "value": 1384,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T20:51:36.000Z"
+        },
+        {
+            "value": 1389,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T21:06:36.000Z"
+        },
+        {
+            "value": 1376,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T21:21:36.000Z"
+        },
+        {
+            "value": 1367,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T21:36:36.000Z"
+        },
+        {
+            "value": 1393,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T21:51:37.000Z"
+        },
+        {
+            "value": 1299,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T22:06:36.000Z"
+        },
+        {
+            "value": 1294,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T22:21:36.000Z"
+        },
+        {
+            "value": 1314,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T22:36:36.000Z"
+        },
+        {
+            "value": 1310,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T22:51:35.000Z"
+        },
+        {
+            "value": 1309,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T23:06:35.000Z"
+        },
+        {
+            "value": 1307,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T23:21:35.000Z"
+        },
+        {
+            "value": 1321,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T23:36:35.000Z"
+        },
+        {
+            "value": 1307,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-12T23:51:35.000Z"
+        },
+        {
+            "value": 1310,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T00:06:35.000Z"
+        },
+        {
+            "value": 1295,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T00:21:35.000Z"
+        },
+        {
+            "value": 1312,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T00:36:35.000Z"
+        },
+        {
+            "value": 1314,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T00:51:35.000Z"
+        },
+        {
+            "value": 1335,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T01:06:35.000Z"
+        },
+        {
+            "value": 1343,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T01:21:35.000Z"
+        },
+        {
+            "value": 1327,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T01:36:35.000Z"
+        },
+        {
+            "value": 1327,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T01:51:36.000Z"
+        },
+        {
+            "value": 1310,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T02:06:35.000Z"
+        },
+        {
+            "value": 1313,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T02:21:35.000Z"
+        },
+        {
+            "value": 1298,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T02:36:34.000Z"
+        },
+        {
+            "value": 1295,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T02:51:34.000Z"
+        },
+        {
+            "value": 1281,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T03:06:34.000Z"
+        },
+        {
+            "value": 1257,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T03:21:34.000Z"
+        },
+        {
+            "value": 1231,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T03:36:34.000Z"
+        },
+        {
+            "value": 1209,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T03:51:35.000Z"
+        },
+        {
+            "value": 1203,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T04:06:34.000Z"
+        },
+        {
+            "value": 1205,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T04:21:34.000Z"
+        },
+        {
+            "value": 1187,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T04:36:34.000Z"
+        },
+        {
+            "value": 1181,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T04:51:34.000Z"
+        },
+        {
+            "value": 1163,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T05:06:34.000Z"
+        },
+        {
+            "value": 1180,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T05:21:34.000Z"
+        },
+        {
+            "value": 1234,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T05:36:34.000Z"
+        },
+        {
+            "value": 1226,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T05:51:34.000Z"
+        },
+        {
+            "value": 1271,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T06:06:34.000Z"
+        },
+        {
+            "value": 1426,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T06:21:33.000Z"
+        },
+        {
+            "value": 1742,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T06:36:33.000Z"
+        },
+        {
+            "value": 1939,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T06:51:33.000Z"
+        },
+        {
+            "value": 2088,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T07:06:33.000Z"
+        },
+        {
+            "value": 2020,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T07:21:33.000Z"
+        },
+        {
+            "value": 2066,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T07:36:33.000Z"
+        },
+        {
+            "value": 1360,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T07:51:33.000Z"
+        },
+        {
+            "value": 1516,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T08:06:33.000Z"
+        },
+        {
+            "value": 1636,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T08:21:33.000Z"
+        },
+        {
+            "value": 1641,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T08:36:33.000Z"
+        },
+        {
+            "value": 1636,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T08:51:33.000Z"
+        },
+        {
+            "value": 455,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T09:06:33.000Z"
+        },
+        {
+            "value": 412,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T09:21:33.000Z"
+        },
+        {
+            "value": 406,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T09:36:33.000Z"
+        },
+        {
+            "value": 436,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T09:51:33.000Z"
+        },
+        {
+            "value": 454,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T10:06:33.000Z"
+        },
+        {
+            "value": 465,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T10:21:33.000Z"
+        },
+        {
+            "value": 471,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T10:36:33.000Z"
+        },
+        {
+            "value": 479,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T10:51:33.000Z"
+        },
+        {
+            "value": 483,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T11:06:33.000Z"
+        },
+        {
+            "value": 490,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T11:21:33.000Z"
+        },
+        {
+            "value": 490,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T11:36:33.000Z"
+        },
+        {
+            "value": 495,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T11:51:33.000Z"
+        },
+        {
+            "value": 493,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T12:06:33.000Z"
+        },
+        {
+            "value": 502,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T12:21:32.000Z"
+        },
+        {
+            "value": 499,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T12:36:33.000Z"
+        },
+        {
+            "value": 500,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T12:51:32.000Z"
+        },
+        {
+            "value": 506,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T13:06:32.000Z"
+        },
+        {
+            "value": 512,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T13:21:32.000Z"
+        },
+        {
+            "value": 506,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T13:36:32.000Z"
+        },
+        {
+            "value": 512,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T13:51:32.000Z"
+        },
+        {
+            "value": 515,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T14:06:32.000Z"
+        },
+        {
+            "value": 517,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T14:21:32.000Z"
+        },
+        {
+            "value": 518,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T14:36:33.000Z"
+        },
+        {
+            "value": 527,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T14:51:32.000Z"
+        },
+        {
+            "value": 524,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T15:06:32.000Z"
+        },
+        {
+            "value": 527,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T15:21:32.000Z"
+        },
+        {
+            "value": 524,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T15:36:31.000Z"
+        },
+        {
+            "value": 528,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T15:51:31.000Z"
+        },
+        {
+            "value": 530,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T16:06:31.000Z"
+        },
+        {
+            "value": 536,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T16:21:31.000Z"
+        },
+        {
+            "value": 532,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T16:36:31.000Z"
+        },
+        {
+            "value": 654,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T16:51:31.000Z"
+        },
+        {
+            "value": 563,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T17:06:31.000Z"
+        },
+        {
+            "value": 591,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T17:21:30.000Z"
+        },
+        {
+            "value": 521,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T17:36:30.000Z"
+        },
+        {
+            "value": 442,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T17:51:31.000Z"
+        },
+        {
+            "value": 584,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T18:06:30.000Z"
+        },
+        {
+            "value": 711,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T18:21:30.000Z"
+        },
+        {
+            "value": 767,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T18:36:30.000Z"
+        },
+        {
+            "value": 1060,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T18:51:30.000Z"
+        },
+        {
+            "value": 1341,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T19:06:30.000Z"
+        },
+        {
+            "value": 1522,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T19:21:30.000Z"
+        },
+        {
+            "value": 1456,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T19:36:30.000Z"
+        },
+        {
+            "value": 1613,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T19:51:30.000Z"
+        },
+        {
+            "value": 1736,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T20:06:30.000Z"
+        },
+        {
+            "value": 1727,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T20:21:30.000Z"
+        },
+        {
+            "value": 1789,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T20:36:30.000Z"
+        },
+        {
+            "value": 1876,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T20:51:30.000Z"
+        },
+        {
+            "value": 2038,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T21:06:30.000Z"
+        },
+        {
+            "value": 2156,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T21:21:30.000Z"
+        },
+        {
+            "value": 2286,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T21:36:30.000Z"
+        },
+        {
+            "value": 2269,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T21:51:30.000Z"
+        },
+        {
+            "value": 2287,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T22:06:30.000Z"
+        },
+        {
+            "value": 2350,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T22:21:30.000Z"
+        },
+        {
+            "value": 2221,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T22:36:31.000Z"
+        },
+        {
+            "value": 2154,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T22:51:30.000Z"
+        },
+        {
+            "value": 2128,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T23:06:30.000Z"
+        },
+        {
+            "value": 2092,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T23:21:30.000Z"
+        },
+        {
+            "value": 2057,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T23:36:30.000Z"
+        },
+        {
+            "value": 1993,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-13T23:51:30.000Z"
+        },
+        {
+            "value": 1947,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T00:06:30.000Z"
+        },
+        {
+            "value": 1921,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T00:21:30.000Z"
+        },
+        {
+            "value": 1875,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T00:36:30.000Z"
+        },
+        {
+            "value": 1835,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T00:51:30.000Z"
+        },
+        {
+            "value": 1804,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T01:06:30.000Z"
+        },
+        {
+            "value": 1774,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T01:21:29.000Z"
+        },
+        {
+            "value": 1749,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T01:36:30.000Z"
+        },
+        {
+            "value": 1723,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T01:51:30.000Z"
+        },
+        {
+            "value": 1694,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T02:06:30.000Z"
+        },
+        {
+            "value": 1673,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T02:21:30.000Z"
+        },
+        {
+            "value": 1650,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T02:36:30.000Z"
+        },
+        {
+            "value": 1641,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T02:51:30.000Z"
+        },
+        {
+            "value": 1624,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T03:06:30.000Z"
+        },
+        {
+            "value": 1589,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T03:21:30.000Z"
+        },
+        {
+            "value": 1575,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T03:36:30.000Z"
+        },
+        {
+            "value": 1566,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T03:51:30.000Z"
+        },
+        {
+            "value": 1566,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T03:51:35.000Z"
+        },
+        {
+            "value": 1534,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T04:06:30.000Z"
+        },
+        {
+            "value": 1517,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T04:21:31.000Z"
+        },
+        {
+            "value": 1509,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T04:36:30.000Z"
+        },
+        {
+            "value": 1487,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T04:51:30.000Z"
+        },
+        {
+            "value": 1488,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T05:06:30.000Z"
+        },
+        {
+            "value": 1538,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T05:21:30.000Z"
+        },
+        {
+            "value": 1567,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T05:36:30.000Z"
+        },
+        {
+            "value": 1605,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T05:51:30.000Z"
+        },
+        {
+            "value": 1643,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T06:06:30.000Z"
+        },
+        {
+            "value": 1742,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T06:21:30.000Z"
+        },
+        {
+            "value": 2092,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T06:36:29.000Z"
+        },
+        {
+            "value": 1736,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T06:51:30.000Z"
+        },
+        {
+            "value": 1102,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T07:06:29.000Z"
+        },
+        {
+            "value": 1086,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T07:21:29.000Z"
+        },
+        {
+            "value": 785,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T07:36:29.000Z"
+        },
+        {
+            "value": 562,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T07:51:29.000Z"
+        },
+        {
+            "value": 877,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T08:06:29.000Z"
+        },
+        {
+            "value": 1123,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T08:21:29.000Z"
+        },
+        {
+            "value": 1380,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T08:36:29.000Z"
+        },
+        {
+            "value": 1489,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T08:51:29.000Z"
+        },
+        {
+            "value": 999,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T09:06:30.000Z"
+        },
+        {
+            "value": 979,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T09:21:29.000Z"
+        },
+        {
+            "value": 999,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T09:36:29.000Z"
+        },
+        {
+            "value": 990,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T09:51:29.000Z"
+        },
+        {
+            "value": 958,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T10:06:28.000Z"
+        },
+        {
+            "value": 923,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T10:21:28.000Z"
+        },
+        {
+            "value": 1113,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T10:36:28.000Z"
+        },
+        {
+            "value": 1347,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T10:51:28.000Z"
+        },
+        {
+            "value": 1556,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T11:06:28.000Z"
+        },
+        {
+            "value": 1665,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T11:21:29.000Z"
+        },
+        {
+            "value": 1823,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T11:36:28.000Z"
+        },
+        {
+            "value": 1927,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T11:51:28.000Z"
+        },
+        {
+            "value": 2037,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T12:06:28.000Z"
+        },
+        {
+            "value": 2135,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T12:21:28.000Z"
+        },
+        {
+            "value": 2206,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T12:36:28.000Z"
+        },
+        {
+            "value": 744,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T12:51:28.000Z"
+        },
+        {
+            "value": 1196,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T13:06:28.000Z"
+        },
+        {
+            "value": 1639,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T13:21:28.000Z"
+        },
+        {
+            "value": 1843,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T13:36:28.000Z"
+        },
+        {
+            "value": 1967,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T13:51:27.000Z"
+        },
+        {
+            "value": 2057,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T14:06:27.000Z"
+        },
+        {
+            "value": 2057,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.co2.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-14T14:06:32.000Z"
+        }
+    ]
+}

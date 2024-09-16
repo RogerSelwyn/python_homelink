@@ -1,0 +1,691 @@
+{
+    "unit": "celsius",
+    "count": 97,
+    "type": "environment-temperature-indoor",
+    "dataAvailability": "Only the last 7days of readings are available via this api. See: https://homelinkhelp.zendesk.com/hc/en-us/articles/6906536639249-Data-Availability-and-Retention",
+    "_rel": {
+        "property": "property/DUMMY_USER_My_House",
+        "device": "device/001FD75F"
+    },
+    "values": [
+        {
+            "value": 20.31,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T00:06:25.000Z"
+        },
+        {
+            "value": 20.27,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T00:21:25.000Z"
+        },
+        {
+            "value": 20.24,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T00:36:25.000Z"
+        },
+        {
+            "value": 20.21,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T00:51:25.000Z"
+        },
+        {
+            "value": 20.2,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T01:06:25.000Z"
+        },
+        {
+            "value": 20.16,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T01:21:25.000Z"
+        },
+        {
+            "value": 20.13,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T01:36:25.000Z"
+        },
+        {
+            "value": 20.12,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T01:51:25.000Z"
+        },
+        {
+            "value": 20.08,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T02:06:25.000Z"
+        },
+        {
+            "value": 20.04,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T02:21:25.000Z"
+        },
+        {
+            "value": 20.01,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T02:36:25.000Z"
+        },
+        {
+            "value": 19.99,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T02:51:25.000Z"
+        },
+        {
+            "value": 19.97,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T03:06:25.000Z"
+        },
+        {
+            "value": 19.94,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T03:21:26.000Z"
+        },
+        {
+            "value": 19.91,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T03:36:25.000Z"
+        },
+        {
+            "value": 19.89,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T03:51:25.000Z"
+        },
+        {
+            "value": 19.87,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T04:06:25.000Z"
+        },
+        {
+            "value": 19.84,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T04:21:25.000Z"
+        },
+        {
+            "value": 19.81,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T04:36:24.000Z"
+        },
+        {
+            "value": 19.79,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T04:51:24.000Z"
+        },
+        {
+            "value": 19.75,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T05:06:24.000Z"
+        },
+        {
+            "value": 19.77,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T05:21:24.000Z"
+        },
+        {
+            "value": 19.77,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T05:36:24.000Z"
+        },
+        {
+            "value": 19.78,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T05:51:24.000Z"
+        },
+        {
+            "value": 19.78,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T06:06:24.000Z"
+        },
+        {
+            "value": 19.78,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T06:21:24.000Z"
+        },
+        {
+            "value": 19.77,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T06:36:24.000Z"
+        },
+        {
+            "value": 19.76,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T06:51:24.000Z"
+        },
+        {
+            "value": 19.76,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T07:06:24.000Z"
+        },
+        {
+            "value": 19.74,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T07:21:24.000Z"
+        },
+        {
+            "value": 19.79,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T07:36:24.000Z"
+        },
+        {
+            "value": 19.81,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T07:51:24.000Z"
+        },
+        {
+            "value": 19.79,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T08:06:24.000Z"
+        },
+        {
+            "value": 20.33,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T08:21:24.000Z"
+        },
+        {
+            "value": 21.14,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T08:36:24.000Z"
+        },
+        {
+            "value": 21.62,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T08:51:23.000Z"
+        },
+        {
+            "value": 21.47,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T09:06:23.000Z"
+        },
+        {
+            "value": 21.26,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T09:21:23.000Z"
+        },
+        {
+            "value": 21.05,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T09:36:23.000Z"
+        },
+        {
+            "value": 20.87,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T09:51:23.000Z"
+        },
+        {
+            "value": 20.74,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:06:23.000Z"
+        },
+        {
+            "value": 20.63,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:21:23.000Z"
+        },
+        {
+            "value": 20.56,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:36:23.000Z"
+        },
+        {
+            "value": 20.56,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:36:28.000Z"
+        },
+        {
+            "value": 20.48,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T10:51:23.000Z"
+        },
+        {
+            "value": 20.44,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T11:06:23.000Z"
+        },
+        {
+            "value": 20.39,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T11:21:23.000Z"
+        },
+        {
+            "value": 20.34,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T11:36:23.000Z"
+        },
+        {
+            "value": 20.3,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T11:51:23.000Z"
+        },
+        {
+            "value": 20.28,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T12:06:23.000Z"
+        },
+        {
+            "value": 20.26,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T12:21:23.000Z"
+        },
+        {
+            "value": 20.23,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T12:36:23.000Z"
+        },
+        {
+            "value": 20.2,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T12:51:23.000Z"
+        },
+        {
+            "value": 20.17,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T13:06:23.000Z"
+        },
+        {
+            "value": 20.15,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T13:21:23.000Z"
+        },
+        {
+            "value": 20.13,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T13:36:23.000Z"
+        },
+        {
+            "value": 20.13,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T13:51:22.000Z"
+        },
+        {
+            "value": 20.18,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T14:06:22.000Z"
+        },
+        {
+            "value": 20.24,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T14:21:22.000Z"
+        },
+        {
+            "value": 20.27,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T14:36:22.000Z"
+        },
+        {
+            "value": 20.29,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T14:51:22.000Z"
+        },
+        {
+            "value": 20.31,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T15:06:23.000Z"
+        },
+        {
+            "value": 20.34,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T15:21:23.000Z"
+        },
+        {
+            "value": 20.36,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T15:36:23.000Z"
+        },
+        {
+            "value": 20.37,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T15:51:23.000Z"
+        },
+        {
+            "value": 20.34,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T16:06:22.000Z"
+        },
+        {
+            "value": 20.35,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T16:21:22.000Z"
+        },
+        {
+            "value": 20.43,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T16:36:22.000Z"
+        },
+        {
+            "value": 20.66,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T16:51:22.000Z"
+        },
+        {
+            "value": 21.23,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T17:06:22.000Z"
+        },
+        {
+            "value": 21.3,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T17:21:22.000Z"
+        },
+        {
+            "value": 21.52,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T17:36:22.000Z"
+        },
+        {
+            "value": 21.39,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T17:51:22.000Z"
+        },
+        {
+            "value": 21.3,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T18:06:22.000Z"
+        },
+        {
+            "value": 21.19,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T18:21:22.000Z"
+        },
+        {
+            "value": 21.05,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T18:36:22.000Z"
+        },
+        {
+            "value": 20.95,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T18:51:22.000Z"
+        },
+        {
+            "value": 20.9,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T19:06:22.000Z"
+        },
+        {
+            "value": 20.91,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T19:21:22.000Z"
+        },
+        {
+            "value": 20.9,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T19:36:22.000Z"
+        },
+        {
+            "value": 20.9,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T19:51:22.000Z"
+        },
+        {
+            "value": 20.9,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T20:06:22.000Z"
+        },
+        {
+            "value": 20.91,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T20:21:22.000Z"
+        },
+        {
+            "value": 20.92,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T20:36:22.000Z"
+        },
+        {
+            "value": 20.9,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T20:51:22.000Z"
+        },
+        {
+            "value": 20.88,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T21:06:22.000Z"
+        },
+        {
+            "value": 20.86,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T21:21:22.000Z"
+        },
+        {
+            "value": 20.74,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T21:36:22.000Z"
+        },
+        {
+            "value": 20.66,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T21:51:22.000Z"
+        },
+        {
+            "value": 20.59,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T22:06:22.000Z"
+        },
+        {
+            "value": 20.53,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T22:21:22.000Z"
+        },
+        {
+            "value": 20.47,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T22:36:21.000Z"
+        },
+        {
+            "value": 20.41,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T22:51:21.000Z"
+        },
+        {
+            "value": 20.35,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T23:06:21.000Z"
+        },
+        {
+            "value": 20.29,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T23:21:21.000Z"
+        },
+        {
+            "value": 20.41,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T23:36:21.000Z"
+        },
+        {
+            "value": 20.68,
+            "serialNumber": "C3CEC7FB-001FD75F",
+            "readingTypeId": "environment.temperature.indoor",
+            "statusId": "ACTIVE",
+            "readingDate": "2024-09-15T23:51:21.000Z"
+        }
+    ]
+}

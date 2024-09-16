@@ -1,0 +1,32 @@
+{
+    "serialNumber": "001FD799",
+    "model": "Ei1020",
+    "modelType": "ENVSENSOR",
+    "location": "HALLWAY1",
+    "locationNickname": null,
+    "manufacturer": "Ei",
+    "installationDate": "2023-11-16T15:48:30.627Z",
+    "installedBy": "Roger Selwyn",
+    "replaceDate": "2033-08-15T00:00:00.000Z",
+    "createdAt": "2023-11-16T15:48:32.442Z",
+    "updatedAt": "2023-11-16T15:48:32.442Z",
+    "metadata": {
+        "signalStrength": -52,
+        "lastSeenDate": "2024-09-16T12:43:08.609Z",
+        "connectivityType": "EIRF868"
+    },
+    "status": {
+        "operationalStatus": "GOOD",
+        "lastTestedDate": null,
+        "dataCollectionStatus": "ACTIVE"
+    },
+    "_rel": {
+        "_self": "device/001FD799",
+        "property": "property/DUMMY_USER_My_House",
+        "alerts": "device/001FD799/alerts",
+        "readings": {
+            "temperatureReadings": "device/001FD799/readings/environment-temperature-indoor",
+            "humidityReadings": "device/001FD799/readings/environment-humidity-indoor"
+        }
+    }
+}
