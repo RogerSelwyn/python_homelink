@@ -1,4 +1,5 @@
 """Python module for accessing HomeLINK Device."""
+
 from datetime import datetime
 from typing import List
 
@@ -28,7 +29,7 @@ class Device:
         return self._raw_data["serialNumber"]
 
     @property
-    def createdate(self) -> datetime:
+    def createdat(self) -> datetime:
         """Return the createdate of the Device"""
         return parse_date(self._raw_data["createdAt"])
 
