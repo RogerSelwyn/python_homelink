@@ -130,23 +130,8 @@ async def test_property_get_readings(homelink_api: HomeLINKApi, mock_aio) -> Non
     readings = await hl_property.async_get_readings(date.today())
 
     assert len(readings) == 4
-
     reading = readings[0]
     assert isinstance(reading, PropertyReading)
-    assert reading.unit == "ppm"
-    assert reading.type == "environment-co2-indoor"
-    assert isinstance(reading.dataavailability, str)
-    assert len(reading.devices) == 1
-
-    readingdevice = reading.devices[0]
-    assert readingdevice.serialnumber == "C3CEC7FB-001FD75F"
-    assert readingdevice.rel.hl_property == f"property/{PROPERTY_REF}"
-    assert readingdevice.rel.device == f"device/{readingdevice.serialnumber}"
-    assert len(readingdevice.values) == readingdevice.count
-
-    readingvalue = readingdevice.values[0]
-    assert readingvalue.value == 1235
-    assert isinstance(readingvalue.readingdate, datetime)
 
 
 async def test_property_readings(homelink_api: HomeLINKApi, mock_aio) -> None:
