@@ -1,5 +1,5 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/rogerselwyn/python_homelink/badge)](https://www.codefactor.io/repository/github/rogerselwyn/python_homelink)
-[![CodeQL](https://github.com/RogerSelwyn/python_homelink/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/RogerSelwyn/python_homelink/actions/workflows/github-code-scanning/codeql)
+[![CodeQL](https://github.com/RogerSelwyn/python_homelink/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/RogerSelwyn/python_homelink/actions/workflows/github-code-scanning/codeql) [![Python tests](https://github.com/RogerSelwyn/python_homelink/actions/workflows/test.yaml/badge.svg)](https://github.com/RogerSelwyn/python_homelink/actions/workflows/test.yaml)
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/pyhomelink)](https://libraries.io/pypi/pyhomelink)
 
 ![GitHub release](https://img.shields.io/github/v/release/RogerSelwyn/python_homelink) [![maintained](https://img.shields.io/maintenance/yes/2024.svg)](#)
