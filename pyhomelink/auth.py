@@ -1,4 +1,5 @@
 """HomeLINK Auth."""
+
 import logging
 from abc import ABC, abstractmethod
 from typing import Any, Mapping, Optional
@@ -40,9 +41,6 @@ class AbstractAuth(ABC):
             "accept": "application/json",
         }
         url = f"{BASE_URL}{url_suffix}"
-        _LOGGER.debug("request[%s]=%s %s", method, url, kwargs.get("params"))
-        if method == "post" and "json" in kwargs:
-            _LOGGER.debug("request[post json]=%s", kwargs["json"])
         return await self._websession.request(method, url, **kwargs, headers=headers)
 
     async def async_get_token(
