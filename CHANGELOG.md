@@ -1,5 +1,39 @@
 # Changelog
 
+## 0.2.0 (2024/09/17)
+### ✨ Enhancements
+- [Add new attributes to device reading](https://github.com/RogerSelwyn/python_homelink/commit/89fd42409cc3bb3a93da28083149d43fd064d663) - @RogerSelwyn
+
+### 🐛 Fixes
+- [Correct name of created at attribute for device](https://github.com/RogerSelwyn/python_homelink/commit/9bbb45158fd6846ef320d6a0fa69e16a3cf0432d) - @RogerSelwyn
+- [Fix typo](https://github.com/RogerSelwyn/python_homelink/commit/25411ea3111a76f70bad17e1528d7536c58475f3) - @RogerSelwyn
+- [Correct incorrect formating of calculatedAt for Insight](https://github.com/RogerSelwyn/python_homelink/commit/2582b1044c95f249698bd7282e6eac40e0679306) - @RogerSelwyn
+- [Fix dataavailability on device reading](https://github.com/RogerSelwyn/python_homelink/commit/b232220801d97c1ef4671b9e3f0bdfecf6d4d2b0) - @RogerSelwyn
+
+### 🧰 Maintenance
+- [Remove redundant code](https://github.com/RogerSelwyn/python_homelink/commit/d8ac0ae95f61d7cc6b0031ddc1e13d02456a405c) - @RogerSelwyn
+- [Create requirements.txt](https://github.com/RogerSelwyn/python_homelink/commit/a0a4c2b068c6871fe6da0272c0499826f0b0beda) - @RogerSelwyn
+
+### 📚 Documentation
+- [Update README.md](https://github.com/RogerSelwyn/python_homelink/commit/62f3d57dbb6a994e560a4517728aa97d281d2c55) - @RogerSelwyn
+
+### ⬆️ Dependencies
+- [build(deps): bump pytest from 8.3.1 to 8.3.3](https://github.com/RogerSelwyn/python_homelink/commit/1b271911afb83f278a1e2ee2d9333380b6c55e98) - @dependabot[bot]
+- [build(deps): bump pytest-asyncio from 0.23.8 to 0.24.0](https://github.com/RogerSelwyn/python_homelink/commit/c50db5e7aea3d4346b94123c92e769960c8e27cd) - @dependabot[bot]
+
+### ✅ Test
+- [Add initial basic tests](https://github.com/RogerSelwyn/python_homelink/commit/2fa6edd08ca8cfb74c6fe8249b7d290a716d2542) - @RogerSelwyn
+- [Added all property testings](https://github.com/RogerSelwyn/python_homelink/commit/6ec866be1b525295dd7654f44cfeed6986d6dc98) - @RogerSelwyn
+- [Added testing for device](https://github.com/RogerSelwyn/python_homelink/commit/62cacc83f64c74eba890ba0e024975031ff71440) - @RogerSelwyn
+- [Add Insight tests](https://github.com/RogerSelwyn/python_homelink/commit/313cb59b6fe626a18893a550342b2111f906cf23) - @RogerSelwyn
+- [Add lookup tests](https://github.com/RogerSelwyn/python_homelink/commit/d611308930abb893ac2038be780a324bd09b017f) - @RogerSelwyn
+- [Re-organise reading tests](https://github.com/RogerSelwyn/python_homelink/commit/2d2a0963eb9226597a68612c44e485fa405c7b45) - @RogerSelwyn
+- [Add alert and auth tests](https://github.com/RogerSelwyn/python_homelink/commit/e941cedcbcc58b10f441ef3cdc52aeba8effe788) - @RogerSelwyn
+- [Create test.yaml](https://github.com/RogerSelwyn/python_homelink/commit/c11bef2493ca1bbb687f9b50f86d1052142b443b) - @RogerSelwyn
+
+### 🔖 Release
+- [Release 0.2.0](https://github.com/RogerSelwyn/python_homelink/commit/95178b191b29d6d0e4f48e8de7b61a55cd03e18f) - @RogerSelwyn
+
 ## 0.1.11 (2024/04/17)
 ### 🐛 Fixes
 - [Further fix for invalid readings from api](https://github.com/RogerSelwyn/python_homelink/commit/3df90dbbec777939b433fea6a8e89c6ed64d7970) - @RogerSelwyn
