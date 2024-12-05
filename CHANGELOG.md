@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.1 (2024/12/05)
+### 🧰 Maintenance
+- [Added typing throughout](https://github.com/RogerSelwyn/python_homelink/commit/5f5fd3e810a8290738aed10f6840ef0fa522362e) - @RogerSelwyn
+- [Convert to pyproject.toml](https://github.com/RogerSelwyn/python_homelink/commit/ef4b0c9766fe1e8b49af3675aab1d133b4face7e) - @RogerSelwyn
+
+### ✅ Test
+- [Bump pytest-cov to 6.0.0](https://github.com/RogerSelwyn/python_homelink/commit/51c217bd1a092033fcb9553f1a87742b34b7c976) - @RogerSelwyn
+- [Correct async testing setup](https://github.com/RogerSelwyn/python_homelink/commit/ecef8f6219f1f5e2c3a64aca3be3e162dd651c64) - @RogerSelwyn
+
+### 🔖 Release
+- [Release 0.2.1](https://github.com/RogerSelwyn/python_homelink/commit/c84a52f2901443530d49e04ec9f476deec960fd3) - @RogerSelwyn
+
 ## 0.2.0 (2024/09/17)
 ### ✨ Enhancements
 - [Add new attributes to device reading](https://github.com/RogerSelwyn/python_homelink/commit/89fd42409cc3bb3a93da28083149d43fd064d663) - @RogerSelwyn
