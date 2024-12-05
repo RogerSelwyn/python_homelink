@@ -20,7 +20,7 @@ class AbstractAuth(ABC):
     def __init__(
         self,
         websession: ClientSession,
-    ):
+    ) -> None:
         """Initialize the auth."""
         self._websession = websession
 
@@ -41,7 +41,12 @@ class AbstractAuth(ABC):
             "accept": "application/json",
         }
         url = f"{BASE_URL}{url_suffix}"
-        return await self._websession.request(method, url, **kwargs, headers=headers)
+        return await self._websession.request(
+            method,
+            url,
+            **kwargs,  # type: ignore[arg-type]
+            headers=headers,
+        )
 
     async def async_get_token(
         self, url: str, **kwargs: Optional[Mapping[str, Any]]
@@ -49,6 +54,9 @@ class AbstractAuth(ABC):
         """Make a request."""
         url = f"{AUTHURL}{url}"
         _LOGGER.debug(
-            "request[%s]=%s %s", "get", "Auth get token", kwargs.get("params")
+            "request[%s]=%s %s",
+            "get",
+            "Auth get token",
+            kwargs.get("params"),
         )
-        return await self._websession.request("get", url, **kwargs)
+        return await self._websession.request("get", url, **kwargs)  # type: ignore[arg-type]

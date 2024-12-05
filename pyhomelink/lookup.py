@@ -4,7 +4,7 @@
 class Lookup:
     """Lookup is the instantiation of a HomeLINK Lookup"""
 
-    def __init__(self, raw_data: dict):
+    def __init__(self, raw_data: dict) -> None:
         """Initialize the property."""
         self._raw_data = raw_data
 

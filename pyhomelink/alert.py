@@ -1,13 +1,37 @@
 """Python module for accessing HomeLINK Alert."""
+
 from datetime import datetime
 
 from .utils import parse_date
 
 
+class Rel:
+    """Relative URLs for property."""
+
+    def __init__(self, raw_data) -> None:
+        """Initialise _Rel."""
+        self._raw_data = raw_data
+        if "device" in self._raw_data:
+            self.device = self._raw_data["device"]
+
+        if "insight" in self._raw_data:
+            self.insight = self._raw_data["insight"]
+
+    @property
+    def self(self) -> str:
+        """Return the self url of the Alert"""
+        return self._raw_data["_self"]
+
+    @property
+    def hl_property(self) -> str:
+        """Return the property url of the Alert"""
+        return self._raw_data["property"]
+
+
 class Alert:
     """Alert is the instantiation of a HomeLINK Alert"""
 
-    def __init__(self, raw_data: dict):
+    def __init__(self, raw_data: dict) -> None:
         """Initialize the property."""
         self._raw_data = raw_data
 
@@ -64,7 +88,7 @@ class Alert:
     @property
     def raiseddate(self) -> datetime:
         """Return the raisedDate of the Property"""
-        return parse_date(self._raw_data["raisedDate"])
+        return parse_date(self._raw_data["raisedDate"])  # type: ignore[return-value]
 
     @property
     def severity(self) -> str:
@@ -87,28 +111,6 @@ class Alert:
         return self._raw_data["status"]
 
     @property
-    def rel(self) -> any:
+    def rel(self) -> Rel:
         """Return the tags of the Alert"""
-        return self.Rel(self._raw_data["_rel"])
-
-    class Rel:
-        """Relative URLs for property."""
-
-        def __init__(self, raw_data):
-            """Initialise _Rel."""
-            self._raw_data = raw_data
-            if "device" in self._raw_data:
-                self.device = self._raw_data["device"]
-
-            if "insight" in self._raw_data:
-                self.insight = self._raw_data["insight"]
-
-        @property
-        def self(self) -> str:
-            """Return the self url of the Alert"""
-            return self._raw_data["_self"]
-
-        @property
-        def hl_property(self) -> str:
-            """Return the property url of the Alert"""
-            return self._raw_data["property"]
+        return Rel(self._raw_data["_rel"])

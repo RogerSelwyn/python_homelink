@@ -1,12 +1,32 @@
 """Python module for accessing HomeLINK Insight."""
 
+from datetime import datetime
+
 from .utils import parse_date
+
+
+class Rel:
+    """Relative URLs for property."""
+
+    def __init__(self, raw_data):
+        """Initialise _Rel."""
+        self._raw_data = raw_data
+
+    @property
+    def self(self) -> str:
+        """Return the self url of the Insight"""
+        return self._raw_data["_self"]
+
+    @property
+    def hl_property(self) -> str:
+        """Return the property url of the Insight"""
+        return self._raw_data["property"]
 
 
 class Insight:
     """Insight is the instantiation of a HomeLINK Insight"""
 
-    def __init__(self, raw_data: dict):
+    def __init__(self, raw_data: dict) -> None:
         """Initialize the property."""
         self._raw_data = raw_data
 
@@ -46,28 +66,11 @@ class Insight:
         return self._raw_data.get("location", None)
 
     @property
-    def calculatedat(self) -> str:
+    def calculatedat(self) -> datetime | None:
         """Return the datetime of the Insight calculation"""
         return parse_date(self._raw_data.get("calculatedAt", None))
 
     @property
-    def rel(self) -> any:
+    def rel(self) -> Rel:
         """Return the tags of the Insight"""
-        return self.Rel(self._raw_data["_rel"])
-
-    class Rel:
-        """Relative URLs for property."""
-
-        def __init__(self, raw_data):
-            """Initialise _Rel."""
-            self._raw_data = raw_data
-
-        @property
-        def self(self) -> str:
-            """Return the self url of the Insight"""
-            return self._raw_data["_self"]
-
-        @property
-        def hl_property(self) -> str:
-            """Return the property url of the Insight"""
-            return self._raw_data["property"]
+        return Rel(self._raw_data["_rel"])

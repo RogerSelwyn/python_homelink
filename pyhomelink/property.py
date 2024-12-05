@@ -8,14 +8,47 @@ from .auth import AbstractAuth
 from .const import ATTR_RESULTS, HomeLINKEndpoint
 from .device import Device
 from .insight import Insight
-from .reading import DeviceReading, PropertyReading
+from .reading import PropertyReading
 from .utils import check_status, parse_date
+
+
+class Rel:
+    """Relative URLs for property."""
+
+    def __init__(self, raw_data: dict) -> None:
+        """Initialise _Rel."""
+        self._raw_data = raw_data
+
+    @property
+    def self(self) -> str:
+        """Return the self url of the Property"""
+        return self._raw_data["_self"]
+
+    @property
+    def devices(self) -> str:
+        """Return the devices url of the Property"""
+        return self._raw_data["devices"]
+
+    @property
+    def alerts(self) -> str:
+        """Return the alerts url of the Property"""
+        return self._raw_data["alerts"]
+
+    @property
+    def readings(self) -> str:
+        """Return the readings url of the Property"""
+        return self._raw_data["readings"]
+
+    @property
+    def insights(self) -> str:
+        """Return the insights url of the Property"""
+        return self._raw_data["insights"]
 
 
 class Property:
     """Property is the instantiation of a HomeLINK Property"""
 
-    def __init__(self, raw_data: dict, auth: AbstractAuth):
+    def __init__(self, raw_data: dict, auth: AbstractAuth) -> None:
         """Initialize the property."""
         self._raw_data = raw_data
         self._auth = auth
@@ -56,46 +89,14 @@ class Property:
         return self._raw_data["address"]
 
     @property
-    def tags(self) -> list:
+    def tags(self) -> list[str]:
         """Return the tags of the Property"""
         return self._raw_data["tags"]
 
     @property
-    def rel(self) -> any:
+    def rel(self) -> Rel:
         """Return the tags of the Property"""
-        return self.Rel(self._raw_data["_rel"])
-
-    class Rel:
-        """Relative URLs for property."""
-
-        def __init__(self, raw_data):
-            """Initialise _Rel."""
-            self._raw_data = raw_data
-
-        @property
-        def self(self) -> str:
-            """Return the self url of the Property"""
-            return self._raw_data["_self"]
-
-        @property
-        def devices(self) -> str:
-            """Return the devices url of the Property"""
-            return self._raw_data["devices"]
-
-        @property
-        def alerts(self) -> str:
-            """Return the alerts url of the Property"""
-            return self._raw_data["alerts"]
-
-        @property
-        def readings(self) -> str:
-            """Return the readings url of the Property"""
-            return self._raw_data["readings"]
-
-        @property
-        def insights(self) -> str:
-            """Return the insights url of the Property"""
-            return self._raw_data["insights"]
+        return Rel(self._raw_data["_rel"])
 
     async def async_get_devices(self) -> List[Device]:
         """Return the Devices."""
@@ -120,7 +121,7 @@ class Property:
         check_status(resp)
         return [Alert(alert_data) for alert_data in (await resp.json())[ATTR_RESULTS]]
 
-    async def async_get_readings(self, readingdate) -> List[DeviceReading]:
+    async def async_get_readings(self, readingdate) -> List[PropertyReading]:
         """Return the Readings."""
         resp = await self._auth.request(
             "get", f"{self.rel.readings}?date={readingdate}"
