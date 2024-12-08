@@ -197,7 +197,7 @@ class Device:
         return Status(self._raw_data["status"])
 
     @property
-    def rel(self) -> Rel | RelEnvironment:
+    def rel(self) -> RelEnvironment | Rel:
         """Return the tags of the Device"""
         if self.modeltype.startswith(MODELTYPE_ENVIRONMENT):
             return RelEnvironment(self._raw_data["_rel"], self.modeltype)

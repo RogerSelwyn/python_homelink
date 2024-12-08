@@ -189,7 +189,9 @@ class HomeLINKApi:
         check_status(resp)
         return Insight(await resp.json())
 
-    async def async_get_lookups(self, lookuptype: str) -> List:
+    async def async_get_lookups(
+        self, lookuptype: str
+    ) -> List[Lookup] | List[LookupEventType]:
         """Return the Lookups for lookuptype"""
         resp = await self.auth.request(
             "get", HomeLINKEndpoint.LOOKUPS.format(lookuptype=lookuptype)
@@ -200,7 +202,9 @@ class HomeLINKApi:
             for lookup_data in await resp.json()
         ]
 
-    async def async_get_lookup(self, lookuptype: str, lookupid: str):
+    async def async_get_lookup(
+        self, lookuptype: str, lookupid: str
+    ) -> Lookup | LookupEventType:
         """Return the Lookups for lookuptype"""
         resp = await self.auth.request(
             "get",
@@ -209,5 +213,5 @@ class HomeLINKApi:
         check_status(resp)
         return self._process_lookup(lookuptype, await resp.json())
 
-    def _process_lookup(self, lookuptype: str, data: dict):
+    def _process_lookup(self, lookuptype: str, data: dict) -> Lookup | LookupEventType:
         return LookupEventType(data) if lookuptype == LOOKUPEVENTTYPE else Lookup(data)
