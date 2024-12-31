@@ -41,7 +41,7 @@ file = "LICENSE"
 
 [project.optional-dependencies]
 test = [
-    "tomli==2.2.0",
+    "tomli==2.2.1",
 ]
 
 [project.urls]
