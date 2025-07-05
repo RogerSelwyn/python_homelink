@@ -164,3 +164,5 @@ cython_debug/
 docs/.DS_Store
 pyhomelink/.DS_Store
 .DS_Store
+requirements-dev.lock
+requirements.lock
