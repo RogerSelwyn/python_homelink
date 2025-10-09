@@ -40,10 +40,6 @@ version = "0.2.1"
 [project.license]
 file = "LICENSE"
 
-[project.optional-dependencies]
-test = [
-    "tomli==2.2.1",
-]
 
 [project.urls]
 Documentation = "https://rogerselwyn.github.io/python_homelink/"
