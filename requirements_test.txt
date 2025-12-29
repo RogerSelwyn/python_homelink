@@ -1,5 +1,5 @@
 -r requirements.txt
-pytest==9.0.1
+pytest==9.0.2
 pytest-cov==7.0.0
 aiohttp>=3.8.5
 python-dateutil
