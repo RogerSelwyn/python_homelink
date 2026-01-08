@@ -2,7 +2,7 @@
 [![CodeQL](https://github.com/RogerSelwyn/python_homelink/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/RogerSelwyn/python_homelink/actions/workflows/github-code-scanning/codeql) [![Python tests](https://github.com/RogerSelwyn/python_homelink/actions/workflows/test.yaml/badge.svg)](https://github.com/RogerSelwyn/python_homelink/actions/workflows/test.yaml)
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/pyhomelink)](https://libraries.io/pypi/pyhomelink)
 
-![GitHub release](https://img.shields.io/github/v/release/RogerSelwyn/python_homelink) [![maintained](https://img.shields.io/maintenance/yes/2025.svg)](#)
+![GitHub release](https://img.shields.io/github/v/release/RogerSelwyn/python_homelink) [![maintained](https://img.shields.io/maintenance/yes/2026.svg)](#)
 [![maintainer](https://img.shields.io/badge/maintainer-%20%40RogerSelwyn-blue.svg)](https://github.com/RogerSelwyn)
 ![PyPI - Status](https://img.shields.io/pypi/status/pyhomelink)
 [![PyPI](https://img.shields.io/pypi/v/pyhomelink)](https://pypi.org/project/pyhomelink/)
