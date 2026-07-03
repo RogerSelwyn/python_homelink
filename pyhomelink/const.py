@@ -1,4 +1,5 @@
 """Constants."""
+
 from enum import StrEnum
 
 ATTR_RESULTS = "results"
