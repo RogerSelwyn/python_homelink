@@ -6,7 +6,7 @@ nav_order: 1
 # python_homelink
 Python module for accessing AICO HomeLINK services.
 
-Note:- This library requires Python 3.11.
+Note:- This library requires Python 3.11 or greater.
 
 ## Introduction
 
