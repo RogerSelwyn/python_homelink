@@ -1,16 +1,30 @@
 # pylint: disable=protected-access,redefined-outer-name
 """Global fixtures for library."""
 
-from typing import cast
+from typing import Any, cast
 
 import pytest
 from aiohttp import ClientSession
-from aioresponses import aioresponses
+from aiointercept import aiointercept as _aiointercept
 
 from pyhomelink.api import HomeLINKApi
 from pyhomelink.auth import AbstractAuth
 
 from .helpers.const import CLIENTID, CLIENTSECRET
+
+
+class aiointercept(_aiointercept):  # noqa: N801
+    """aiointercept preconfigured to intercept external hosts.
+
+    aioresponses mocked every request by default; aiointercept only
+    redirects external hosts when ``mock_external_urls=True``. This shim
+    restores the aioresponses-compatible default so the test call sites
+    (``@aiointercept()`` / ``async with aiointercept()``) need no changes.
+    """
+
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        kwargs.setdefault("mock_external_urls", True)
+        super().__init__(*args, **kwargs)
 
 
 class ApiAuthImpl(AbstractAuth):
@@ -42,11 +56,10 @@ async def aiohttp_client_session():
 
 
 @pytest.fixture
-def mock_aio():
+async def mock_aio():
     """Mock AIO calls."""
-    with aioresponses() as m:
+    async with aiointercept() as m:
         yield m
-
 
 @pytest.fixture
 async def homelink_api_unauth(aiohttp_client_session: ClientSession) -> HomeLINKApi:
