@@ -1,7 +1,6 @@
 """API in support of HomeLINK."""
 
 from datetime import date
-from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
@@ -15,13 +14,13 @@ from .utils import check_status
 
 
 class HomeLINKApi:
-    """HomeLINK API"""
+    """HomeLINK API."""
 
     def __init__(self, auth: AbstractAuth) -> None:
         """Initialise the api."""
         self.auth = auth
 
-    async def async_get_properties(self) -> List[Property]:
+    async def async_get_properties(self) -> list[Property]:
         """Return the Properties."""
         resp = await self.auth.request("get", HomeLINKEndpoint.PROPERTIES)
         check_status(resp)
@@ -39,7 +38,7 @@ class HomeLINKApi:
         check_status(resp)
         return Property(await resp.json(), self.auth)
 
-    async def async_get_property_devices(self, propertyreference: str) -> List[Device]:
+    async def async_get_property_devices(self, propertyreference: str) -> list[Device]:
         """Return the Property Devices."""
         resp = await self.auth.request(
             "get",
@@ -53,7 +52,7 @@ class HomeLINKApi:
             for device_data in (await resp.json())[ATTR_RESULTS]
         ]
 
-    async def async_get_property_alerts(self, propertyreference: str) -> List[Alert]:
+    async def async_get_property_alerts(self, propertyreference: str) -> list[Alert]:
         """Return the Property Alerts."""
         resp = await self.auth.request(
             "get",
@@ -66,7 +65,7 @@ class HomeLINKApi:
 
     async def async_get_property_insights(
         self, propertyreference: str
-    ) -> List[Insight]:
+    ) -> list[Insight]:
         """Return the Property Insightss."""
         resp = await self.auth.request(
             "get",
@@ -81,7 +80,7 @@ class HomeLINKApi:
 
     async def async_get_property_readings(
         self, propertyreference: str, readingdate: date
-    ) -> List[PropertyReading]:
+    ) -> list[PropertyReading]:
         """Return the Property Readings."""
         resp = await self.auth.request(
             "get",
@@ -97,8 +96,8 @@ class HomeLINKApi:
         ]
 
     async def async_add_property_tags(
-        self, propertyreference: str, tags: List[str]
-    ) -> List[str]:
+        self, propertyreference: str, tags: list[str]
+    ) -> list[str]:
         """Add tags to a property."""
         resp = await self.auth.request(
             "put",
@@ -109,8 +108,8 @@ class HomeLINKApi:
         return await resp.json()
 
     async def async_delete_property_tags(
-        self, propertyreference: str, tags: List[str]
-    ) -> List[str]:
+        self, propertyreference: str, tags: list[str]
+    ) -> list[str]:
         """Delete tags from a property."""
         resp = await self.auth.request(
             "delete",
@@ -120,7 +119,7 @@ class HomeLINKApi:
         check_status(resp)
         return await resp.json()
 
-    async def async_get_devices(self) -> List[Device]:
+    async def async_get_devices(self) -> list[Device]:
         """Return the Properties."""
         resp = await self.auth.request("get", HomeLINKEndpoint.DEVICES)
         check_status(resp)
@@ -137,7 +136,7 @@ class HomeLINKApi:
         check_status(resp)
         return Device(await resp.json(), self.auth)
 
-    async def async_get_device_alerts(self, serialnumber: str) -> List[Alert]:
+    async def async_get_device_alerts(self, serialnumber: str) -> list[Alert]:
         """Return the Device Alerts."""
         resp = await self.auth.request(
             "get",
@@ -173,7 +172,7 @@ class HomeLINKApi:
         check_status(resp)
         return DeviceReading(await resp.json())
 
-    async def async_get_insights(self) -> List[Insight]:
+    async def async_get_insights(self) -> list[Insight]:
         """Return the Properties."""
         resp = await self.auth.request("get", HomeLINKEndpoint.INSIGHTS)
         check_status(resp)
@@ -191,8 +190,8 @@ class HomeLINKApi:
 
     async def async_get_lookups(
         self, lookuptype: str
-    ) -> List[Lookup] | List[LookupEventType]:
-        """Return the Lookups for lookuptype"""
+    ) -> list[Lookup] | list[LookupEventType]:
+        """Return the Lookups for lookuptype."""
         resp = await self.auth.request(
             "get", HomeLINKEndpoint.LOOKUPS.format(lookuptype=lookuptype)
         )
@@ -205,7 +204,7 @@ class HomeLINKApi:
     async def async_get_lookup(
         self, lookuptype: str, lookupid: str
     ) -> Lookup | LookupEventType:
-        """Return the Lookups for lookuptype"""
+        """Return the Lookups for lookuptype."""
         resp = await self.auth.request(
             "get",
             HomeLINKEndpoint.LOOKUP.format(lookuptype=lookuptype, lookupid=lookupid),

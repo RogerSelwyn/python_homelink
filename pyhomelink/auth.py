@@ -1,10 +1,11 @@
 """HomeLINK Auth."""
 
-import logging
 from abc import ABC, abstractmethod
-from typing import Any, Mapping, Optional
+from collections.abc import Mapping
+import logging
+from typing import Any
 
-from aiohttp import ClientError, ClientResponse, ClientSession
+from aiohttp import ClientConnectionError, ClientError, ClientResponse, ClientSession
 
 from .const import BASE_URL
 
@@ -29,7 +30,7 @@ class AbstractAuth(ABC):
         """Return a valid access token."""
 
     async def request(
-        self, method: str, url_suffix: str, **kwargs: Optional[Mapping[str, Any]]
+        self, method: str, url_suffix: str, **kwargs: Mapping[str, Any] | None
     ) -> ClientResponse:
         """Make a request."""
         try:
@@ -41,6 +42,16 @@ class AbstractAuth(ABC):
             "accept": "application/json",
         }
         url = f"{BASE_URL}{url_suffix}"
+
+        try:
+            result = await self._request(method, url, headers, **kwargs)
+        except ClientConnectionError as err:
+            _LOGGER.info("CCE Exception - retrying: %s", err)
+            result = await self._request(method, url, headers, **kwargs)
+
+        return result
+
+    async def _request(self, method, url, headers, **kwargs):
         return await self._websession.request(
             method,
             url,
@@ -49,7 +60,7 @@ class AbstractAuth(ABC):
         )
 
     async def async_get_token(
-        self, url: str, **kwargs: Optional[Mapping[str, Any]]
+        self, url: str, **kwargs: Mapping[str, Any] | None
     ) -> ClientResponse:
         """Make a request."""
         url = f"{AUTHURL}{url}"

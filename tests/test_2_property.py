@@ -1,6 +1,6 @@
 """Test the HomeLINK property methods."""
 
-from datetime import date, datetime
+from datetime import datetime
 
 from pyhomelink.api import HomeLINKApi
 from pyhomelink.property import Property
@@ -124,10 +124,10 @@ async def test_property_get_readings(homelink_api: HomeLINKApi, mock_aio) -> Non
 
     create_mock(
         mock_aio,
-        f"/property/{PROPERTY_REF}/readings?date={date.today()}",
+        f"/property/{PROPERTY_REF}/readings?date={datetime.now().date()}",
         "property_readings.json",
     )
-    readings = await hl_property.async_get_readings(date.today())
+    readings = await hl_property.async_get_readings(datetime.now().date())
 
     assert len(readings) == 4
     reading = readings[0]
@@ -139,11 +139,11 @@ async def test_property_readings(homelink_api: HomeLINKApi, mock_aio) -> None:
 
     create_mock(
         mock_aio,
-        f"/property/{PROPERTY_REF}/readings?date={date.today()}",
+        f"/property/{PROPERTY_REF}/readings?date={datetime.now().date()}",
         "property_readings.json",
     )
     readings = await homelink_api.async_get_property_readings(
-        PROPERTY_REF, date.today()
+        PROPERTY_REF, datetime.now().date()
     )
 
     assert len(readings) == 4

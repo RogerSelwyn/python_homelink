@@ -1,6 +1,6 @@
 """Test the HomeLINK property methods."""
 
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 
 from pyhomelink.api import HomeLINKApi
 from pyhomelink.const import HomeLINKReadingType
@@ -91,7 +91,7 @@ async def test_device_get_readings_start(homelink_api: HomeLINKApi, mock_aio) ->
     create_mock(mock_aio, f"/device/{DEVICE_SERIAL}", "device.json")
     device = await homelink_api.async_get_device(DEVICE_SERIAL)
 
-    today = date.today()
+    today = datetime.now().date()
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL}/readings/environment-temperature-indoor?start={today}",
@@ -111,8 +111,8 @@ async def test_device_get_readings_start_end(
     create_mock(mock_aio, f"/device/{DEVICE_SERIAL}", "device.json")
     device = await homelink_api.async_get_device(DEVICE_SERIAL)
 
-    today = date.today()
-    yesterday = date.today() - timedelta(days=1)
+    today = datetime.now().date()
+    yesterday = datetime.now().date() - timedelta(days=1)
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL}/readings/environment-temperature-indoor?start={yesterday}&end={today}",
@@ -130,7 +130,7 @@ async def test_device_get_readings_end(homelink_api: HomeLINKApi, mock_aio) -> N
     create_mock(mock_aio, f"/device/{DEVICE_SERIAL}", "device.json")
     device = await homelink_api.async_get_device(DEVICE_SERIAL)
 
-    today = date.today()
+    today = datetime.now().date()
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL}/readings/environment-temperature-indoor?end={today}",
@@ -145,7 +145,7 @@ async def test_device_get_readings_end(homelink_api: HomeLINKApi, mock_aio) -> N
 async def test_device_readings_start(homelink_api: HomeLINKApi, mock_aio) -> None:
     """Test device alerts request."""
 
-    today = date.today()
+    today = datetime.now().date()
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL}/readings/environment-temperature-indoor?start={today}",
@@ -160,8 +160,8 @@ async def test_device_readings_start(homelink_api: HomeLINKApi, mock_aio) -> Non
 async def test_device_readings_start_end(homelink_api: HomeLINKApi, mock_aio) -> None:
     """Test device alerts request."""
 
-    today = date.today()
-    yesterday = date.today() - timedelta(days=1)
+    today = datetime.now().date()
+    yesterday = datetime.now().date() - timedelta(days=1)
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL}/readings/environment-temperature-indoor?start={yesterday}&end={today}",
@@ -176,7 +176,7 @@ async def test_device_readings_start_end(homelink_api: HomeLINKApi, mock_aio) ->
 async def test_device_readings_end(homelink_api: HomeLINKApi, mock_aio) -> None:
     """Test device alerts request."""
 
-    today = date.today()
+    today = datetime.now().date()
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL}/readings/environment-temperature-indoor?end={today}",
@@ -194,7 +194,7 @@ async def test_device_readings_co2(homelink_api: HomeLINKApi, mock_aio) -> None:
     create_mock(mock_aio, f"/device/{DEVICE_SERIAL_CO2}", "device_co2.json")
     device = await homelink_api.async_get_device(DEVICE_SERIAL_CO2)
 
-    today = date.today()
+    today = datetime.now().date()
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL_CO2}/readings/environment-co2-indoor?start={today}",
@@ -212,7 +212,7 @@ async def test_device_readings_humidity(homelink_api: HomeLINKApi, mock_aio) -> 
     create_mock(mock_aio, f"/device/{DEVICE_SERIAL_CO2}", "device_co2.json")
     device = await homelink_api.async_get_device(DEVICE_SERIAL_CO2)
 
-    today = date.today()
+    today = datetime.now().date()
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL_CO2}/readings/environment-humidity-indoor?start={today}",

@@ -13,7 +13,7 @@ from pyhomelink.auth import AbstractAuth
 from .helpers.const import CLIENTID, CLIENTSECRET
 
 
-class aiointercept(_aiointercept):  # noqa: N801
+class aiointercept(_aiointercept):
     """aiointercept preconfigured to intercept external hosts.
 
     aioresponses mocked every request by default; aiointercept only
@@ -23,6 +23,7 @@ class aiointercept(_aiointercept):  # noqa: N801
     """
 
     def __init__(self, *args: Any, **kwargs: Any) -> None:
+        """Initialise the test configuration."""
         kwargs.setdefault("mock_external_urls", True)
         super().__init__(*args, **kwargs)
 
@@ -76,7 +77,7 @@ async def homelink_api(homelink_api_unauth, mock_aio) -> HomeLINKApi:
     mock_aio.get(
         "https://auth.live.homelync.io/oauth2?client=1234&secret=5678",
         status=200,
-        body='{"accessToken": "%s"}' % (new_token),
+        body=f'{{"accessToken": "{new_token}"}}',
         repeat=True,
     )
     return homelink_api_unauth

@@ -1,6 +1,6 @@
 """Test the HomeLINK reading methods."""
 
-from datetime import date, datetime
+from datetime import datetime
 
 from pyhomelink.api import HomeLINKApi
 from pyhomelink.const import HomeLINKReadingType
@@ -19,10 +19,10 @@ async def test_property_readings(homelink_api: HomeLINKApi, mock_aio) -> None:
 
     create_mock(
         mock_aio,
-        f"/property/{PROPERTY_REF}/readings?date={date.today()}",
+        f"/property/{PROPERTY_REF}/readings?date={datetime.now().date()}",
         "property_readings.json",
     )
-    readings = await hl_property.async_get_readings(date.today())
+    readings = await hl_property.async_get_readings(datetime.now().date())
 
     reading = readings[0]
     assert isinstance(reading, PropertyReading)
@@ -45,7 +45,7 @@ async def test_property_readings(homelink_api: HomeLINKApi, mock_aio) -> None:
 async def test_device_readings_start(homelink_api: HomeLINKApi, mock_aio) -> None:
     """Test device alerts request."""
 
-    today = date.today()
+    today = datetime.now().date()
     create_mock(
         mock_aio,
         f"/device/{DEVICE_SERIAL}/readings/environment-temperature-indoor?start={today}",

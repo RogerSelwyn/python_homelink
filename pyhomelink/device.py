@@ -1,7 +1,6 @@
 """Python module for accessing HomeLINK Device."""
 
 from datetime import date, datetime
-from typing import List
 
 from .alert import Alert
 from .auth import AbstractAuth
@@ -19,22 +18,22 @@ class Metadata:
     """Metadata for property."""
 
     def __init__(self, raw_data: dict) -> None:
-        """Initialise Metadata"""
+        """Initialise Metadata."""
         self._raw_data = raw_data
 
     @property
     def signalstrength(self) -> str:
-        """Return the signalstrength of the Device"""
+        """Return the signalstrength of the Device."""
         return self._raw_data["signalStrength"]
 
     @property
     def lastseendate(self) -> datetime:
-        """Return the lastseendate of the Device"""
+        """Return the lastseendate of the Device."""
         return parse_date(self._raw_data["lastSeenDate"])
 
     @property
     def connectivitytype(self) -> str:
-        """Return the connectivitytype of the Device"""
+        """Return the connectivitytype of the Device."""
         return self._raw_data["connectivityType"]
 
 
@@ -42,27 +41,27 @@ class Status:
     """Status for property."""
 
     def __init__(self, raw_data: dict) -> None:
-        """Initialise Status"""
+        """Initialise Status."""
         self._raw_data = raw_data
 
     @property
     def operationalstatus(self) -> str:
-        """Return the operationalstatus of the Device"""
+        """Return the operationalstatus of the Device."""
         return self._raw_data["operationalStatus"]
 
     @property
     def lasttesteddate(self) -> datetime:
-        """Return the lasttesteddate of the Device"""
+        """Return the lasttesteddate of the Device."""
         return parse_date(self._raw_data["lastTestedDate"])
 
     @property
     def datacollectionstatus(self) -> str:
-        """Return the datacollectionstatus of the Device"""
+        """Return the datacollectionstatus of the Device."""
         return self._raw_data["dataCollectionStatus"]
 
 
 class Readings:
-    """Reading URLs for device"""
+    """Reading URLs for device."""
 
     def __init__(self, raw_data: dict) -> None:
         """Initialise _Rel."""
@@ -70,21 +69,21 @@ class Readings:
 
     @property
     def temperaturereadings(self) -> str:
-        """Return the temperature readings url of the Device"""
+        """Return the temperature readings url of the Device."""
         return self._raw_data["temperatureReadings"]
 
     @property
     def humidityreadings(self) -> str:
-        """Return the humidity readings url of the Device"""
+        """Return the humidity readings url of the Device."""
         return self._raw_data["humidityReadings"]
 
 
 class ReadingsCO2(Readings):
-    """CO2 Reading URLs for device"""
+    """CO2 Reading URLs for device."""
 
     @property
     def co2readings(self) -> str:
-        """Return the CO2 readings url of the Device"""
+        """Return the CO2 readings url of the Device."""
         return self._raw_data["co2Readings"]
 
 
@@ -98,17 +97,17 @@ class Rel:
 
     @property
     def self(self) -> str:
-        """Return the self url of the Device"""
+        """Return the self url of the Device."""
         return self._raw_data["_self"]
 
     @property
     def hl_property(self) -> str:
-        """Return the property url of the Device"""
+        """Return the property url of the Device."""
         return self._raw_data["property"]
 
     @property
     def alerts(self) -> str:
-        """Return the alerts url of the Device"""
+        """Return the alerts url of the Device."""
         return self._raw_data["alerts"]
 
 
@@ -117,14 +116,14 @@ class RelEnvironment(Rel):
 
     @property
     def readings(self) -> Readings | ReadingsCO2:
-        """Return the readings url of the Device"""
+        """Return the readings url of the Device."""
         if MODELTYPE_CO2 in self._modeltype:
             return ReadingsCO2(self._raw_data["readings"])
         return Readings(self._raw_data["readings"])
 
 
 class Device:
-    """Device is the instantiation of a HomeLINK Device"""
+    """Device is the instantiation of a HomeLINK Device."""
 
     def __init__(self, raw_data: dict, auth: AbstractAuth) -> None:
         """Initialize the property."""
@@ -133,77 +132,77 @@ class Device:
 
     @property
     def serialnumber(self) -> str:
-        """Return the serialnumber of the Device"""
+        """Return the serialnumber of the Device."""
         return self._raw_data["serialNumber"]
 
     @property
     def createdat(self) -> datetime:
-        """Return the createdat of the Device"""
+        """Return the createdat of the Device."""
         return parse_date(self._raw_data["createdAt"])
 
     @property
     def updatedat(self) -> datetime:
-        """Return the updatedate of the Device"""
+        """Return the updatedate of the Device."""
         return parse_date(self._raw_data["updatedAt"])
 
     @property
     def model(self) -> str:
-        """Return the model of the Device"""
+        """Return the model of the Device."""
         return self._raw_data["model"]
 
     @property
     def modeltype(self) -> str:
-        """Return the modeltype of the Device"""
+        """Return the modeltype of the Device."""
         return self._raw_data["modelType"]
 
     @property
     def location(self) -> str:
-        """Return the location of the Device"""
+        """Return the location of the Device."""
         return self._raw_data["location"]
 
     @property
     def locationnickname(self) -> str:
-        """Return the locationnickname of the Device"""
+        """Return the locationnickname of the Device."""
         return self._raw_data["locationNickname"]
 
     @property
     def manufacturer(self) -> str:
-        """Return the manufacturer of the Device"""
+        """Return the manufacturer of the Device."""
         return self._raw_data["manufacturer"]
 
     @property
     def installationdate(self) -> datetime:
-        """Return the installationdate of the Device"""
+        """Return the installationdate of the Device."""
         return parse_date(self._raw_data["installationDate"])
 
     @property
     def installedby(self) -> str:
-        """Return the installedby of the Device"""
+        """Return the installedby of the Device."""
         return self._raw_data["installedBy"]
 
     @property
     def replacedate(self) -> datetime:
-        """Return the replacedate of the Device"""
+        """Return the replacedate of the Device."""
         return parse_date(self._raw_data["replaceDate"])
 
     @property
     def metadata(self) -> Metadata:
-        """Return the metadata of the Device"""
+        """Return the metadata of the Device."""
         return Metadata(self._raw_data["metadata"])
 
     @property
     def status(self) -> Status:
-        """Return the tags of the Device"""
+        """Return the tags of the Device."""
         return Status(self._raw_data["status"])
 
     @property
     def rel(self) -> RelEnvironment | Rel:
-        """Return the tags of the Device"""
+        """Return the tags of the Device."""
         if self.modeltype.startswith(MODELTYPE_ENVIRONMENT):
             return RelEnvironment(self._raw_data["_rel"], self.modeltype)
         return Rel(self._raw_data["_rel"], self.modeltype)
 
-    async def async_get_alerts(self) -> List[Alert]:
+    async def async_get_alerts(self) -> list[Alert]:
         """Return the Alerts."""
         resp = await self._auth.request("get", f"{self.rel.alerts}")
         check_status(resp)
