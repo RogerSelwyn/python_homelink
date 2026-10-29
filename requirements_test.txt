@@ -3,5 +3,5 @@ pytest>=9.1.1
 pytest-cov>=7.1.0
 aiohttp>=3.14.0
 python-dateutil>=2.9.0
-pytest-asyncio>=1.4.0
+pytest-asyncio>=1.4.1
 aiointercept>=0.1.12
